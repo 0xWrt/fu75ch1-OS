@@ -1,0 +1,23 @@
+# ============================================================
+# fu75ch1_public — .gitignore
+# Alles hier ist public-safe. Dieses File schützt vor
+# versehentlichem Commit von Obsidian-Internals und Temp-Dateien.
+# ============================================================
+
+# Obsidian workspace (gerätespezifisch, nicht committen)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Temp / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+
+# NIEMALS in diesen Vault (Tripwire — falls doch vorhanden)
+*sk-ant-*
+*apiKey*
+*password*
+*credentials*
