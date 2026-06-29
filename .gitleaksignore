@@ -1,0 +1,5 @@
+# fu75ch1_public .gitleaksignore
+# Demo-Strings die keine echten Secrets sind
+# Format: sha256:fingerprint
+
+# Bekannte harmlose Patterns in Dokumentation
