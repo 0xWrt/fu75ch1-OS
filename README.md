@@ -95,6 +95,7 @@ Full write-up of every phase: [01_Architecture/Phases](01_Architecture/Phases)
 /
 ├── README.md                    ← this file
 ├── LICENSE                      ← CC BY-NC 4.0
+├── MANIFESTO.md                 ← philosophy & architecture vision (honest build status)
 ├── 00_PROOF/                    ← verified metrics, Garak run details
 ├── 01_Architecture/             ← sanitized system prompt, phase write-ups,
 │                                   error chronicle (94 entries), handbook
