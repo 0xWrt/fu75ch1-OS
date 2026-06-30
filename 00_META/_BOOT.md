@@ -1,6 +1,7 @@
 ---
 tags: [meta, boot, public]
 date: 2026-06-24
+updated: 2026-06-30
 status: ✅ Aktiv
 title: _BOOT — fu75ch1_public
 ---
@@ -11,16 +12,18 @@ title: _BOOT — fu75ch1_public
 
 ## Inhalt
 
-- `01_Architecture/` — Konzepte & Guides (öffentlich teilbar)
+- `README.md` / `LICENSE` — Repo-Root (GitHub-Standard)
+- `00_PROOF/` — Verified Results, Garak Run Details, Before/After
+- `01_Architecture/` — Konzepte, Phasen-Doku, Error Chronicle, Handbuch
 - `02_CONTENT_OPERATING_SYSTEM/` — LinkedIn, Newsletter, Gumroad
-- `03_GitHub_Docs/` — README, Manifesto
 
 ## Regeln
 
 - **Kein sensitives Material** — keine Keys, IPs, Credentials, PII
 - **Alles Git-tracked** — jede Änderung versioniert
-- **Quelle:** automatisierter Export aus fu75ch1 via Phase 13 Pipeline
+- **Quelle:** automatisierter Export aus dem privaten Vault via `Invoke-PublicExport-v2.ps1` (Sanitierung inklusive)
+- **Ausnahme:** `00_PROOF/Verified_Results.md` und `Before_After_Visual.md` sind manuell gepflegt (nicht Teil des Export-Manifests)
 
 ## Verknüpfter privater Vault
 
-`%USERPROFILE%\Documents\fu75ch1` (nicht öffentlich)
+Lokaler Core-Vault (nicht öffentlich, nicht Teil dieses Repos).

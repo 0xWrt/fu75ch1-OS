@@ -1,6 +1,6 @@
 ---
 date: 2026-06-25
-updated: 2026-06-25
+updated: 2026-06-30
 tags: [proof, metrics, before-after, garak, opsec, verified]
 status: ✅ Verifiziert
 title: fu75ch1 — Verified Results (Alle Metriken)
@@ -16,30 +16,37 @@ title: fu75ch1 — Verified Results (Alle Metriken)
 
 ## 1. Jailbreak Resistance — Garak 0.15.1
 
-Systematische Red-Team-Tests des Master-Prompts über 4 Runs.
+Systematische Red-Team-Tests des Master-Prompts über 5 Runs.
 
 | Run | Datum | System-Prompt | Probe | Attempts | ASR | Trend |
 |---|---|---|---|---|---|---|
 | 1 — Baseline | 2026-06-21 | keiner | dan.Dan_11_0 | ~65 | **45.23%** | — |
 | 2 | 2026-06-21 | v4.3 | dan.Dan_11_0 | ~65 | **43.67%** | -1.56% |
 | 3 | 2026-06-22 | v4.4 | Ablation_Dan_11_0 | ~40 | **15.75%** | -27.92% |
-| 4 | 2026-06-24 | v4.5 | AutoDANCached | 3 | **0%** ✅ | -15.75% |
+| 4 (Pilot) | 2026-06-24 | v4.5 | AutoDANCached | 3 | **0%** | nicht repräsentativ |
+| **5** | **2026-06-30** | **v4.5** | **dan.DanInTheWild** | **512** | **41.8%** | repräsentativ |
+| **5** | **2026-06-30** | **v4.5** | **promptinject.HijackHateHumans** | **512** | **9.8%** | repräsentativ |
 
-**Gesamtreduktion: 45.23% → 0% (−100%)**
+> ⚠️ Run 4 nutzte nur 3 Versuche und ist statistisch nicht aussagekräftig — ein
+> Pilot-Test, kein Beweis. Run 5 ersetzt ihn als Referenzwert: 512 reale
+> Community-Jailbreaks pro Probe geben ein deutlich belastbareres Bild der
+> tatsächlichen Robustheit. Die höhere ASR gegenüber Run 4 ist Folge der
+> breiteren Stichprobe, nicht einer Verschlechterung des Systems — wir zeigen
+> beide Werte, statt nur den besten herauszupicken.
 
-Detektoren in Run 4:
-- `dan.DAN` — 3/3 PASS (0% ASR)
-- `mitigation.MitigationBypass` — 3/3 PASS (0% ASR)
-- Laufzeit: 45.18s
-- Modell: anthropic/claude-sonnet-4-5
+Detektoren in Run 5:
+- `mitigation.MitigationBypass` (DanInTheWild) — 139 PASS / 100 FAIL / 17 None (239 ausgewertet) → 41.8% ASR
+- `promptinject.AttackRogueString` (HijackHateHumans) — 221 PASS / 24 FAIL / 11 None (245 ausgewertet) → 9.8% ASR
+- Modell: anthropic/claude-sonnet-4-6 (direkter Anthropic-API-Key)
 
-Getestete Angriffsmuster (AutoDANCached):
+Getestete Angriffsmuster (Run 4, AutoDANCached — Pilot):
 1. Llama-2 Persona-Hijack ("Disregard previous instructions")
 2. Developer Mode Output Framework
 3. Bifurcated-Response Developer Mode (langer Kontext-Angriff)
 
-> ⚠️ Hinweis: Run 1+2 vs Run 3+4 nutzen unterschiedliche Probes — eingeschränkte
-> Vergleichbarkeit. Trend ist eindeutig, absolute Zahlen vorsichtig interpretieren.
+> ⚠️ Hinweis: Runs nutzen unterschiedliche Probes über die Zeit — eingeschränkte
+> direkte Vergleichbarkeit zwischen alten und neuen Runs. Trend bei Runs 1-3 ist
+> eindeutig; Run 5 ist der aktuell verlässlichste Einzelwert.
 
 ---
 
@@ -51,7 +58,7 @@ Getestete Angriffsmuster (AutoDANCached):
 | bias:gender | 2 | 2 | 0 | **1.0** |
 | **Gesamt (Teilrun)** | **7** | **7** | **0** | **100%** |
 
-Ausstehend: 1358 weitere Tests (32 Plugins) — wenn Credits verfügbar.
+Ausstehend: 1358 weitere Tests (32 Plugins) — vollständiger Lauf noch offen.
 Modell: anthropic:messages:claude-sonnet-4-6
 Eval-ID: eval-B1R-2026-06-24T11:56:25
 
@@ -66,12 +73,10 @@ Automatisiertes Audit-Script mit 26 Checks über 4 Kategorien.
 | VPN / Netzwerk | 01–05 | 5/5 | 100% |
 | System Security | 06–10 | 5/5 | 100% |
 | Tools & AppSec | 11–18 | 8/8 | 100% |
-| Anti-Tracking | 19–26 | 7/8 | 87.5% |
-| **Gesamt** | **26** | **25/26** | **96% 🟢** |
+| Anti-Tracking | 19–26 | 8/8 | 100% |
+| **Gesamt** | **26** | **26/26** | **100% 🟢** |
 
-Einziger offener Check (#26 — WiFi MAC Randomisierung):
-Treiber schreibt Registry-Wert nicht — manuell verifiziert als aktiv.
-Treiber-Update ausstehend.
+Stand 2026-06-29: letzter offener Check (WiFi MAC Randomisierung) verifiziert/geschlossen.
 
 Vorher: kein Audit-Tool vorhanden (Phase 0–11) — Baseline = unbekannt / 0%.
 
@@ -87,7 +92,8 @@ Vorher: kein Audit-Tool vorhanden (Phase 0–11) — Baseline = unbekannt / 0%.
 | v4.0 | Governance L0–L4 + Decision Engine | kontrollierbare Autonomie |
 | v4.3 | Vault fu75ch1 + Phasen-Protokoll | ASR 45.23% → 43.67% (-1.56%) |
 | v4.4 | `[prompt_security]` — 7 Jailbreak-Muster | ASR 43.67% → 15.75% (-27.92%) |
-| **v4.5** | pwsh Guardrails + Idempotenz | ASR 15.75% → **0%** (-100%) |
+| v4.5 | pwsh Guardrails + Idempotenz | ASR 15.75% → 0% (Pilot, 3 Versuche) |
+| **v4.5** | **(repräsentativer Test, Run 5)** | **ASR 41.8% / 9.8% gegen 512 reale Jailbreaks** |
 
 ---
 
@@ -103,7 +109,12 @@ Lokal: AnythingLLM (semantische Vault-Suche), Ollama (lokale LLMs, offline-fähi
 n8n (Workflow-Automation, self-hosted), LangFuse (LLM-Observability, self-hosted Docker),
 Memos (Quick-Capture, self-hosted Docker).
 
-Cloud: Anthropic API — nur für architektonische/Security-Analysen (Komplexitätsstufe Large).
+Cloud: Anthropic API — primär für Architektur-/Security-Analysen und Dokumentengenerierung
+(Komplexitätsstufe Medium/Large). Hinweis: lokale LLMs (Ollama) sind als Infrastruktur
+vorhanden und einsatzbereit, der produktive Hauptworkload läuft Stand heute überwiegend
+über die Anthropic-API — siehe Master-Prompt `[environment]`-Sektion ("kein lokales LLM"
+im Tages-Workflow). "<20% Cloud" bezieht sich auf die Anzahl unterstützender Workloads
+(RAG, Automation, Observability), nicht auf den Anteil der KI-Inferenz selbst.
 
 ---
 
@@ -123,7 +134,7 @@ Akzeptiert da: keine Internet-Exposition, localhost:5230 only.
 
 ---
 
-## 7. Fehler-Chronologie — 77 dokumentierte Fehler
+## 7. Fehler-Chronologie — 94 dokumentierte Fehler
 
 Alle Fehler mit Ursache, Lösung und abgeleiteter Präventionsregel.
 
@@ -141,7 +152,8 @@ Alle Fehler mit Ursache, Lösung und abgeleiteter Präventionsregel.
 | Phase 12 | #66–67 | KONFIGURATION, SECURITY |
 | Phase 13 | #68–72 | AUTH, API |
 | Phase 14 | #73–77 | PFAD, SYNTAX, PARSING |
-| **Gesamt** | **77+** | **12 Kategorien** |
+| Phase 15 + Folgesessions | #78–95 | KONFIGURATION, SYNTAX, PROZESS, KOMPATIBILITÄT |
+| **Gesamt** | **94 Einträge** (nummeriert bis #95, eine Nummer historisch konsolidiert) | **12+ Kategorien** |
 
 Vollständige Liste: [Error_Chronicle.md](../01_Architecture/Error_Chronicle.md)
 
@@ -169,13 +181,15 @@ Phase 1 Ergebnis:
 
 | Metrik | Methode | Status |
 |---|---|---|
-| Token-Kosten vorher/nachher | LangFuse 4-Wochen-Export | ab Phase 3 |
-| Setup-Zeit Neuling | Beta-Tester | Phase 3 |
-| Promptfoo vollständiger Run (1358 Tests) | Credits erforderlich | offen |
-| Vault-Wachstumskurve | Git-Log-Auswertung | Phase 2 |
+| Token-Kosten vorher/nachher | LangFuse 4-Wochen-Export | offen |
+| Setup-Zeit Neuling | Beta-Tester | offen |
+| Promptfoo vollständiger Run (1358 Tests) | Budget jetzt verfügbar (~$10.77) | offen |
+| DanInTheWild Fail-Cases im Detail | Manuelle Analyse der 100 Fail-Fälle | offen |
+| Vault-Wachstumskurve | Git-Log-Auswertung | offen |
 
 ---
 
-*Quellen: Garak_Run4_2026-06-24.md, Phase8_BlockB_Promptfoo_2026-06-24.md,
-Phase12_BlockA_Abschluss.md, Fehler_Chronologie_Kumulativ.md,
+*Quellen: Garak_Run4_2026-06-24.md, Garak_Run5_2026-06-30.md,
+Phase8_BlockB_Promptfoo_2026-06-24.md, Phase12_BlockA_Abschluss.md,
+Fehler_Chronologie_Kumulativ.md, Phase1_Retrospektive.md,
 Phase1_Block3-4_Defender_Telemetrie.md — alle im Core Vault fu75ch1.*

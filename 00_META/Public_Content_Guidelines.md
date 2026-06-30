@@ -19,13 +19,13 @@ title: Public Content Guidelines
 | Architektur-Diagramme | ✅ | Netzwerktopologie (intern) |
 | Garak/Promptfoo Ergebnisse | ✅ | System-Prompt vollständig |
 
-## Export-Prozess (Phase 13 Pipeline)
+## Export-Prozess
 
 ```
 fu75ch1 (privat)
-  → 16_AUTO/ (Staging)
-  → L2-Kuratierung (manuell)
-  → fu75ch1_public (commit)
+  -> Invoke-PublicExport-v2.ps1 (Manifest-gesteuert, sanitiert automatisch)
+  -> DryRun zur Kontrolle
+  -> fu75ch1_public (Freigabe + Commit)
 ```
 
 ## Sanitierungs-Checkliste vor Export

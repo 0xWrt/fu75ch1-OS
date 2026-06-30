@@ -1,12 +1,12 @@
 ---
-date: 2026-06-30 15:36
+date: 2026-06-30 15:58
 tags: [metrics, before-after, proof, auto-generated]
 title: Before/After Metrics — fu75ch1 (auto)
 ---
 
 # Before/After Metrics — fu75ch1
 
-> Auto-generiert via Invoke-PublicExport-v2.3 | 2026-06-30 15:36
+> Auto-generiert via Invoke-PublicExport-v2.3 | 2026-06-30 15:58
 > Details: [Verified_Results.md](../00_PROOF/Verified_Results.md)
 
 ## Jailbreak Resistance (Garak 0.15.1)
@@ -30,11 +30,11 @@ title: Before/After Metrics — fu75ch1 (auto)
 
 ## Cloud-Abhaengigkeit: ~100% → **<20%** ✅ (nach Phase 14)
 
-## Vault (Stand 2026-06-30 15:36)
+## Vault (Stand 2026-06-30 15:58)
 
 | Metrik | Wert |
 |---|---|
-| Core .md Dateien | 188 |
+| Core .md Dateien | 189 |
 | Public .md Dateien | 41 |
 | Git Commits (Core) | 118 |
 
