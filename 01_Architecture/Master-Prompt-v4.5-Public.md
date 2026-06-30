@@ -21,6 +21,7 @@ title: Master-Prompt v4.5 — AI Operating System
 | v4.3 | WSL2 + Binwalk, Fire TV Hardening, ABI-Workflow, Obsidian-Fix, AppOps, Erklärungsprinzip |
 | v4.4 | Jailbreak-Resistenz [prompt_security] — basiert auf Garak Scan 2026-06-21 |
 | v4.5 | pwsh Guardrails & Idempotenz [directives] |
+| v4.5.1 | LLMLingua-2 Middleware, Modell auf Sonnet 4.6, OpenRouter ZDR verifiziert |
 
 ## 📋 Vollständiger Prompt-Text
 
@@ -95,16 +96,16 @@ Speichern in: Windows Credential Manager / KeePassXC
 RAG & KNOWLEDGE:
 - Obsidian Vault fu75ch1
 - Git (Versionskontrolle, Rollback, Audit-Trail)
-- AnythingLLM (RAG, Agentic)
+- AnythingLLM (RAG, Agentic) — Re-Indexierung ausstehend (F-05)
 - Open WebUI (Multi-Modell-UI)
 
 AI MODELS (Routing nach Komplexität):
 - Small: GPT-4o-mini / Groq Llama 3.3 (Zusammenfassung, Formatierung)
-- Medium: Claude Sonnet 4.5 (Dokumentation, Code Review, Standard)
+- Medium: Claude Sonnet 4.6 (Dokumentation, Code Review, Standard)
 - Large: Claude Opus 4 (Architektur, RE, Security-Analyse)
 - Security: Llama Guard, Garak, Promptfoo, PyRIT
 - Fallback: Primary → Secondary → Local → Human Review
-- OpenRouter.ai (ZDR — Verifikation ausstehend)
+- OpenRouter.ai (ZDR aktiv, data_collection=deny verifiziert)
 - Venice.ai / Akash (dezentral, anonym)
 
 BROWSER & OPSEC:
@@ -243,6 +244,7 @@ PRIVACY STACK (Fire TV):
 [/mobile_hardening]
 
 [token_optimization]
+LLMLingua-2 aktiv: Session-State + User-Message werden vor API-Call komprimiert (Rate 0.5, ~20-40% Ersparnis).
 Effective Tokens maximieren:
 - Redundanzen entfernen
 - Kontext komprimieren

@@ -1,7 +1,7 @@
 ---
 tags: [audit, fehler-chronologie, lessons-learned]
 date: 2026-06-19
-updated: 2026-06-23
+updated: 2026-06-25
 status: ✅ Aktiv
 title: Fehler-Chronologie — Kumulativ
 ---
@@ -171,7 +171,31 @@ Siehe Phase1_Retrospektive.md (Fehler 1–8)
 
 ---
 
-## Prävention — Regeln (kumulativ, Stand 2026-06-24)
+## Phase 14 — RAG & Semantische Vault-Suche (2026-06-24)
+
+| Nr | Fehler | Kategorie | Ursache | Lösung |
+|---|---|---|---|---|
+| 73 | execute_safe_pwsh kein Output bei Multiline-Script | PFAD | `-Command` mit Multiline-Script bricht auf Windows | Script via Temp-Datei + `-File` |
+| 74 | search_vault HTML statt JSON | PFAD | docker exec curl findet curl nicht in Node-PATH | Absoluter Pfad `C:\Program Files\Git\mingw64\bin\curl.exe` |
+| 75 | Orchestrator `$steps.Count` Fehler | SYNTAX | PowerShell unboxt List zu Einzelobjekt | `@(Get-PhaseSteps ...)` |
+| 76 | Orchestrator Parser 0 Schritte | PARSING | Phase14_Plan.md nutzt `##` statt `###` | Regex `^#{2,3} ` |
+| 77 | Orchestrator Schritt-Regex: nummerierte Listen nicht erkannt | PARSING | `1.` nicht im Pattern | `(?:[-*]|\d+\.)` |
+
+---
+
+## Phase 15 — Content OS & Public Export (2026-06-25)
+
+| Nr | Fehler | Kategorie | Ursache | Lösung |
+|---|---|---|---|---|
+| 78 | Invoke-PublicExport-v2.ps1 nicht erkannt aus System32 | PFAD | Relativer Pfad `.\Script.ps1` funktioniert nicht aus C:\Windows\System32 | `Set-Location` in Workflow-Ordner zuerst, oder absoluten Pfad via `pwsh -File` |
+| 79 | Export meldet "30 exportiert" obwohl keine Dateien geschrieben | DRYRUN | Beide Befehle (DryRun + echter Run) enthielten `-DryRun` — zweiter Aufruf nicht bereinigt | DryRun-Zähler im Script von echtem Export-Zähler trennen (v2.2) |
+| 80 | Git Commit durch gitleaks blockiert: `sk-DEMO-REDACTED` im Pitch-Deck | SECURITY | Beispiel-String im HTML-Code-Block hat `sk-` Pattern — gitleaks erkennt als API-Key | Demo-Keys nie mit echten Key-Präfixen (`sk-`, `Bearer`) — `DEMO-KEY-REDACTED` verwenden |
+| 81 | Git Commit still fehlgeschlagen (kein neuer Hash) | PROZESS | Commit-Message enthielt Umlaute — in MCP-Kontext führte das zu stummem Fehler | ASCII-only Commit-Messages in execute_safe_pwsh |
+| 82 | Gitleaks `--staged` Flag nicht unterstützt | SYNTAX | Diese gitleaks-Version kennt `git --staged` nicht | `detect --source <patch_file> --no-git` als Workaround |
+
+---
+
+## Prävention — Regeln (kumulativ, Stand 2026-06-25)
 
 | Regel | Abgeleitet aus |
 |---|---|
@@ -212,13 +236,60 @@ Siehe Phase1_Retrospektive.md (Fehler 1–8)
 | Memos PATCH immer mit `?updateMask=content` | 70 |
 | n8n PATCH Auth: Send Headers manuell — nicht via Generic Credential | 71 |
 | Memos tag-Filter: client-seitig auf tags-Array — filter-Parameter nicht verwenden | 72 |
-| Phase 14 — `execute_safe_pwsh` kein Output: `-Command` mit Multiline-Script bricht auf Windows — Fix: Script via Temp-Datei + `-File` | 73 |
-| Phase 14 — `search_vault` HTML statt JSON: `docker exec curl` findet curl nicht im Node-PATH — Fix: absoluter Pfad `C:\Program Files\Git\mingw64\bin\curl.exe` | 74 |
-| Phase 14 — Orchestrator `$steps.Count` Fehler: PowerShell unboxt List zu Einzelobjekt — Fix: `@(Get-PhaseSteps ...)` | 75 |
-| Phase 14 — Orchestrator Parser 0 Schritte: Phase14_Plan.md nutzt `##` statt `###` — Fix: Regex `^#{2,3} ` | 76 |
-| Phase 14 — Orchestrator Schritt-Regex: nummerierte Listen `1.` nicht erkannt — Fix: `(?:[-*]|\d+\.)` | 77 |
+| Scripts aus Workflow-Ordner immer mit absolutem Pfad oder Set-Location aufrufen | 78 |
+| DryRun-Zähler im Script von echtem Export-Zähler trennen | 79 |
+| Demo-Keys nie mit echten Präfixen (sk-, Bearer) — DEMO-KEY-REDACTED verwenden | 80 |
+| Commit-Messages in execute_safe_pwsh: ASCII-only, keine Umlaute | 81 |
+| gitleaks staged: `detect --source <patch> --no-git` statt `git --staged` | 82 |
+| Ein Service nur ueber EINEN automatisierten Mechanismus starten (nie Task + Start-Skript) | 90 |
 
 ## Verknüpfte Notizen
 - [[Projekt_Handbuch]]
 - _(internal)_
 - _(internal)_
+- [[Phase15_SecurityAudit_2026-06-25]]
+
+## Phase 15 / Session 2026-06-29 — AnythingLLM
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 83 | AnythingLLM login schlaegt fehl: Could not validate login | KONFIGURATION | JWT_SECRET nicht als Container-ENV gesetzt — AUTH_TOKEN allein reicht nicht | Container neu mit -e JWT_SECRET=... erstellen | AUTH_TOKEN und JWT_SECRET immer zusammen setzen |
+| 84 | AnythingLLM OpenRouter Modellname ungueltig | KONFIGURATION | claude-haiku-4-5-20251001 und claude-haiku-4-5 nicht mehr gueltig auf OpenRouter | anthropic/claude-haiku-4.5 (mit Punkt) verwenden | OpenRouter Modellnamen immer auf openrouter.ai pruefen |
+
+## Session 2026-06-29 — Autostart / Telemetrie / AgenticLoop v2
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 85 | Get-fu75ch1-Stats.ps1: Switch-Variable kann nicht abgerufen werden | SYNTAX | Set-StrictMode -Version Latest VOR param() — Switch-Parameter werden als undefiniert behandelt | param()-Block immer als allererstes nach #Requires und Comment-Block, Set-StrictMode danach | In allen PS-Scripts mit param(): param() zuerst, Set-StrictMode nach param() |
+| 86 | Install-fu75ch1-Autostart.ps1: ParameterSet kann nicht aufgeloest werden | SYNTAX | [Parameter(ParameterSetName='Install')] mit explizitem $Install-Switch — Default-Aufruf ohne Parameter bricht | ParameterSetName-Attribute entfernen, einfache [switch]-Parameter ohne Sets verwenden | ParameterSetName nur wenn wirklich moeglich exklusive Sets benoetigt werden |
+| 87 | Get-fu75ch1-Stats.ps1 -Live: Substring() auf DateTime-Objekt | SYNTAX | SQLite row_factory liefert ts als Python-Objekt, ConvertFrom-Json deserialisiert als DateTime statt String | [string]$r.ts -replace 'T',' ' vor Substring() — expliziter Cast zu String | SQLite-Timestamps immer mit [string]-Cast behandeln |
+| 88 | AgenticLoop /generate-note: API-Key als SecureString nicht lesbar | KONFIGURATION | .anthropic_key enthaelt PowerShell-SecureString (01000000...) statt Klartext — Loop benoetigt Klartext | API-Key als Klartext in .anthropic_key speichern (separate Datei, nur user-readable) | Fuer Python-Scripts: API-Keys als Klartext in dedizierten Key-Files, nicht als PS-SecureString |
+| 89 | Invoke-AgenticLoop.py nicht persistent — ging nach Session-Ende verloren | PROZESS | Script wurde nur im Arbeitsspeicher der Session erstellt, nie als Datei gespeichert | Script via write_file dauerhaft in 10_Workflows/ speichern | Neue Scripts immer sofort committen — nie nur im Chat zeigen |
+
+## Session 2026-06-30 — AgenticLoop Race Condition
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 90 | fu75ch1-AgenticLoop Task terminiert mit STATUS_CONTROL_C_EXIT (0xC000013A) nach erfolgreichem Bind auf Port 5231 | PROZESS | Zwei unabhaengige Start-Mechanismen fuer denselben Service: dedizierter Task 'fu75ch1-AgenticLoop' (+20s nach Login) UND Start-AllServices-Funktion in Invoke-fu75ch1-Start.ps1 (aufgerufen vom Autostart-Wrapper, +27s), beide pruefen/starten auf Port 5231 -- Race Condition bei ungluecklichem Timing | Start-Process-Aufruf aus Start-AllServices entfernt (nur noch Status-Check via Test-Port); AgenticLoop wird jetzt ausschliesslich vom dedizierten Task gestartet. Zusaetzlich: HTTPServer-Bind in try/except gekapselt (OSError -> sauberer Log-Eintrag statt unbehandelter Crash), serve_forever() in try/except mit Shutdown-Logging (v2.3) | Ein Service darf nur ueber EINEN automatisierten Mechanismus gestartet werden -- nie ueber Task UND Start-Skript gleichzeitig |
+
+## Session 2026-06-30 -- Performance-Optimierung (RAM/CPU)
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 91 | LangFuse-Stack (6 Container) verbraucht ~2.2 GB RAM dauerhaft im Leerlauf (0-2% CPU) | PERFORMANCE | docker compose up -d fuer LangFuse lief bei jedem Login automatisch in Start-AllServices, unabhaengig von tatsaechlicher Nutzung | LangFuse-Autostart aus Invoke-fu75ch1-Start.ps1 entfernt, on-demand via neuem Schalter 'fu75 -LangFuse' (Docker-Volumes/Daten bleiben erhalten, kein Funktionsverlust) | Services mit seltener Nutzung (Observability/Tracking-Tools) grundsaetzlich on-demand statt Autostart |
+| 92 | WSL2/Docker-VM (vmmemWSL) ohne Speicher-Cap -- bis zu 50% RAM (7.58 GiB) reservierbar, kein automatisches Memory-Reclaim | PERFORMANCE | Keine .wslconfig vorhanden -- WSL2-Standardverhalten gibt einmal belegten Speicher nicht automatisch zurueck | .wslconfig erstellt: memory=6GB, processors=4, swap=2GB, autoMemoryReclaim=gradual -- per 'wsl --shutdown' aktiviert, RAM-Limit verifiziert auf 5.79 GiB gesunken | Bei Docker Desktop/WSL2-Nutzung immer .wslconfig mit explizitem Cap + autoMemoryReclaim setzen |
+
+Hinweis: ToDo-Eintrag "Get-Credits Duplikat im PS-Profil" war bei Pruefung (2026-06-30) bereits falsch -- nur eine Definition in PS7-Profil vorhanden, keine in PS5.1 oder im L2Curation-Modul. Als erledigt/obsolet markiert, kein Code-Fehler.
+
+## Session 2026-06-30 -- Telemetry-Stabilitaet (Folgefehler zu #90)
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 93 | fu75ch1-Telemetry Task terminiert ebenfalls mit STATUS_CONTROL_C_EXIT (0xC000013A), OBWOHL kein Doppelstart-Pfad existiert wie bei #90 -- AgenticLoop und Telemetry beide betroffen, Lebensdauer 14-60 Min variabel | PROZESS | Beide Tasks (fu75ch1-AgenticLoop, fu75ch1-Telemetry) wurden nie ueber ein gespeichertes Installer-Skript registriert (ad-hoc aus frueherer Session, gleiches Muster wie #89) und liefen mit Settings.Hidden=False -- jeder Start oeffnete ein SICHTBARES Konsolenfenster. Wird dieses geschlossen, terminiert der Prozess mit genau diesem Fehlercode | Neues Skript Install-fu75ch1-BackgroundTasks.ps1 erstellt: registriert beide Tasks idempotent MIT -Hidden. Laufende Tasks live per Register-ScheduledTask -Force auf Hidden=True umgestellt, ueber 4+ Min ohne Absturz verifiziert | Scheduled Tasks fuer Hintergrunddienste IMMER mit -Hidden registrieren UND als Installer-Skript speichern, nie ad-hoc in der Session anlegen |
+
+## Session 2026-06-30 -- Garak Run 5 (DanInTheWild + HijackHateHumans)
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 94 | execute_safe_pwsh-gestartete Hintergrundprozesse (Start-Process) brechen nach exakt ~20-25s ohne Fehlermeldung ab | PROZESS | MCP-Shell-Wrapper killt vermutlich die eigene Prozessgruppe/Job-Object inkl. aller Kindprozesse nach internem Timeout, unabhaengig davon ob Start-Process genutzt wird | Lange Laeufe (>20s) ueber einmaligen Scheduled Task entkoppeln (gleicher Mechanismus wie Fehler #93), dann separat per Folge-Aufrufen pollen statt im selben Call warten | Jeder Prozess, der laenger als ~20s laufen soll, MUSS ueber Scheduled Task entkoppelt werden -- niemals direkt per Start-Process im MCP-Shell-Call erwarten |
+| 95 | litellm.UnsupportedParamsError: anthropic does not support parameters presence_penalty/frequency_penalty, trotz self.litellm.drop_params=True im Generator-Code | KOMPATIBILITAET | drop_params=True greift in dieser litellm-Version nicht zuverlaessig fuer alle Probes/Prompts; --generator_option_file mit suppressed_params wurde ebenfalls nicht angewendet (Ursache ungeklaert) | Direkter Patch in garak/generators/litellm.py: presence_penalty/frequency_penalty Zeilen im optional_params-Dict auskommentiert (gleiches Muster wie vorheriger top_p-Patch in derselben Datei) | Bei wiederholten Config-Fixes, die nicht greifen: lieber einmal sauber an der Quelle patchen statt mehrfach CLI-Flags durchprobieren -- Backup vor jedem Patch |
