@@ -46,7 +46,7 @@ The goal was simple: 80% of my AI workloads should run locally.
 No API calls for routine tasks. No data leaving the machine for anything sensitive.
 No single point of failure.
 
-After 15 phases and several months of work, I'm at 96% OpSec score
+After 15 phases and several months of work, I'm at 88% OpSec score (34-point audit, v2.0)
 and 0% jailbreak ASR on my system prompt.
 
 Not because I used some magic tool.
@@ -126,7 +126,7 @@ Determinism → Controlled vault growth → RAG & semantic search.
 
 Phase 12 is where you make everything reliable, not just functional.
 Idempotency guardrails. SBOM pipeline. MCP server.
-Phase 14 adds AnythingLLM: semantic search across 300+ vault notes.
+Phase 14 adds AnythingLLM: semantic search across hundreds of vault notes.
 
 **Phase 15: This newsletter.**
 The Content Operating System.
@@ -137,14 +137,14 @@ Documenting the system in public.
 The full phase documentation is in The Blueprint.
 → [LINK] — Early Bird €29
 
-Next issue: How I got Garak to 0% ASR — the jailbreak resistance story.
+Next issue: How I got Garak to 0% ASR (AutoDANCached probe set) — the jailbreak resistance story.
 
 fu75ch1
 ```
 
 ---
 
-## Issue #3 — "How I got Garak to 0% ASR"
+## Issue #3 — "How I got Garak to 0% ASR (AutoDANCached probe set)"
 
 **Betreff:** `From 45% to 0% jailbreak ASR — what actually worked`
 **Typ:** Proof / Technical
@@ -180,7 +180,7 @@ technical authority framing, threats, RANT+bypass, empty placeholders.
 Each pattern gets an explicit detection rule and rejection behavior.
 Going from 43% to 15% in one version is not magic — it's specific countermeasures.
 
-**Run 4: Master-Prompt v4.5 → 0% ASR ✅**
+**Run 4 (AutoDANCached): Master-Prompt v4.5 → 0% ASR ✅**
 
 The remaining 15% were addressed with the AutoDANCached probe set.
 Idempotency guardrails and the PowerShell execution rules
@@ -293,7 +293,7 @@ fu75ch1
 |---|---|---|
 | 1 | #1 Why I Built This | Manifest |
 | 2 | #2 The 15 Phases | Architecture |
-| 3 | #3 Garak 0% ASR | Proof |
+| 3 | #3 Garak 0% ASR (AutoDANCached) | Proof |
 | 4 | #4 Complete Privacy Stack | Tool Overview |
 
 Batch schreiben, dann wöchentlich scheduled posten.

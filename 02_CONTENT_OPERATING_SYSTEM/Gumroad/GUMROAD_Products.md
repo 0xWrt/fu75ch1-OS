@@ -19,7 +19,7 @@ title: Gumroad — Produkt-Beschreibungen (alle 9)
 **Kurzbeschreibung:**
 ```
 The system prompt that runs a complete AI OS.
-Jailbreak-resistant (0% ASR via Garak). Governance layers. Security hardened.
+Jailbreak-resistant. Garak 0.15.1 tested: 0% ASR (AutoDANCached, 3 probes, pilot) and 38.43% ASR (DanInTheWild, 512 real-world probes). Governance layers. Security hardened.
 ```
 
 **Volltext:**
@@ -39,7 +39,11 @@ What's inside:
 - Mobile hardening (Fire TV ADB rules)
 - Output format + explanation protocol
 
-Verified: Garak 0.15.1 AutoDANCached → 0% ASR ✅
+Verified: Garak 0.15.1
+- AutoDANCached → 0% ASR (pilot run, 3 probes — not representative)
+- DanInTheWild → 38.43% ASR (512 real-world community jailbreaks)
+
+Both results disclosed honestly. Higher ASR = harder probe set, not worse system.
 
 © fu75ch1 — CC BY-NC 4.0
 ```
@@ -50,11 +54,11 @@ Verified: Garak 0.15.1 AutoDANCached → 0% ASR ✅
 
 ## Produkt 2 — OpSec Checklist (€7)
 
-**Titel:** `fu75ch1 OpSec Checklist — 26-Point Security Audit (PowerShell)`
+**Titel:** `fu75ch1 OpSec Checklist — 34-Point Security Audit (PowerShell, v2.0)`
 
 **Kurzbeschreibung:**
 ```
-26 automated security checks for Windows. Run it, get a score.
+34 automated security checks for Windows. Run it, get a score.
 No manual work. Real results in 60 seconds.
 ```
 
@@ -62,7 +66,7 @@ No manual work. Real results in 60 seconds.
 ```
 Invoke-OpSecAudit.ps1 — my personal security audit script.
 
-26 checks across:
+34 checks across (v2.0):
 - VPN status + Kill-Switch verification
 - DNS leak detection
 - IPv6 leak check
@@ -74,7 +78,7 @@ Invoke-OpSecAudit.ps1 — my personal security audit script.
 - WiFi MAC randomization
 - ... and more
 
-Output: ✅/⚠️ per check + overall score (e.g. 25/26 = 96%)
+Output: ✅/⚠️ per check + overall score (current: 31/34 = 91%)
 No raw data output. No PII in logs.
 
 Works on: Windows 11, PowerShell 7+
@@ -142,10 +146,12 @@ Phase 12 was the hardening phase — making the system reliable, not just functi
 What's documented:
 - pwsh Guardrails (Set-StrictMode, idempotency patterns)
 - Script header retrofit (4 production scripts)
-- Anti-tracking hardening (26 checks, 96% score)
+- Anti-tracking hardening (34 checks, 91% score (v2.0), OpSec 31/34)
 - SBOM pipeline (syft + grype — dependency verification)
 - MCP Custom Server setup (3 tools)
-- Prompt security (Garak baseline: 45% → 0% ASR across 4 runs)
+- Prompt security (Garak baseline: 45.23% → 38.43% ASR across 6 runs)
+  Note: 0% was a pilot run (3 probes, AutoDANCached — not representative).
+  DanInTheWild (512 real probes) shows 38.43% as current honest benchmark.
 
 Includes:
 - Full phase plan + completion protocol

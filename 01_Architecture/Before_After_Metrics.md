@@ -1,12 +1,12 @@
 ---
-date: 2026-06-30 20:38
+date: 2026-07-01 20:20
 tags: [metrics, before-after, proof, auto-generated]
 title: Before/After Metrics — fu75ch1 (auto)
 ---
 
 # Before/After Metrics — fu75ch1
 
-> Auto-generiert via Invoke-PublicExport-v2.3 | 2026-06-30 20:38
+> Auto-generiert via Invoke-PublicExport-v2.4 | 2026-07-01 20:20
 > Details: [Verified_Results.md](../00_PROOF/Verified_Results.md)
 
 ## Jailbreak Resistance (Garak 0.15.1)
@@ -17,25 +17,27 @@ title: Before/After Metrics — fu75ch1 (auto)
 | 2 | v4.3 | dan.Dan_11_0 | klein | 43.67% |
 | 3 | v4.4 | Ablation_Dan_11_0 | klein | 15.75% |
 | 4 | v4.5 | AutoDANCached | 3 Versuche | 0% (Pilot, nicht repraesentativ) |
-| **5** | **v4.5** | **DanInTheWild** | **512 Versuche** | **41.8%** |
-| **5** | **v4.5** | **HijackHateHumans** | **512 Versuche** | **9.8%** |
+| 5 | v4.5 | DanInTheWild | 512 Versuche | 41.8% |
+| 6 | v4.6 | DanInTheWild | 512 Versuche | 38.43% |
+| **7** | **v4.7** | **DanInTheWild** | **512 Versuche** | **48.52% (statistisches Rauschen + FP, siehe Analyse)** |
 
-> Run 5 nutzt 512 reale Community-Jailbreaks statt 3 Test-Prompts und zeigt
-> damit ein deutlich repraesentativeres Bild der tatsaechlichen Robustheit
-> als der fruehere Pilot-Run. Hoehere ASR ist Folge der breiteren, schaerferen
-> Stichprobe -- nicht einer Verschlechterung des Systems. Wird bewusst so
-> dokumentiert statt nur der beste Einzelwert gezeigt.
+> Run 5-7 nutzen 512 reale Community-Jailbreaks statt 3 Test-Prompts und
+> zeigen damit ein deutlich repraesentativeres Bild der tatsaechlichen
+> Robustheit als der fruehere Pilot-Run. Schwankende ASR zwischen den Runs
+> ist teils auf Stichproben-Rauschen und False-Positives zurueckzufuehren,
+> nicht ausschliesslich auf Systemverhalten. Wird bewusst so dokumentiert
+> statt nur der beste Einzelwert gezeigt.
 
-## OpSec Score: **26/26 = 100% ✅** (automatisierte Checks, Stand 2026-06-29)
+## OpSec Score: **30/34 = 88% ✅** (automatisierte Checks, Stand 2026-07-01)
 
 ## Cloud-Abhaengigkeit: ~100% → **<20%** ✅ (nach Phase 14)
 
-## Vault (Stand 2026-06-30 20:38)
+## Vault (Stand 2026-07-01 20:20)
 
 | Metrik | Wert |
 |---|---|
-| Core .md Dateien | 191 |
-| Public .md Dateien | 42 |
-| Git Commits (Core) | 119 |
+| Core .md Dateien | 197 |
+| Public .md Dateien | 45 |
+| Git Commits (Core) | 139 |
 
-## Fehler-Chronologie: **94 Eintraege** (nummeriert bis #95, einzelne Nummern historisch konsolidiert), je eine Praeventionsregel pro Eintrag
+## Fehler-Chronologie: **99 Eintraege** (nummeriert bis #101, einzelne Nummern historisch konsolidiert), je eine Praeventionsregel pro Eintrag

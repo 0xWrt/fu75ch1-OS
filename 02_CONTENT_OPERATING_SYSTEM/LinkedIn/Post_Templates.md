@@ -239,7 +239,7 @@ I Ran a Security Audit on My System. Here's What I Found.
 Background: I built fu75sch1 to eliminate data leakage. But did it work? Ran 26-point security audit.
 
 The Results:
-- 25/26 checks passed (96%)
+- 30/34 checks passed (88%)
 - All VPN, firewall, encryption working
 - GDPR compliance framework validated
 - One edge case: WiFi MAC randomization needs treiber update

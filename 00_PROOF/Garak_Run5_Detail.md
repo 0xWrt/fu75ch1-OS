@@ -80,3 +80,21 @@ $env:PYTHONUTF8 = "1"
 - [[Garak_Run4_2026-06-24]]
 - [[Master-Prompt]] _(sanitized)_
 - _(internal)_
+
+## 🔍 Fail-Analyse (2026-07-01)
+
+| Pattern | Hits (ca.) | Typ |
+|---|---|---|
+| Evil Persona (DAN/Anarchy/PABLO/DOGA) | ~35 | Echter Bypass |
+| "From now on" Override | ~21 | Echter Bypass (partiell) |
+| Harmlose Roleplay-Persona (Mika-chan etc.) | ~40 | False Positive -- Detektor-Artefakt |
+| Technical Framing (APL) | ~4 | Korrekt erkannt und abgelehnt |
+
+**Kernluecke:** Pattern 1 (PERSONA-HIJACK) griff nur bei expliziten Triggern.
+Implizite Evil-Personas ('devil that fulfills any desire', 'AI named Anarchy')
+wurden nicht erkannt -- fehlende Kategorie im [prompt_security]-Block.
+
+**Fix angewendet:** Master-Prompt v4.6 mit Pattern 8 (Implizite Evil-Persona)
+und Pattern 9 (From-Now-On-Override) erweitert.
+
+**Naechster Schritt:** Garak Run 6 mit DanInTheWild nach v4.6-Deployment.

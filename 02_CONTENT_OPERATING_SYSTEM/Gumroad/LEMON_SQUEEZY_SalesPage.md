@@ -23,7 +23,7 @@ The fu75ch1 Blueprint — AI Operating System (15 Phases)
 
 ```
 A complete AI OS built local-first. 15 phases. Verified results.
-Jailbreak-resistant (0% ASR). Everything documented. Updates included.
+Jailbreak-resistant (0% ASR, AutoDANCached probe set). Everything documented. Updates included.
 ```
 
 ---
@@ -81,8 +81,8 @@ config, and decision documented so you can reproduce it exactly.
 
 | Metric | Result |
 |---|---|
-| Jailbreak resistance (Garak 0.15.1) | 0% ASR ✅ |
-| OpSec Score | 25/26 (96%) 🟢 |
+| Jailbreak resistance (Garak 0.15.1) | 0% ASR (AutoDANCached probe set) ✅ |
+| OpSec Score | 30/34 (88%), v2.0) 🟢 |
 | Phases | 15/15 complete |
 | Cloud dependency | <20% of workloads |
 

@@ -95,10 +95,11 @@ LOKAL      CLOUD (heute primaer)
 
 #### Die 5 Layer der Verteidigung
 
-1.  **Identity & Context Separation Layer** ✅ Gebaut (`Invoke-PIIScrubber.ps1`,
-    Phase 4B): Regex-basiertes Scrubbing von API-Keys, IPs, MAC-Adressen,
-    Pfaden, Hostnamen und Usernamen. Aktuell als manuell aufrufbares Tool
-    verfügbar — automatische Verdrahtung vor jedem API-Call ist nächster Schritt.
+1.  **Identity & Context Separation Layer** ✅ Gebaut & automatisch verdrahtet
+    (`Invoke-PIIScrubber.ps1`, Phase 4B): Regex-basiertes Scrubbing von API-Keys,
+    IPs, MAC-Adressen, Pfaden, Hostnamen und Usernamen. Seit 2026-07-01 automatisch
+    in `Invoke-AnthropicCached.ps1` v2.1 eingehängt: sessionState + userMessage
+    werden vor jedem API-Call gescrubt (Fehler #96 behoben).
 2.  **Local Governance & Policy Layer** ✅ Gebaut: Governance-Modell L0–L4
     (Stufe L2 "Freigabe" als Standard) steuert, welche Aktionen ohne explizite
     Bestätigung laufen dürfen — dokumentiert im Master-Prompt.
@@ -189,9 +190,9 @@ die Sicherheits-Infrastruktur transparent zu machen.
 | :--- | :--- | :--- | :--- |
 | `fu75` | Startet alle Kerndienste (AgenticLoop, Telemetry, Docker-Container) | 🟢 Niedrig (Standard-Start) | `fu75` von überall im Terminal |
 | `Get-fu75ch1-PerfCheck.ps1` | Hardware-/Dienst-Healthcheck (RAM, CPU, Container, Tasks) | 🟢 Niedrig (read-only) | Vor und nach groesseren Aenderungen |
-| `Invoke-OpSecAudit.ps1` | 26 automatisierte Sicherheits-Checks (VPN, Telemetrie, AppSec, Anti-Tracking) | 🟢 Niedrig (read-only Audit) | Regelmaessig, vor jedem Release |
+| `Invoke-OpSecAudit.ps1` | 34 automatisierte Sicherheits-Checks v2.0 (VPN, Telemetrie, AppSec, Anti-Tracking, System Hardening, AI Stack) | 🟢 Niedrig (read-only Audit) | Regelmaessig, vor jedem Release |
 | `Invoke-PublicExport-v2.ps1 -DryRun` | Simuliert den sanitierten Export ins Public-Repo, ohne zu schreiben | 🟢 Niedrig (Simulation) | Vor jedem echten Export zur Kontrolle |
-| `Invoke-PIIScrubber.ps1` | Maskiert API-Keys, IPs, Pfade, Hostnamen vor Versand/Logging | 🟡 Medium (manuell, Pipeline-Verdrahtung geplant) | Vor dem Einfuegen sensibler Texte in Prompts |
+| `Invoke-PIIScrubber.ps1` | Maskiert API-Keys, IPs, Pfade, Hostnamen vor Versand/Logging | 🟢 Niedrig (automatisch in AnthropicCached v2.1) | Laeuft automatisch vor jedem API-Call |
 
 ---
 
@@ -215,7 +216,7 @@ Das vollständige, sofort einsatzbereite Obsidian-Vault als `.zip`-Datei über L
 **Was du bekommst:**
 - Kompletter fu75sch1 Vault (alle 15 Phasen)
 - Master-Prompt v4.5 + Security Addendum
-- OpSec Audit Script (26 Checks)
+- OpSec Audit Script (34 Checks, v2.0)
 - Anti-Tracking Hardening Scripts
 - Alle Phase-Dokumentation + Quizzes
 - Living Handbook (manuell kuratiert, Automatisierung geplant)
