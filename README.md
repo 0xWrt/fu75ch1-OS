@@ -1,4 +1,4 @@
-# fu75ch1
+﻿# fu75ch1
 
 > Privacy by Architecture. Not by Settings.
 
@@ -19,7 +19,7 @@ including the ones that don't look perfect.
 | Metric | Result |
 |---|---|
 | Jailbreak resistance (Garak 0.15.1, 512 real-world attempts) | **41.8% / 9.8% ASR** (see note) |
-| OpSec Score | **26/26 (100%)** 🟢 |
+| OpSec Score | **26/26 (v1.0 Baseline) -- v2.0: 30/34 (88%)** 🟢 |
 | Phases completed | **15 / 15** ✅ |
 | Supporting-workload cloud dependency | **< 20%** (RAG, automation, observability) |
 | Errors documented with root cause + fix | **94** (numbered to #95) |
