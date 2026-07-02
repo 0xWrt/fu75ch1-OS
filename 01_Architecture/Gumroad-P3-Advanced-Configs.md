@@ -20,6 +20,8 @@ These configs are different. Every non-obvious setting has an inline comment exp
 
 Built and tested on Windows 11 + Docker Desktop as part of a 15-phase AI operating system.
 
+Built in a two-week solo sprint, tested against real hardware limits — not idealized specs. The Ollama config exists because a dedicated GPU check happened first, not as an afterthought.
+
 ---
 
 ## DETAILS

@@ -19,6 +19,8 @@ KeePassXC keeps everything local. This blueprint adds a Key-File concept: your d
 
 Built as the credential management layer of a 15-phase AI operating system — handling everything from system passwords to API keys for LLM providers.
 
+Built solo over two weeks, alongside 101 other documented mistakes — this is the layer that had to be right the first time, so it got the most scrutiny.
+
 ---
 
 ## DETAILS

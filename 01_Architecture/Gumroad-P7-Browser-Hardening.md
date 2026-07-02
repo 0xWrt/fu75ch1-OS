@@ -19,6 +19,8 @@ This config closes those gaps with exportable settings you apply once and keep.
 
 No manual tweaking of 200 about:config entries. No half-measures. A complete, tested configuration built as Phase 3 of a hardened AI operating system — used daily under Mullvad VPN with strict DNS filtering.
 
+Part of a two-week solo build, 101 mistakes documented along the way — this config reflects what actually held up under daily use, not a first draft.
+
 ---
 
 ## DETAILS

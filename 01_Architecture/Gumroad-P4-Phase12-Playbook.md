@@ -19,7 +19,7 @@ Phase 12 was the hardening phase of the fu75ch1 AI operating system — where ev
 
 This playbook is not a guide on what to do. It is a documented record of what was actually done — including what broke, why it broke, and what the prevention rule is for next time.
 
-If you are building a production AI system and want to learn from 99 documented mistakes instead of making them yourself, this is that document.
+If you are building a production AI system and want to learn from 101 documented mistakes instead of making them yourself, this is that document.
 
 ---
 

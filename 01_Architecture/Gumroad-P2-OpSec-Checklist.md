@@ -21,6 +21,9 @@ No raw data leaves the machine. No IPs, MACs, or credentials in the output. Just
 
 If you want to know your actual security posture — not your assumed one — run this script.
 
+One of 34 checks in a script written for a solo, two-week build — the kind that
+finds real gaps because it was written to catch the author's own mistakes, not to look thorough in a demo.
+
 ---
 
 ## DETAILS

@@ -21,6 +21,8 @@ Every step follows the same format: command → what it does → why it matters 
 
 Built as Phase 1 of a 15-phase AI operating system running on hardened Windows 11.
 
+Written during a two-week solo build. "Learned from real mistakes" isn't a tagline here — the services documented as breaking things are the ones that actually broke, on the actual machine this was built on.
+
 ---
 
 ## DETAILS

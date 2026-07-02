@@ -21,6 +21,8 @@ Every step includes a verification command. You do not trust it works. You test 
 
 Built as Phase 2 of the fu75ch1 AI operating system, running continuously under Mullvad WireGuard with NextDNS DoH and an automated 60-second watchdog.
 
+One of 101 documented build steps from a solo, two-week project — the watchdog exists because the leak happened once, got logged, and got fixed.
+
 ---
 
 ## DETAILS

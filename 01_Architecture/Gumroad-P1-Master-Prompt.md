@@ -21,6 +21,9 @@ It was not designed for demos. It was built to run daily — handling IT support
 
 If you want an AI that stays in role, respects boundaries, handles sensitive data correctly, and operates with reproducible behavior — this is the foundation.
 
+Built solo, in two weeks, alongside 100+ other documented mistakes from the
+same build. Not a polished demo prompt — the one actually running in production.
+
 ---
 
 ## DETAILS
