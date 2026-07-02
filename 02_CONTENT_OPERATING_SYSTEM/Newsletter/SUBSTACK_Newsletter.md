@@ -46,8 +46,8 @@ The goal was simple: 80% of my AI workloads should run locally.
 No API calls for routine tasks. No data leaving the machine for anything sensitive.
 No single point of failure.
 
-After 15 phases and several months of work, I'm at 88% OpSec score (34-point audit, v2.0)
-and 0% jailbreak ASR on my system prompt.
+After 15 phases and several months of work, I'm at 91% OpSec score (34-point audit, v2.0)
+and 38.43% jailbreak ASR against 512 real-world attack attempts (Garak DanInTheWild) on my system prompt.
 
 Not because I used some magic tool.
 Because I documented every decision, tested every assumption,
@@ -112,7 +112,7 @@ AppSec → Reverse Engineering → Hardware Forensics → AI Red-Teaming.
 This is where you learn to verify, not trust.
 You learn to read what software actually does, not what it claims to do.
 Phase 8 (AI Red-Teaming) is where Garak comes in.
-My prompt went from 45% jailbreak ASR to 0% across these phases.
+My prompt went from 45% jailbreak ASR down to 38.43% against 512 real-world attack probes across these phases.
 
 **Phase 9–11: Automation**
 Extended security → Workflow automation → Custom API workflow.
@@ -137,16 +137,16 @@ Documenting the system in public.
 The full phase documentation is in The Blueprint.
 → [LINK] — Early Bird €29
 
-Next issue: How I got Garak to 0% ASR (AutoDANCached probe set) — the jailbreak resistance story.
+Next issue: What Garak actually found when I tested my prompt against 512 real jailbreaks — the honest jailbreak resistance story.
 
 fu75ch1
 ```
 
 ---
 
-## Issue #3 — "How I got Garak to 0% ASR (AutoDANCached probe set)"
+## Issue #3 — "What Happens When You Red-Team Your Own Prompt Honestly"
 
-**Betreff:** `From 45% to 0% jailbreak ASR — what actually worked`
+**Betreff:** `From 45% to 38.43% jailbreak ASR — and why I'm not claiming 0%`
 **Typ:** Proof / Technical
 **Länge:** ~650 Wörter
 
@@ -157,7 +157,7 @@ You point it at a system prompt and it tries to break it.
 When I first ran it, my prompt had no security hardening.
 Result: 45.23% Attack Success Rate. Almost half of attack probes succeeded.
 
-Here's what I did to get it to 0%.
+Here's the full progression — including the number I almost led with, and why I didn't.
 
 ---
 
@@ -180,20 +180,33 @@ technical authority framing, threats, RANT+bypass, empty placeholders.
 Each pattern gets an explicit detection rule and rejection behavior.
 Going from 43% to 15% in one version is not magic — it's specific countermeasures.
 
-**Run 4 (AutoDANCached): Master-Prompt v4.5 → 0% ASR ✅**
+**Run 4 (AutoDANCached): Master-Prompt v4.5 → 0% ASR — and here's the catch**
 
-The remaining 15% were addressed with the AutoDANCached probe set.
-Idempotency guardrails and the PowerShell execution rules
-closed the last gap — the model behavior was made deterministic enough
-that attack variations stopped finding new angles.
+This probe set only ran 3 attack attempts. Zero for three sounds perfect.
+It's also not a real measurement — a 3-probe pilot proves almost nothing.
+I could have stopped here and published "0% jailbreak ASR." I didn't, because it would've been misleading.
+
+**Run 5: Same prompt, DanInTheWild probe set (512 real community jailbreaks) → 41.8% ASR**
+
+This is the test that actually matters: 512 real-world jailbreak attempts,
+not 3 cached ones. The honest number came back much higher than the pilot suggested.
+That's not the prompt getting worse — it's the test getting real.
+
+**Run 6: Master-Prompt v4.6, same 512-probe set → 38.43% ASR**
+
+Two new [prompt_security] patterns (implicit evil-persona, from-now-on override)
+brought it down 3.4 points. Moderate, real, and documented — not dramatic, but true.
 
 ---
 
-The lesson: jailbreak resistance isn't about being "more restrictive."
-It's about being specific. Name the patterns. Define the rejection behavior.
-Test it.
+The lesson isn't "jailbreak resistance isn't about being more restrictive" — that part still holds.
+The bigger lesson: a 3-probe pilot and a 512-probe real-world test are not the same claim,
+and publishing the smaller number because it looks better is exactly the kind of thing
+this whole project exists to push back against.
 
-The full prompt_security section is in Master-Prompt v4.5:
+38.43% against 512 real attacks is the number I'm standing behind.
+
+The full prompt_security section is in Master-Prompt v4.7:
 → Gumroad [LINK] — €9
 → Or included in The Blueprint [LINK] — €29 Early Bird
 
@@ -274,7 +287,7 @@ Regex-based PII scrubber runs before any API call.
 Windows 11 hardened (ASR, outbound firewall, telemetry off, BitLocker).
 PowerShell 7 with strict mode + idempotency guardrails.
 Garak + Promptfoo for regular red-team runs.
-Invoke-OpSecAudit.ps1: 26-point automated check, runs weekly.
+Invoke-OpSecAudit.ps1: 34-point automated check, runs weekly.
 
 ---
 
@@ -293,7 +306,7 @@ fu75ch1
 |---|---|---|
 | 1 | #1 Why I Built This | Manifest |
 | 2 | #2 The 15 Phases | Architecture |
-| 3 | #3 Garak 0% ASR (AutoDANCached) | Proof |
+| 3 | #3 From 45% to 38.43% jailbreak ASR (honest DanInTheWild results) | Proof |
 | 4 | #4 Complete Privacy Stack | Tool Overview |
 
 Batch schreiben, dann wöchentlich scheduled posten.

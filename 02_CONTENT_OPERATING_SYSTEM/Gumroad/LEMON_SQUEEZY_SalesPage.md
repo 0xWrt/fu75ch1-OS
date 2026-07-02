@@ -1,7 +1,7 @@
 ---
 date: 2026-06-25
 tags: [sales, lemon-squeezy, blueprint, produkt]
-status: ✅ v1.0 — bereit zum Einpflegen
+status: ⚠️ Stale (2026-06-25) — 2026-07-02 korrigiert: v4.5→v4.7, OpSec 26→34 Checks/30→31, ASR-Zahl auf ehrliche Dual-Angabe (0% Pilot / 38.43% real) umgestellt. Vor Live-Einpflegen nochmal komplett gegenlesen.
 title: Lemon Squeezy — The Blueprint (Sales Page)
 ---
 
@@ -23,7 +23,7 @@ The fu75ch1 Blueprint — AI Operating System (15 Phases)
 
 ```
 A complete AI OS built local-first. 15 phases. Verified results.
-Jailbreak-resistant (0% ASR, AutoDANCached probe set). Everything documented. Updates included.
+Jailbreak-resistant (Garak 0.15.1: 0% ASR pilot / 38.43% ASR real-world, 512 probes). Everything documented. Updates included.
 ```
 
 ---
@@ -44,13 +44,13 @@ config, and decision documented so you can reproduce it exactly.
 ## What's included
 
 **Core System**
-- Master-Prompt v4.5 (production-tested, 0% jailbreak ASR via Garak)
+- Master-Prompt v4.7 (production-tested, Garak-verified: 38.43% ASR vs. 512 real-world jailbreaks)
 - Behaviour Addendum v1.1 (explanation protocol, error analysis)
 - All 15 phase plans + completion protocols
 - PowerShell scripts (idempotent, strict mode, documented)
 
 **Privacy & Security**
-- OpSec Checklist (26 checks, automated via PowerShell)
+- OpSec Checklist (34 checks, automated via PowerShell)
 - Windows Hardening Guide (ASR, BitLocker, Firewall, Telemetry)
 - DNS/VPN Setup (NextDNS DoH + WireGuard Kill-Switch)
 - Browser Hardening (LibreWolf + uBlock Origin config export)
@@ -81,10 +81,15 @@ config, and decision documented so you can reproduce it exactly.
 
 | Metric | Result |
 |---|---|
-| Jailbreak resistance (Garak 0.15.1) | 0% ASR (AutoDANCached probe set) ✅ |
-| OpSec Score | 30/34 (88%), v2.0) 🟢 |
+| Jailbreak resistance (Garak 0.15.1, 512 real-world probes) | 38.43% ASR (DanInTheWild) — see note below |
+| OpSec Score | 31/34 (91%) 🟢 |
 | Phases | 15/15 complete |
 | Cloud dependency | <20% of workloads |
+
+> **Why not 0%?** An early pilot run (AutoDANCached, 3 probes) showed 0% ASR — not
+> representative. Tested against 512 real-world jailbreak attempts (DanInTheWild),
+> the honest number is 38.43%. Higher probe count = harder test, not a worse system.
+> Full disclosure in the included Garak run documentation.
 
 ---
 
@@ -131,11 +136,11 @@ Updates always included — you're buying the living system, not a snapshot.
 Folgende Struktur packen:
 
 ```
-fu75ch1_blueprint_v4.5/
+fu75ch1_blueprint_v4.7/
 ├── README.md
 ├── LICENSE (CC BY-NC 4.0)
 ├── 00_META/
-│   ├── Master-Prompt-v4.5.md
+│   ├── Master-Prompt-v4.7.md
 │   ├── Behaviour_Addendum_v1.1.md
 │   └── Public_Handbuch.md
 ├── Phasen/

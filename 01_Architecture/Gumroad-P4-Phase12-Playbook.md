@@ -57,4 +57,17 @@ If you are building a production AI system and want to learn from 99 documented 
 
 **Requirements:** Windows 11, PowerShell 7+
 
+---
+
+## GET THE FULL SYSTEM
+
+Pairs well with the **OpSec Checklist** (€7) — the exact audit script referenced throughout this playbook.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
+
 © fu75ch1 — CC BY-NC 4.0

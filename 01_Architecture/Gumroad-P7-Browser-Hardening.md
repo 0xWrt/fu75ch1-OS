@@ -58,4 +58,17 @@ No manual tweaking of 200 about:config entries. No half-measures. A complete, te
 **Setup time:** Under 20 minutes.
 **Works on:** LibreWolf (Firefox-based), Windows and Linux
 
+---
+
+## GET THE FULL SYSTEM
+
+Pairs well with the **KeePass Blueprint** (€7) — move credentials fully offline next.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
+
 © fu75ch1 — CC BY-NC 4.0

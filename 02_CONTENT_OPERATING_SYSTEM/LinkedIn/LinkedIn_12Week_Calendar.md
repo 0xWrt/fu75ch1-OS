@@ -44,7 +44,7 @@ status: ready-to-use
 
 **Post Struktur:**
 ```
-[HOOK]: A [USER] used to cost €1.80...
+[HOOK]: A Futschi used to cost €1.80...
 [EXPLAIN]: 80% local, 20% cloud
 [SHOW]: Simple diagram (ASCII or screenshot)
 [WHY]: Economic + Technical benefits — inkl. Green IT Framing:
@@ -103,7 +103,7 @@ status: ready-to-use
 [RULE2]: Kontext komprimieren, nicht wiederholen
 [RULE3]: Rolle + Aufgabe + Format in einer Zeile
 [RESULT]: Gleiche Qualität, 60–70% weniger Token-Kosten
-[CTA]: Master-Prompt v4.5 zeigt wie das in der Praxis aussieht (Gumroad €9)
+[CTA]: Master-Prompt v4.7 zeigt wie das in der Praxis aussieht (Gumroad €9)
 [LENGTH]: ~400 words
 ```
 
@@ -141,7 +141,7 @@ status: ready-to-use
 
 ## WEEK 5: Real Results (Social Proof)
 
-**Topic:** OpSec Audit — 30/34 Security Score Explained  
+**Topic:** OpSec Audit — 31/34 Security Score Explained  
 **Type:** Results / Case Study (Your Own)  
 **Tone:** Factual, Impressive-But-Honest  
 **CTA:** Full Audit Checklist (Gumroad €7)  
@@ -150,11 +150,11 @@ status: ready-to-use
 
 **Post Struktur:**
 ```
-[HEADLINE]: I Audited My System Against 26 Security Checks
-[RESULTS]: 30/34 passed (88%)
+[HEADLINE]: I Audited My System Against 34 Security Checks
+[RESULTS]: 31/34 passed (91%)
 [BREAKDOWN]: VPN/Network, System Security, Tools, Anti-Tracking
 [SPECIFIC]: Show top 3 findings + how I fixed them
-[OFFER]: Full 26-point checklist (Gumroad link)
+[OFFER]: Full 34-point checklist (Gumroad link)
 [LENGTH]: ~400 words
 ```
 
@@ -197,8 +197,8 @@ status: ready-to-use
 **Post Struktur:**
 ```
 [UPDATE]: Completed Phase 12 (Hardening & Determinism)
-[WHAT]: Master-Prompt v4.5, Anti-Tracking, SBOM Pipeline
-[METRICS]: OpSec Score 30/34 (88%), Garak Run 4 AutoDANCached 0% ASR
+[WHAT]: Master-Prompt v4.7, Anti-Tracking, SBOM Pipeline
+[METRICS]: OpSec Score 31/34 (91%), Garak DanInTheWild 38.43% ASR (512 real probes; early 3-probe pilot showed 0%, not representative)
 [NEXT]: What's coming in Phase 13
 [SHOW]: 1–2 Architecture Diagrams
 [CTA]: Star on GitHub + Subscribe for Phase 13 updates

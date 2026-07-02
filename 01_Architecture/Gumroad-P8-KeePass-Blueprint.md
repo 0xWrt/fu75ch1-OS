@@ -62,4 +62,17 @@ Built as the credential management layer of a 15-phase AI operating system — h
 
 **Works on:** Windows (primary), KeePassXC is cross-platform
 
+---
+
+## GET THE FULL SYSTEM
+
+Pairs well with the **OpSec Checklist** (€7) — verify your credential hygiene is actually enforced.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
+
 © fu75ch1 — CC BY-NC 4.0

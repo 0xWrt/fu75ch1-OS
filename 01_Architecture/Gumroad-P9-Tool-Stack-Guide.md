@@ -84,4 +84,17 @@ If you are building a local-first AI stack and want to skip the evaluation phase
 **For each tool the guide includes:**
 purpose, evaluated alternatives, why it made the cut, privacy status, version pinning rationale, setup notes, known issues.
 
+---
+
+## GET THE FULL SYSTEM
+
+This guide explains every tool. The **full system** shows how they're wired together end to end.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
+
 © fu75ch1 — CC BY-NC 4.0

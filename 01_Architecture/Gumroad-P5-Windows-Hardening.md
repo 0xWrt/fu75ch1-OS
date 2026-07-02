@@ -65,4 +65,17 @@ Built as Phase 1 of a 15-phase AI operating system running on hardened Windows 1
 
 **Requirements:** Windows 11, PowerShell 7+
 
+---
+
+## GET THE FULL SYSTEM
+
+Pairs well with the **DNS/VPN Guide** (€7) — the next layer after hardening the OS itself.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
+
 © fu75ch1 — CC BY-NC 4.0

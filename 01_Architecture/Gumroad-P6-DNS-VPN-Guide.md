@@ -59,4 +59,17 @@ Built as Phase 2 of the fu75ch1 AI operating system, running continuously under 
 
 **Requirements:** Windows 11, PowerShell 7+
 
+---
+
+## GET THE FULL SYSTEM
+
+Pairs well with the **Browser Hardening** config (€7) — close the last major leak surface.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
+
 © fu75ch1 — CC BY-NC 4.0

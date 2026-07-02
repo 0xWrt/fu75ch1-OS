@@ -2,7 +2,7 @@
 # Title: fu75ch1 Advanced Configs — Ollama, n8n, WireGuard (Ready-to-Deploy)
 # Price: €12
 # Slug: advanced-configs
-# STATUS: HELD — files not yet built. Do not publish until configs are ready.
+# STATUS: READY — built 2026-07-02, files verified
 
 ---
 
@@ -26,6 +26,7 @@ Built and tested on Windows 11 + Docker Desktop as part of a 15-phase AI operati
 
 **Ollama (local LLMs):**
 - Model routing config (task-based: small / medium / large)
+- Honest hardware note included: what actually needs a dedicated GPU vs. what runs fine on integrated graphics
 - Memory and context window settings
 - API endpoint setup for local access
 - Open WebUI integration
@@ -43,5 +44,18 @@ Built and tested on Windows 11 + Docker Desktop as part of a 15-phase AI operati
 
 **Format:** `.yml`, `.conf`, `.json` — ready to use, not templates with empty blanks.
 **Requirements:** Docker Desktop, Windows 11, PowerShell 7+
+
+---
+
+## GET THE FULL SYSTEM
+
+Pairs well with the **Master-Prompt** (€9) — the infrastructure this prompt was written to control.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
 
 © fu75ch1 — CC BY-NC 4.0

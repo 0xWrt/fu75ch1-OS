@@ -1,0 +1,39 @@
+# fu75ch1 Advanced Configs — WireGuard Client Template
+#
+# Teil von "fu75ch1 Advanced Configs" (Produkt 3, EUR 12).
+# Zwei Variablen zum Anpassen: PrivateKey (dein Client-Key) und die Peer-Zeile
+# (Endpoint + PublicKey deines VPN-Providers oder eigenen Servers).
+# Alles andere ist ready-to-deploy.
+#
+# Diese Werte bekommst du von deinem VPN-Provider (z.B. Mullvad-Account-Panel
+# generiert eine fertige .conf) oder von deinem eigenen WireGuard-Server.
+# NIE echte Keys in ein Repo committen -- diese Datei ist nur ein Template.
+
+[Interface]
+# ANPASSEN: Dein privater Client-Schluessel (vom VPN-Provider oder
+# `wg genkey` bei eigenem Server -- NIE weitergeben)
+PrivateKey = CLIENT_PRIVATE_KEY_HIER_EINSETZEN
+
+# Client-IP im VPN-Tunnel (vom Provider vorgegeben oder bei eigenem Server frei waehlbar)
+Address = 10.64.0.2/32
+
+# DNS ueber den Tunnel -- verhindert DNS-Leaks ausserhalb des VPN
+# (z.B. NextDNS-Resolver-IP, oder Provider-eigener DNS)
+DNS = 10.64.0.1
+
+# MTU meist Standard, bei Verbindungsproblemen auf 1280 senken
+MTU = 1420
+
+[Peer]
+# ANPASSEN: Public Key deines VPN-Servers/Providers
+PublicKey = SERVER_PUBLIC_KEY_HIER_EINSETZEN
+
+# ANPASSEN: Server-Endpoint (Hostname:Port oder IP:Port vom Provider)
+Endpoint = dein-vpn-server.example.com:51820
+
+# 0.0.0.0/0 = kompletter Traffic durch den Tunnel (empfohlen fuer volle Privacy).
+# Fuer Split-Tunneling stattdessen gezielte Subnetze eintragen.
+AllowedIPs = 0.0.0.0/0, ::/0
+
+# Keepalive gegen NAT-Timeouts (wichtig bei Consumer-Routern/CGNAT)
+PersistentKeepalive = 25

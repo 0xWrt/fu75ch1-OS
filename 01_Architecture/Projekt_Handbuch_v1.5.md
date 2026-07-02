@@ -223,7 +223,7 @@ Phase 4   abgeschlossen -- Cache Optimizer + PII-Scrubber
 Phase 5   abgeschlossen -- AppSec (gitleaks + PSScriptAnalyzer)
 Phase 6   abgeschlossen -- Reverse Engineering + Fire TV Hardening
 Phase 7   abgeschlossen -- Hardware Forensik (Ghidra, Binwalk, Fire TV OTA RE)
-Phase 8   abgeschlossen -- AI Red Teaming (Garak 0% ASR, Promptfoo ausstehend Credits)
+Phase 8   abgeschlossen -- AI Red Teaming (Garak 38.43% ASR, DanInTheWild 512 Proben, Run 6 -- Pilot-Run zeigte 0% bei nur 3 Proben, nicht repraesentativ)
 Phase 9   abgeschlossen -- Semi-Autonome Orchestrierung
 Phase 10  abgeschlossen -- Infrastruktur (n8n, AnythingLLM, repomix)
 Phase 11  abgeschlossen -- Agentic Loop (LLMLingua, LangFuse, Instructor, LangGraph, MCP)

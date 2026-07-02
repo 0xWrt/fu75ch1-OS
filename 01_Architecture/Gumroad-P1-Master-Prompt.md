@@ -45,4 +45,17 @@ If you want an AI that stays in role, respects boundaries, handles sensitive dat
 **Compatible with:** Claude, GPT-4, any API with a system prompt field.
 **Includes:** Buyer setup guide + adaptation instructions for `[environment]` and `[stack]` blocks.
 
+---
+
+## GET THE FULL SYSTEM
+
+Pairs well with the **OpSec Checklist** (€7) — verify the environment this prompt assumes is actually hardened.
+
+- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **More standalone products:** fu75ch1.gumroad.com
+- **Weekly build notes:** [SUBSTACK LINK]
+- **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
+
+**→ Buy now on Gumroad**
+
 © fu75ch1 — CC BY-NC 4.0

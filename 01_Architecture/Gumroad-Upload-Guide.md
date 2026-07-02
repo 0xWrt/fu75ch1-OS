@@ -37,13 +37,24 @@ title: Gumroad Upload Guide — alle 9 Produkte
 
 ---
 
-## Produkt 3 — Advanced Configs ⏸ ZURÜCKGESTELLT
+## Produkt 3 — Advanced Configs ✅
 
 **Titel:** `fu75ch1 Advanced Configs — Ollama, n8n, WireGuard (Ready-to-Deploy)`
 **Preis:** €12
-**Status:** Zurückgestellt — Config-Dateien existieren noch nicht als eigenständige Deploy-Files.
-Nur Dokumentation im Vault vorhanden. Erst bauen, dann launchen.
-**Nächster Schritt:** Ollama-Config, n8n Docker Compose, WireGuard-Template aus Phase-Docs extrahieren und als eigenständige Files erstellen.
+**Status:** Bereit (gebaut 2026-07-02)
+
+**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P3-Advanced-Configs.md`
+
+**Upload 2-8 (Produkt-Files):**
+```
+fu75ch1_public\01_Architecture\Configs\Ollama\model-routing.md
+fu75ch1_public\01_Architecture\Configs\Ollama\model-routing.json
+fu75ch1_public\01_Architecture\Configs\n8n\docker-compose.yml
+fu75ch1_public\01_Architecture\Configs\n8n\webhook-ai-pipeline-template.json
+fu75ch1_public\01_Architecture\Configs\WireGuard\client.conf.template
+fu75ch1_public\01_Architecture\Configs\WireGuard\Install-KillSwitch.ps1
+fu75ch1_public\01_Architecture\Configs\WireGuard\Disable-IPv6Leak.ps1
+```
 
 **Slug (reserviert):** `advanced-configs`
 
@@ -164,7 +175,7 @@ fu75ch1_public\01_Architecture\Gumroad-P9-Tool-Stack-Guide.md
 
 ## ⚠️ Offene Punkte vor Launch
 
-- [ ] Produkt 3: Config-Dateien im Vault prüfen + ggf. zusammenstellen
+- [x] Produkt 3: Config-Dateien gebaut (2026-07-02) — Ollama, n8n, WireGuard, 7 Dateien
 - [ ] Alle Produkte: Lemon Squeezy URL als Footer-Link nachtragen (sobald LS live)
 - [ ] Alle Produkte: Substack URL als Footer-Link nachtragen
 - [ ] Thumbnail/Cover-Bild für alle 9 Produkte (optional, aber empfohlen)

@@ -1,0 +1,81 @@
+# fu75ch1 Advanced Configs — n8n Production Docker Compose
+#
+# Teil von "fu75ch1 Advanced Configs" (Produkt 3, €12).
+# Zwei Variablen zum Anpassen: N8N_ENCRYPTION_KEY (einmalig generieren, s.u.)
+# und WEBHOOK_URL (deine eigene Domain/Tunnel-URL). Alles andere ready-to-deploy.
+#
+# Encryption-Key generieren (einmalig, dann in .env speichern):
+#   [System.Guid]::NewGuid().ToString("N")   # PowerShell
+#   openssl rand -hex 32                      # Linux/Mac
+#
+# Start:  docker compose up -d
+# Stop:   docker compose down
+# Logs:   docker logs n8n --tail 50
+# UI:     http://localhost:5678
+
+version: "3.8"
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      # --- Sicherheit ---
+      - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY:?Setze N8N_ENCRYPTION_KEY in .env}
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_BASIC_AUTH_USER:-admin}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_BASIC_AUTH_PASSWORD:?Setze N8N_BASIC_AUTH_PASSWORD in .env}
+
+      # --- Webhook / externe Erreichbarkeit ---
+      # ANPASSEN: deine eigene Domain oder Tunnel-URL (z.B. Cloudflare Tunnel,
+      # ngrok, oder eigene Domain mit Reverse Proxy). Ohne das funktionieren
+      # eingehende Webhooks nicht korrekt.
+      - WEBHOOK_URL=${WEBHOOK_URL:-http://localhost:5678/}
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_PROTOCOL=${N8N_PROTOCOL:-http}
+      - N8N_PORT=5678
+
+      # --- Zeitzone (fuer Schedule-Trigger) ---
+      - GENERIC_TIMEZONE=${TZ:-Europe/Berlin}
+      - TZ=${TZ:-Europe/Berlin}
+
+      # --- Datenschutz ---
+      # n8n sendet standardmaessig anonyme Nutzungsdaten -- hier deaktiviert
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_VERSION_NOTIFICATIONS_ENABLED=false
+      - N8N_TEMPLATES_ENABLED=false
+
+      # --- Execution-Daten-Aufbewahrung (Storage-Wachstum begrenzen) ---
+      - EXECUTIONS_DATA_PRUNE=true
+      - EXECUTIONS_DATA_MAX_AGE=336    # 14 Tage in Stunden
+
+    volumes:
+      - n8n_data:/home/node/.n8n
+      # Optional: eigene Workflow-JSONs beim Start automatisch importieren
+      # - ./workflows:/home/node/.n8n/workflows-import:ro
+
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:5678/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  n8n_data:
+    driver: local
+
+# ---------------------------------------------------------------------------
+# .env Beispiel (im selben Ordner als ".env" speichern, NICHT committen):
+#
+# N8N_ENCRYPTION_KEY=<dein-generierter-key>
+# N8N_BASIC_AUTH_USER=admin
+# N8N_BASIC_AUTH_PASSWORD=<dein-passwort>
+# WEBHOOK_URL=https://deine-domain-oder-tunnel.example.com/
+# N8N_HOST=deine-domain-oder-tunnel.example.com
+# N8N_PROTOCOL=https
+# TZ=Europe/Berlin
+# ---------------------------------------------------------------------------

@@ -13,9 +13,9 @@ Die Geburtsstunde von `fu75sch1` war das radikale Umdenken an einem ganz normale
 
 ---
 
-### 2. DAS [USER]-PRINZIP: DIE 80/20 DUAL-CORE-MATRIX
+### 2. DAS FUTSCHI-PRINZIP: DIE 80/20 DUAL-CORE-MATRIX
 
-Der Codename `fu75sch1` leitet sich von der Berliner Eckkneipen-Kultur ab – namentlich dem Kultgetränk „[USER]" (Wilthener Goldkrone und Cola). Die Architektur ehrt das kompromisslose Mischungsverhältnis des „Heavy Pour": 80% harter Kern, 20% Auffüller. Im technologischen Kontext übersetzt sich diese radikale Matrix in das **80/20 Dual-Core-Operating-Principle**:
+Der Codename `fu75sch1` leitet sich von der Berliner Eckkneipen-Kultur ab – namentlich dem Kultgetränk „Futschi" (Wilthener Goldkrone und Cola). Die Architektur ehrt das kompromisslose Mischungsverhältnis des „Heavy Pour": 80% harter Kern, 20% Auffüller. Im technologischen Kontext übersetzt sich diese radikale Matrix in das **80/20 Dual-Core-Operating-Principle**:
 
 #### 1. The Heavy Pour (80% Lokale Härte & Isolation)
 Achtzig Prozent der unterstützenden Workloads — Wissensspeicher, semantische Suche, Workflow-Automation, Observability — laufen lokal und sandboxed innerhalb des unbrechbaren lokalen Markdown-Vaults. Es fließen keinerlei Daten ab, und es entstehen keinerlei Token-Kosten für diesen Anteil.
@@ -30,13 +30,13 @@ Die verbleibenden Workloads, die extreme logische Abstraktion erfordern — heut
 
 ---
 
-### 3. DIE [USER]-INFLATION: DIE ÖKONOMIE DER EFFIZIENZ
+### 3. DIE FUTSCHI-INFLATION: DIE ÖKONOMIE DER EFFIZIENZ
 
-Die Rebellion besitzt eine harte ökonomische Komponente, die sich am Tresen widerspiegelt. Ein [USER] in der Berliner Kneipe kostete früher 1,80 € – ein unkompliziertes Getränk für jedermann. Heute treibt die Inflation den Preis gegen die 4-Euro-Marke.
+Die Rebellion besitzt eine harte ökonomische Komponente, die sich am Tresen widerspiegelt. Ein Futschi in der Berliner Kneipe kostete früher 1,80 € – ein unkompliziertes Getränk für jedermann. Heute treibt die Inflation den Preis gegen die 4-Euro-Marke.
 
 Exakt dieselbe Dynamik blutet die IT-Budgets von Entwicklern und Unternehmen aus. Was als offene KI-Forschung begann, ist heute ein profitorientiertes Monopol. API-Token-Preise, proprietäre Compliance-Zertifikate und absurde pro-Kopf-Lizenzgebühren (Seat Licenses) machen Datenschutz zu einem Luxusgut, das sich nur noch Großkonzerne leisten können.
 
-`fu75sch1` bricht diese Spirale. Indem die unterstützenden Workloads lokal bei exakt null Token-Kosten abgefangen werden, drückt die Architektur die Betriebskosten der Enterprise-KI radikal nach unten. Wir holen uns den **1,80 € [USER]-Tarif** zurück in die Infrastruktur. Keine monatlich wiederkehrenden Software-as-a-Service-Abos, keine unvorhersehbaren API-Kosten-Spikes für diesen Anteil – mehr finanzielle Souveränität durch lokale Execution.
+`fu75sch1` bricht diese Spirale. Indem die unterstützenden Workloads lokal bei exakt null Token-Kosten abgefangen werden, drückt die Architektur die Betriebskosten der Enterprise-KI radikal nach unten. Wir holen uns den **1,80 € Futschi-Tarif** zurück in die Infrastruktur. Keine monatlich wiederkehrenden Software-as-a-Service-Abos, keine unvorhersehbaren API-Kosten-Spikes für diesen Anteil – mehr finanzielle Souveränität durch lokale Execution.
 
 ---
 
@@ -171,7 +171,7 @@ Das Prinzip kombiniert unnachgiebige Härte bei Fehlern mit informativen Belohnu
 *   **Bei Auswahl von Antwort B (RICHTIG):**
     > 🟢 **KORREKT:** Exakt das ist das Ziel-Verhalten. Der Identity-Layer (gebaut, Kapitel 5) maskiert sensible Daten lokal, bevor irgendetwas die Maschine verlässt — nur der anonymisierte Rest darf passieren.
     > 
-    > 🌟 **[USER] FUN FACT:** Wusstest du, dass der originale [USER] in den Berliner Arbeiterkneipen der Nachkriegszeit entstand, weil billiger Weinbrand (Goldkrone) geschmacklich durch die Süße der West-Cola kaschiert werden musste? Genauso maskiert unser Scrubbing-Layer die sensiblen Unternehmensdaten durch Anonymisierung, bevor die ungenießbare Cloud-API sie zu Gesicht bekommt.
+    > 🌟 **FUTSCHI FUN FACT:** Wusstest du, dass der originale Futschi in den Berliner Arbeiterkneipen der Nachkriegszeit entstand, weil billiger Weinbrand (Goldkrone) geschmacklich durch die Süße der West-Cola kaschiert werden musste? Genauso maskiert unser Scrubbing-Layer die sensiblen Unternehmensdaten durch Anonymisierung, bevor die ungenießbare Cloud-API sie zu Gesicht bekommt.
 
 ---
 
@@ -215,7 +215,7 @@ Das vollständige, sofort einsatzbereite Obsidian-Vault als `.zip`-Datei über L
 
 **Was du bekommst:**
 - Kompletter fu75sch1 Vault (alle 15 Phasen)
-- Master-Prompt v4.5 + Security Addendum
+- Master-Prompt v4.7 + Security Addendum
 - OpSec Audit Script (34 Checks, v2.0)
 - Anti-Tracking Hardening Scripts
 - Alle Phase-Dokumentation + Quizzes
@@ -254,6 +254,6 @@ High-End Consulting direkt mit dem anonymen Operator (via text-only channels). T
 
 Das System steht. Die Werkzeuge sind auf der Festplatte. Die API-Pipelines von Big Tech warten auf Daten – wir werden sie ihnen entziehen.
 
-Sicher dir das Vault. Schütz deine Maschine. Trink deinen [USER] lokal.
+Sicher dir das Vault. Schütz deine Maschine. Trink deinen Futschi lokal.
 
 **Privacy for the Masses. fu75sch1 für alle.**

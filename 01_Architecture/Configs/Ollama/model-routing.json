@@ -1,0 +1,28 @@
+{
+  "routing_policy": {
+    "small": {
+      "description": "Zusammenfassung, Formatierung, einfache Extraktion",
+      "provider": "ollama",
+      "model": "phi3:mini",
+      "fallback_provider": "cloud",
+      "fallback_model": "claude-haiku",
+      "max_context_tokens": 4000
+    },
+    "medium": {
+      "description": "Dokumentation, Code-Review, Standardanalyse",
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "requires_gpu": true,
+      "fallback_provider": "cloud",
+      "fallback_model": "claude-sonnet",
+      "max_context_tokens": 8000
+    },
+    "large": {
+      "description": "Architektur, Security-Analyse, komplexes Reasoning",
+      "provider": "cloud",
+      "model": "claude-opus",
+      "note": "Bewusst nie lokal geroutet -- Reasoning-Tiefe auf Consumer-Hardware nicht erreichbar"
+    }
+  },
+  "decision_logic": "Aufgabenklasse manuell oder heuristisch (Tokenlaenge, Schluesselwoerter) bestimmen -> Route probieren -> bei Ollama-Fehler oder Timeout (>30s) automatisch auf fallback_provider wechseln"
+}

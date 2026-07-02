@@ -22,7 +22,7 @@ title: Launch Plan — fu75ch1 Produkt & Kanal-Strategie
 **Korrigiert:** €49–79 (Early-Bird: €29 für erste 50 Käufer)
 
 Begründung: Das Blueprint ist kein generischer Prompt-Pack.
-Es ist ein dokumentiertes Betriebssystem mit 15 Phasen, Security-Verifikation (Garak 0% ASR),
+Es ist ein dokumentiertes Betriebssystem mit 15 Phasen, Security-Verifikation (Garak: 38.43% ASR gegen 512 reale Jailbreaks, DanInTheWild; ein frueher 3-Proben-Pilot zeigte 0%, aber das war nicht repraesentativ),
 Governance-Layer und reproduzierbarem Aufbau. Dieser Wert ist nicht bei €29 kommunizierbar.
 
 Early-Bird-Mechanismus:
@@ -35,8 +35,8 @@ Early-Bird-Mechanismus:
 | # | Produkt | Preis | Kanal | Phase |
 |---|---|---|---|---|
 | 1 | **The Blueprint** (Vault + 15 Phasen + Scripts) | €29→€49→€79 | Lemon Squeezy | 2 |
-| 2 | Master-Prompt v4.5 | €9 | Gumroad | 2 |
-| 3 | OpSec Checklist (26-Punkt, automatisiert) | €7 | Gumroad | 2 |
+| 2 | Master-Prompt v4.7 | €9 | Gumroad | 2 |
+| 3 | OpSec Checklist (34-Punkt, automatisiert) | €7 | Gumroad | 2 |
 | 4 | Advanced Configs (Ollama, n8n, WireGuard) | €12 | Gumroad | 2 |
 | 5 | Phase 12 Playbook | €14 | Gumroad | 2 |
 | 6 | Windows Hardening Guide | €9 | Gumroad | 3 |
@@ -87,7 +87,7 @@ Early-Bird-Mechanismus:
 - **Wann:** Ab Phase 2 (wenn GitHub live)
 
 #### Hacker News — Show HN
-- **Was:** Einmaliger Launch-Post: "Show HN: fu75ch1 — AI OS with 0% jailbreak ASR"
+- **Was:** Einmaliger Launch-Post: "Show HN: fu75ch1 — AI OS red-teamed with Garak (38.43% ASR vs. 512 real jailbreaks, full disclosure)"
 - **Aufwand:** 1× einmalig, ~1h Vorbereitung
 - **Timing:** Montag/Dienstag 9–11 Uhr UTC (höchste Sichtbarkeit)
 - **Erwartung:** 50–300 GitHub-Stars im Launch-Fenster
@@ -154,7 +154,7 @@ Early-Bird-Mechanismus:
 ### 3.3 Community (Phase 3+, optional)
 
 **Geschlossener Kanal (Discord/Matrix) nur für Käufer**
-- Beweis-Token: [REDACTED] Squeezy Kaufbestätigung = Zugangsschlüssel
+- Beweis-Token: Lemon Squeezy Kaufbestätigung = Zugangsschlüssel
 - Wert: Q&A, neue Configs, Frühzugang zu Produkten
 - Aufwand: Mittel — erst starten wenn > 50 Käufer
 

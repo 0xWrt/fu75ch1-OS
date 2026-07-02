@@ -12,9 +12,9 @@ title: Gumroad — Produkt-Beschreibungen (alle 9)
 
 ---
 
-## Produkt 1 — Master-Prompt v4.5 (€9)
+## Produkt 1 — Master-Prompt v4.7 (€9)
 
-**Titel:** `fu75ch1 Master-Prompt v4.5 — Production AI System Prompt`
+**Titel:** `fu75ch1 Master-Prompt v4.7 — Production AI System Prompt`
 
 **Kurzbeschreibung:**
 ```
@@ -26,7 +26,7 @@ Jailbreak-resistant. Garak 0.15.1 tested: 0% ASR (AutoDANCached, 3 probes, pilot
 ```
 This is the exact system prompt I run in production.
 
-Not a template. Not a starter kit. A fully evolved prompt after 4.5 versions,
+Not a template. Not a starter kit. A fully evolved prompt after 4.7 versions,
 real-world use, and verified red-team testing.
 
 What's inside:
