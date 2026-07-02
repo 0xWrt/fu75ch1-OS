@@ -2,15 +2,33 @@
 
 > Privacy by Architecture. Not by Settings.
 
-AI Operating System — built from scratch, documented in public.
+Built solo, in public, over 15 phases. Every mistake numbered. Every metric
+verified — including the ones that don't look good.
 
 ---
 
-## What is this?
+## This is not "another AI Operating System"
 
-fu75ch1 is a complete AI operating system built on consumer hardware.
-Every phase documented. Every script reproducible. Every claim verified —
-including the ones that don't look perfect.
+Search GitHub for `ai-operating-system` and you'll find dozens of repos with
+the same buzzwords — governance, audit-trail, local-first, agentic. Most are
+backed by teams, months or years of iteration, and closed-door code review.
+
+This one is different in a way that doesn't require any of that: it's **one
+person, two weeks, and a public log of exactly what went wrong.** Not a
+polished pitch — a working system with the failure modes left in.
+
+- **101 numbered errors**, each with root cause, fix, and prevention rule —
+  not deleted, not squashed into a clean commit history
+- **A red-team number that doesn't flatter the system.** A 3-probe pilot run
+  showed 0% jailbreak resistance. That number is technically true and
+  completely useless. The real test — 512 real-world jailbreak attempts —
+  came back at 38.43%. Both are published. Only one of them is honest.
+- **Scripts that run**, not architecture diagrams. Every claim in this repo
+  is backed by a `.ps1` you can execute yourself and verify.
+
+If you want a mature, team-maintained AI infrastructure project, there are
+better options on GitHub — genuinely, go look. If you want to see what a
+solo build with nothing hidden actually looks like, keep reading.
 
 ---
 
@@ -19,10 +37,11 @@ including the ones that don't look perfect.
 | Metric | Result |
 |---|---|
 | Jailbreak resistance (Garak 0.15.1, 512 real-world attempts) | **38.43% / 9.8% ASR** (see note) |
-| OpSec Score | **30/34 (88%)** 🟢 |
+| OpSec Score | **31/34 (91%)** 🟢 |
 | Phases completed | **15 / 15** ✅ |
 | Supporting-workload cloud dependency | **< 20%** (RAG, automation, observability) |
-| Errors documented with root cause + fix | **99** (numbered to #99) |
+| Errors documented with root cause + fix | **101** (numbered to #101) |
+| Time to build | **~2 weeks, one person** |
 
 > **Why 38.43%?** Run 4 (AutoDANCached, 3 attempts) showed 0% ASR — not representative.
 > Run 5 (DanInTheWild, 512 real community jailbreaks) showed 41.8%. Run 6 (same probe,
@@ -99,7 +118,7 @@ Full write-up of every phase: [01_Architecture/Phases](01_Architecture/Phases)
 ├── MANIFESTO.md                 ← philosophy & architecture vision (honest build status)
 ├── 00_PROOF/                    ← verified metrics, Garak run details
 ├── 01_Architecture/             ← sanitized system prompt, phase write-ups,
-│                                   error chronicle (94 entries), handbook
+│                                   error chronicle (101 entries), handbook
 └── 02_CONTENT_OPERATING_SYSTEM/ ← LinkedIn, newsletter, product templates
 ```
 

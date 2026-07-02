@@ -2,7 +2,7 @@
 date: 2026-06-25
 updated: 2026-06-25
 tags: [meta, launch, plan, monetisierung, anti-copy, plattform]
-status: ✅ v1.0 — aktiv
+status: ⚠️ v1.1 — 2026-07-02 ueberarbeitet (Positionierung geschärft, Whop ergänzt, Tier 3 zurückgestellt, 72h-Sprint)
 title: Launch Plan — fu75ch1 Produkt & Kanal-Strategie
 ---
 
@@ -11,6 +11,36 @@ title: Launch Plan — fu75ch1 Produkt & Kanal-Strategie
 > Kein LinkedIn-Fokus. Kein Video (zurückgestellt auf Phase 5+).
 > Alle Schutz- und Monetisierungsmaßnahmen integriert.
 > Zeitaufwand-Prinzip: Text-first, einmaliger Setup-Aufwand, passive Revenue.
+
+---
+
+## 0. 72-Stunden-Sprint (aktueller Fokus, ab 2026-07-02)
+
+> Ueberschreibt fuer die naechsten 72h die woechentliche Rhythmus-Planung
+> in Abschnitt 5 -- danach gilt Abschnitt 5 wieder normal weiter.
+
+**Positionierungs-Wechsel (wichtigste Aenderung):** Weg von "AI Operating
+ System" als Kategorie-Claim (GitHub-Topic `ai-operating-system` ist
+ uebersaettigt mit teambetriebenen Projekten). Hin zu der einzigen
+ Differenzierung, die ein 2-Wochen-Solo-Projekt ehrlich beanspruchen kann:
+ **101 dokumentierte Fehler, ehrliche 38.43%-ASR-Zahl statt geschoenter 0%,
+ lauffaehige Scripts statt Architektur-Diagramme.** README + GitHub bereits
+ umgeschrieben (2026-07-02).
+
+| Std. | Aktion |
+|---|---|
+| 0-6 | README/GitHub-Repo-Politur final pruefen (bereits umgeschrieben) |
+| 6-12 | Gumroad P3, P5-P9 hochladen (Inhalte fertig) |
+| 12-18 | Whop: P1 (Master-Prompt) als eigenstaendiges Listing, €19-24 (Whop-Marktpreis fuer AI-Prompts, nicht Gumroad-Preisanker uebernehmen) |
+| 18-24 | Cover-Bilder speichern, alle Produktseiten final gegenlesen |
+| Tag 2 frueh | Show HN posten (Mo/Di 9-11 Uhr UTC) |
+| Tag 2 | Reddit: r/privacy, r/selfhosted -- Link in Bio, kein Spam-Post |
+| Tag 3 | Nachfassen: Kommentare beantworten, Traffic beobachten. Keine neuen Produkte mehr -- Energie auf Distribution |
+
+**Bewusst NICHT in den 72h:** Polar.sh (Onboarding pausiert, Vorarbeit in
+`Polar-Produkte-Setup.md` bleibt erhalten fuer spaeter), Lemon Squeezy
+(zieht in Woche 2 nach, sobald ein Traffic-Signal da ist), Tier 3 Enterprise
+Consulting (siehe 1.2 -- aus aktiver Vermarktung genommen).
 
 ---
 
@@ -44,7 +74,7 @@ Early-Bird-Mechanismus:
 | 8 | Browser Hardening Config | €7 | Gumroad | 3 |
 | 9 | KeePass Blueprint | €7 | Gumroad | 3 |
 | 10 | Tool Stack Guide | €12 | Gumroad | 3 |
-| 11 | Consulting (Enterprise Implementation) | €1.5k | Direct | 4 |
+| 11 | Consulting (Enterprise Implementation) | €1.5k | Direct | 4 — **nicht aktiv beworben** (2026-07-02: anonyme Marke ohne Track Record wirkt bei 5-stelligen Betraegen unglaubwuerdig, erst reaktivieren nach ersten organischen Verkaeufen/Testimonial) |
 
 ---
 
@@ -70,6 +100,27 @@ Early-Bird-Mechanismus:
 - **Warum:** Bessere Checkout-UX als Gumroad, EU-VAT-Handling automatisch
 - **Aufwand:** 1× Setup, danach passiv
 - **Early-Bird:** €29 erste 50 Käufer, Counter im Substack sichtbar
+- **Status:** in den 72h-Sprint NICHT enthalten, zieht in Woche 2 nach
+
+#### Whop (neu, 2026-07-02 -- nur fuer Master-Prompt)
+- **Was:** P1 (Master-Prompt) als eigenstaendiges Listing, separat von Gumroad
+- **Warum:** Whops eigener Marktplatz-Fokus liegt auf AI-Prompt-Produkten,
+  validierter Preisbereich €24-50 -- passt strukturell besser als die
+  restlichen 8 Produkte (Scripts/Guides), die dort keinen Markt-Fit haben
+- **Aufwand:** laut Whop < 10 Min Listing-Zeit
+- **Preis:** €19-24 (Whop-Marktpreis, NICHT den Gumroad-Preis €9 uebernehmen)
+- **Bewusst NICHT:** P2-P9 auf Whop listen -- falscher Markt fuer Scripts/Guides,
+  zusaetzlicher Pflegeaufwand ohne Gegenwert
+
+#### Polar.sh (pausiert, 2026-07-02)
+- **Status:** Onboarding gestartet (Organisation `fu75ch1` angelegt), dann
+  bewusst pausiert -- zwei Checkout-Plattformen parallel zu pflegen bei noch
+  null Traffic verdoppelt den Wartungsaufwand ohne belegten Nutzen. Polars
+  Vorteil liegt in Gebuehren/Checkout-UX, nicht in eigener Entdeckbarkeit --
+  der Traffic muesste ohnehin von uns selbst kommen.
+- **Reaktivieren wenn:** Gumroad-Gebuehren bei nennenswertem Volumen spuerbar
+  schmerzen, oder bewusst zwei Kanaele gewuenscht sind sobald Kapazitaet da ist.
+- Vollstaendige Vorarbeit bleibt erhalten: `Polar-Produkte-Setup.md`
 
 #### Substack (Newsletter = Langfrist-Kanal)
 - **Was:** Wöchentlicher Text-Post (500–800 Wörter), Free + Paid
@@ -87,7 +138,7 @@ Early-Bird-Mechanismus:
 - **Wann:** Ab Phase 2 (wenn GitHub live)
 
 #### Hacker News — Show HN
-- **Was:** Einmaliger Launch-Post: "Show HN: fu75ch1 — AI OS red-teamed with Garak (38.43% ASR vs. 512 real jailbreaks, full disclosure)"
+- **Was:** Einmaliger Launch-Post: "Show HN: fu75ch1 — I built an AI stack solo in 2 weeks and published all 101 mistakes (38.43% ASR, not the 0% I could have led with)"
 - **Aufwand:** 1× einmalig, ~1h Vorbereitung
 - **Timing:** Montag/Dienstag 9–11 Uhr UTC (höchste Sichtbarkeit)
 - **Erwartung:** 50–300 GitHub-Stars im Launch-Fenster
