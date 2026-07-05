@@ -5,6 +5,8 @@ status: ⚠️ Stale (2026-06-25) — 2026-07-02 korrigiert: v4.5→v4.7, OpSec 
 title: Lemon Squeezy — The Blueprint (Sales Page)
 ---
 
+> **DE-REFERENZ (2026-07-05):** Kundengerichtete Copy ist ENGLISCH und lebt in `02_Shops\Gumroad\Gumroad-P10-Blueprint.md` (Single-Source-Regel, gilt auch fuer Lemon Squeezy). Diese deutsche Fassung dient nur als interne Referenz/Uebersetzungshilfe - NICHT hochladen.
+
 # The Blueprint — Sales Page (Lemon Squeezy)
 
 > Einpflegen unter: Lemon Squeezy → New Product → Description
