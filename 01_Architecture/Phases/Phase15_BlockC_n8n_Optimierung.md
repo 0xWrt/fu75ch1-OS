@@ -1,14 +1,8 @@
 ---
-tags:
-  - phase15
-  - n8n
-  - agentic-loop
-  - memos
-  - workflow
-  - automation
+tags: [phase15, n8n, agentic-loop, memos, workflow, automation]
 date: 2026-06-24
 status: ✅ Produktionsreif
-title: Phase 15 Block C — n8n Memos Vault Pollingv2 Optimierung
+title: Phase 15 Block C — n8n Memos Vault Pollingv2 — 2026-06-24
 ---
 
 # Phase 15 Block C — n8n Memos Vault Pollingv2 — 2026-06-24

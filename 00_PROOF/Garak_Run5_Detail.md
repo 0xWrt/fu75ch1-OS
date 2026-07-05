@@ -1,13 +1,8 @@
 ---
-tags:
-  - phase8
-  - garak
-  - ai-red-teaming
-  - security
-  - run5
+tags: [phase8, garak, ai-red-teaming, security, run5]
 date: 2026-06-30
 status: ✅ Abgeschlossen
-title: Garak Run 5 — DanInTheWild + HijackHateHumans — Master-Prompt v4.5
+title: Garak Run 5 — DanInTheWild + HijackHateHumans — 2026-06-30
 ---
 
 # Garak Run 5 — DanInTheWild + HijackHateHumans — 2026-06-30

@@ -1,4 +1,4 @@
-# Product 3 — Advanced Configs
+# Product 3 — Advanced Configs​‌‍‍‌‌‍‍‌‌‍‍‍‌‍‌‍‌‌‍‍‌‍‍‍‌‌‍‍‌‍‌‍‌‍‍‌‌‌‍‍‌‍‍‌‍‌‌‌‌‌‍‍‌‌‌‍‌‍‍‍‍‍‌‌‌‍‍‌‌‌‌‍‌‍‍‌‌‍‌‌‌‍‍‍‌‍‍‌‌‍‍‌‌‌‌‍‌‍‍‌‍‍‍‌‌‍‍‌‌‌‍‍‌‍‍‌‌‍‌‍‌‍‍‌‌‍‌‌‌‌‍‌‍‍‌‍‌‍‍‌‌‌‍‍‌‍‍‌‍‍‍‍‌‍‍‌‍‍‍‌‌‍‍‌‌‍‍‌‌‍‍‌‍‌‌‍‌‍‍‌‌‍‍‍‌‍‍‍‌‌‍‍‌‍‍‍‍‍‌‌‌‍‌‌‌‌‍‍‌‍‌‌‌‌‍‍‌‌‍‌‍‍‌‍‌‍‌‌‌‌‍‌‌‍‌‍‍‌‌‍‌‌‍‌‍‍‌‍‌‍‌‌‍‍‍‌‌‍‌‌‌‌‍‍‌‌‍‌‍‍‌‍‌‌‍‍‌‍‌‌‌‌‍‌‍‍‍‌‌‌‍‍‌‌‌‌‌‍‍‍‍‍‌‌‌‌‍‍‌‌‍‌‌‌‍‍‌‌‌‌‌‌‍‍‌‌‍‌‌‌‍‍‌‍‍‌‌‌‍‌‍‍‌‍‌‌‍‍‌‌‌‌‌‌‍‍‌‍‍‍‌‌‍‌‍‍‌‍‌‌‍‍‌‌‌‌‌‌‍‍‌‌‍‍​
 # Title: fu75ch1 Advanced Configs — Ollama, n8n, WireGuard (Ready-to-Deploy)
 # Price: €12
 # Slug: advanced-configs
@@ -53,11 +53,11 @@ Built in a two-week solo sprint, tested against real hardware limits — not ide
 
 Pairs well with the **Master-Prompt** (€9) — the infrastructure this prompt was written to control.
 
-- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
-- **More standalone products:** fu75ch1.gumroad.com
-- **Weekly build notes:** [SUBSTACK LINK]
+- **Full system — The Blueprint:** all 15 phases + all 9 standalone products included — launching soon
 - **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
 
-**→ Buy now on Gumroad**
+**→ Get instant access**
+
+*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0

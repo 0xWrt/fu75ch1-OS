@@ -1,5 +1,5 @@
 ---
-tags: [prompt, public, gumroad, ai-operating-system, security]
+tags: [prompt, public, ai-operating-system, security]
 date: 2026-07-01
 version: "4.7"
 title: Master-Prompt v4.7 — AI Operating System (Public Release)

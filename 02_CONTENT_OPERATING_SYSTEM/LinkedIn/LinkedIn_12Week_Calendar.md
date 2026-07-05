@@ -44,7 +44,7 @@ status: ready-to-use
 
 **Post Struktur:**
 ```
-[HOOK]: A Futschi used to cost €1.80...
+[HOOK]: A [USER] used to cost €1.80...
 [EXPLAIN]: 80% local, 20% cloud
 [SHOW]: Simple diagram (ASCII or screenshot)
 [WHY]: Economic + Technical benefits — inkl. Green IT Framing:
@@ -118,7 +118,7 @@ status: ready-to-use
 
 ## WEEK 4: The Sync Protocol (Authority)
 
-**Topic:** How fu75sch1 Handles Multi-User Without Git Chaos  
+**Topic:** How fu75ch1 Handles Multi-User Without Git Chaos  
 **Type:** Technical Deep-Dive  
 **Tone:** Expert, Problem-Solving  
 **CTA:** GitHub or Consulting Interest  

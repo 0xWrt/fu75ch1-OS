@@ -19,7 +19,7 @@ KeePassXC keeps everything local. This blueprint adds a Key-File concept: your d
 
 Built as the credential management layer of a 15-phase AI operating system — handling everything from system passwords to API keys for LLM providers.
 
-Built solo over two weeks, alongside 101 other documented mistakes — this is the layer that had to be right the first time, so it got the most scrutiny.
+Built solo over two weeks, alongside 100+ other documented mistakes — this is the layer that had to be right the first time, so it got the most scrutiny.
 
 ---
 
@@ -70,11 +70,12 @@ Built solo over two weeks, alongside 101 other documented mistakes — this is t
 
 Pairs well with the **OpSec Checklist** (€7) — verify your credential hygiene is actually enforced.
 
-- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **Full system — The Blueprint:** all 15 phases + all 9 standalone products included (€84 of parts for €29 Early Bird) → fu75ch1.gumroad.com/l/blueprint
 - **More standalone products:** fu75ch1.gumroad.com
-- **Weekly build notes:** [SUBSTACK LINK]
 - **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
 
 **→ Buy now on Gumroad**
+
+*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0

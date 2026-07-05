@@ -1,7 +1,7 @@
 ---
 tags: [audit, fehler-chronologie, lessons-learned]
 date: 2026-06-19
-updated: 2026-06-25
+updated: 2026-07-04
 status: ✅ Aktiv
 title: Fehler-Chronologie — Kumulativ
 ---
@@ -294,6 +294,12 @@ Hinweis: ToDo-Eintrag "Get-Credits Duplikat im PS-Profil" war bei Pruefung (2026
 | 94 | execute_safe_pwsh-gestartete Hintergrundprozesse (Start-Process) brechen nach exakt ~20-25s ohne Fehlermeldung ab | PROZESS | MCP-Shell-Wrapper killt vermutlich die eigene Prozessgruppe/Job-Object inkl. aller Kindprozesse nach internem Timeout, unabhaengig davon ob Start-Process genutzt wird | Lange Laeufe (>20s) ueber einmaligen Scheduled Task entkoppeln (gleicher Mechanismus wie Fehler #93), dann separat per Folge-Aufrufen pollen statt im selben Call warten | Jeder Prozess, der laenger als ~20s laufen soll, MUSS ueber Scheduled Task entkoppelt werden -- niemals direkt per Start-Process im MCP-Shell-Call erwarten |
 | 95 | litellm.UnsupportedParamsError: anthropic does not support parameters presence_penalty/frequency_penalty, trotz self.litellm.drop_params=True im Generator-Code | KOMPATIBILITAET | drop_params=True greift in dieser litellm-Version nicht zuverlaessig fuer alle Probes/Prompts; --generator_option_file mit suppressed_params wurde ebenfalls nicht angewendet (Ursache ungeklaert) | Direkter Patch in garak/generators/litellm.py: presence_penalty/frequency_penalty Zeilen im optional_params-Dict auskommentiert (gleiches Muster wie vorheriger top_p-Patch in derselben Datei) | Bei wiederholten Config-Fixes, die nicht greifen: lieber einmal sauber an der Quelle patchen statt mehrfach CLI-Flags durchprobieren -- Backup vor jedem Patch |
 
+## Session 2026-07-01 -- PIIScrubber-Verdrahtung (nachgetragen 2026-07-04, siehe #103)
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 96 | Invoke-PIIScrubber: Hostname-Scrub-Regex fehlerhaft bei leerem $env:COMPUTERNAME | LOGIK | Der Wert von $env:COMPUTERNAME wurde ungeprueft in die Scrub-Regex eingesetzt -- ist die Variable leer, entsteht eine leere Regex-Alternative mit fehlerhaftem Match-Verhalten | Guard eingebaut: Hostname-Pattern wird nur in die Regex aufgenommen, wenn $env:COMPUTERNAME nicht leer ist (Invoke-AnthropicCached.ps1 v2.1, commit 6c34b46) | Umgebungsvariablen nie ungeprueft in Regex-Alternativen einsetzen -- immer Empty/Null-Guard davor |
+
 ## Session 2026-07-01 -- Streamlit Dashboard
 
 | Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
@@ -307,4 +313,16 @@ Hinweis: ToDo-Eintrag "Get-Credits Duplikat im PS-Profil" war bei Pruefung (2026
 | Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
 |---|---|---|---|---|---|
 | 100 | Invoke-OpSecFix-v1.0.ps1: Check 31 wirft 'The property Count cannot be found on this object' | SYNTAX | Where-Object gibt bei genau einem Treffer ein einzelnes Objekt zurueck, kein Array -- .Count existiert nicht auf einzelnen Objekten in PowerShell | @() um Where-Object-Ausdruck erzwingt Array-Typ unabhaengig von Trefferzahl (0/1/n) | PowerShell: Where-Object-Ergebnis IMMER in @() einwickeln wenn .Count benoetigt wird |
-| 101 | Check 31 meldet [X] obwohl keine fremden Eintraege in der ACL vorhanden sind -- OpSec Score bleibt 30/34 nach Fix | LOGIK | Audit- und Fix-Skript prueften alle ACL-Eintraege inkl. geerbter (IsInherited=True); Username-Match gegen '[USER]' traf nicht auf '[HOSTNAME-REDACTED]\[USER]' weil Regex-Match gegen vollen String lief und geerbte Eintraege nicht gefiltert wurden | IsInherited-Filter hinzugefuegt (geerbte Eintraege sind OS-Standard, kein Risiko); Username-Match als Suffix-Pattern gegen $userSuffix statt Exact-Match | ACL-Checks in PowerShell: IsInherited-Eintraege explizit herausfiltern; IdentityReference immer als 'Domain\User'-Suffix matchen, nie als Exact-Match gegen $env:USERNAME |
+| 101 | Check 31 meldet [X] obwohl keine fremden Eintraege in der ACL vorhanden sind -- OpSec Score bleibt 30/34 nach Fix | LOGIK | Audit- und Fix-Skript prueften alle ACL-Eintraege inkl. geerbter (IsInherited=True); Username-Match gegen '[USER]' traf nicht auf '[HOSTNAME]\[USER]' weil Regex-Match gegen vollen String lief und geerbte Eintraege nicht gefiltert wurden | IsInherited-Filter hinzugefuegt (geerbte Eintraege sind OS-Standard, kein Risiko); Username-Match als Suffix-Pattern gegen $userSuffix statt Exact-Match | ACL-Checks in PowerShell: IsInherited-Eintraege explizit herausfiltern; IdentityReference immer als 'Domain\User'-Suffix matchen, nie als Exact-Match gegen $env:USERNAME |
+
+## Session 2026-07-02 -- LangFuse RAM-Drift (wiederholt)
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 102 | LangFuse-Container liefen wiederholt trotz manuellem 'docker compose stop' und trotz Fehler-#91-Fix (Autostart entfernt) -- RAM-WARN (85-94%) zweimal in derselben Session erneut aufgetreten | KONFIGURATION | docker-compose.yml setzte 'restart: always' auf allen 6 Services -- diese Policy startet Container bei jedem Docker-Daemon-Neustart automatisch neu (WSL2-Neustart, Sleep/Wake, Docker-Desktop-Update), unabhaengig vom manuellen Stop-Zustand. Fehler #91 hatte nur den expliziten Autostart-Eintrag entfernt, nicht die Container-eigene Restart-Policy | 1) Laufende Container: 'docker update --restart no' auf alle 6 LangFuse-Container. 2) Quelle: docker-compose.yml -- 'restart: always' auf allen 6 Services zu 'restart: \"no\"' geaendert (Backup vor Aenderung erstellt), damit kuenftige 'docker compose up' (via fu75 -LangFuse) die Policy nicht zuruecksetzen | Bei on-demand-Diensten IMMER pruefen: (a) kein Autostart-Task/-Setting UND (b) Container-Restart-Policy selbst auf 'no' -- ein On-Demand-Prinzip ist nur an einer Stelle zu setzen unvollstaendig, wenn Docker selbst eine gegenteilige Policy persistiert |
+
+## Session 2026-07-04 -- Chronik-Audit (Review-Session)
+
+| Nr | Fehler | Kategorie | Ursache | Loesung | Praeventionsregel |
+|---|---|---|---|---|---|
+| 103 | Fehler #96 (PIIScrubber COMPUTERNAME-Guard) wurde nie in die Fehler-Chronologie eingetragen -- Chronik sprang von #95 auf #97, waehrend Session_State und Commits #96 referenzierten. Widerspricht dem Kernclaim 'jeder Fehler nummeriert und dokumentiert' | PROZESS | Fehler wurde in Session_State und Commit-Message (6c34b46) dokumentiert, der Chronik-Eintrag aber vergessen -- kein automatischer Abgleich zwischen referenzierten Fehlernummern und tatsaechlich vorhandenen Chronik-Eintraegen | #96 nachgetragen (2026-07-04); Luecken-Check als Pruefpunkt in den Metrik-Konsistenz-Workflow aufgenommen (metrics.json + Invoke-MetricsCheck.ps1) | Fehlernummern-Sequenz regelmaessig auf Luecken pruefen -- jede in Session_State/Commits referenzierte Nummer MUSS einen Chronik-Eintrag haben |

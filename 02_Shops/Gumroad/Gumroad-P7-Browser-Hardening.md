@@ -19,7 +19,7 @@ This config closes those gaps with exportable settings you apply once and keep.
 
 No manual tweaking of 200 about:config entries. No half-measures. A complete, tested configuration built as Phase 3 of a hardened AI operating system — used daily under Mullvad VPN with strict DNS filtering.
 
-Part of a two-week solo build, 101 mistakes documented along the way — this config reflects what actually held up under daily use, not a first draft.
+Part of a two-week solo build, 100+ mistakes documented along the way — this config reflects what actually held up under daily use, not a first draft.
 
 ---
 
@@ -66,11 +66,12 @@ Part of a two-week solo build, 101 mistakes documented along the way — this co
 
 Pairs well with the **KeePass Blueprint** (€7) — move credentials fully offline next.
 
-- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **Full system — The Blueprint:** all 15 phases + all 9 standalone products included (€84 of parts for €29 Early Bird) → fu75ch1.gumroad.com/l/blueprint
 - **More standalone products:** fu75ch1.gumroad.com
-- **Weekly build notes:** [SUBSTACK LINK]
 - **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
 
 **→ Buy now on Gumroad**
+
+*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0

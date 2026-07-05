@@ -6,7 +6,7 @@ title: Gumroad Upload Guide — alle 9 Produkte
 
 # Gumroad Upload Guide — alle 9 Produkte
 
-> Reihenfolge: Produkt 1+2 bereits angelegt.
+> Reihenfolge: Produkt 1+2 bereits angelegt. NEU 2026-07-04: P10 (The Blueprint) MIT hochladen - Copy in Gumroad-P10-Blueprint.md, Zip nach dortigem Manifest packen, Early-Bird als Discount-Code (Limit 50).
 > Weiter ab Produkt 3.
 > Alle Beschreibungs-MDs liegen in:
 > `%USERPROFILE%\Documents\fu75ch1_public\01_Architecture\`
@@ -178,7 +178,7 @@ fu75ch1_public\01_Architecture\Gumroad-P9-Tool-Stack-Guide.md
 - [x] Produkt 3: Config-Dateien gebaut (2026-07-02) — Ollama, n8n, WireGuard, 7 Dateien
 - [ ] Alle Produkte: Lemon Squeezy URL als Footer-Link nachtragen (sobald LS live)
 - [ ] Alle Produkte: Substack URL als Footer-Link nachtragen
-- [ ] Thumbnail/Cover-Bild für alle 9 Produkte (optional, aber empfohlen)
+- [ ] Thumbnail/Cover-Bild (P10 zuletzt) für alle 9 Produkte (optional, aber empfohlen)
 - [ ] Cross-Selling Footer in jedem Produkt: "Full system → The Blueprint [LS LINK]"
 
 ---

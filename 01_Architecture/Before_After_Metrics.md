@@ -1,12 +1,12 @@
 ---
-date: 2026-07-01 20:20
+date: 2026-07-05 12:02
 tags: [metrics, before-after, proof, auto-generated]
 title: Before/After Metrics — fu75ch1 (auto)
 ---
 
 # Before/After Metrics — fu75ch1
 
-> Auto-generiert via Invoke-PublicExport-v2.4 | 2026-07-01 20:20
+> Auto-generiert via Invoke-PublicExport-v2.4 | 2026-07-05 12:02
 > Details: [Verified_Results.md](../00_PROOF/Verified_Results.md)
 
 ## Jailbreak Resistance (Garak 0.15.1)
@@ -28,16 +28,16 @@ title: Before/After Metrics — fu75ch1 (auto)
 > nicht ausschliesslich auf Systemverhalten. Wird bewusst so dokumentiert
 > statt nur der beste Einzelwert gezeigt.
 
-## OpSec Score: **30/34 = 88% ✅** (automatisierte Checks, Stand 2026-07-01)
+## OpSec Score: **31/34 = 91% ✅** (automatisierte Checks, Stand 2026-07-05)
 
 ## Cloud-Abhaengigkeit: ~100% → **<20%** ✅ (nach Phase 14)
 
-## Vault (Stand 2026-07-01 20:20)
+## Vault (Stand 2026-07-05 12:02)
 
 | Metrik | Wert |
 |---|---|
-| Core .md Dateien | 197 |
-| Public .md Dateien | 45 |
-| Git Commits (Core) | 139 |
+| Core .md Dateien | 205 |
+| Public .md Dateien | 79 |
+| Git Commits (Core) | 147 |
 
-## Fehler-Chronologie: **99 Eintraege** (nummeriert bis #101, einzelne Nummern historisch konsolidiert), je eine Praeventionsregel pro Eintrag
+## Fehler-Chronologie: **102 Eintraege** (nummeriert bis #103, einzelne Nummern historisch konsolidiert), je eine Praeventionsregel pro Eintrag

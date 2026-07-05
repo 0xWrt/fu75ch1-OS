@@ -1,4 +1,4 @@
-# Product 1 — Master-Prompt v4.7
+# Product 1 — Master-Prompt v4.7​‌‍‍‌‌‍‍‌‌‍‍‍‌‍‌‍‌‌‍‍‌‍‍‍‌‌‍‍‌‍‌‍‌‍‍‌‌‌‍‍‌‍‍‌‍‌‌‌‌‌‍‍‌‌‌‍‌‍‍‍‍‍‌‌‌‍‍‌‍‍‌‍‌‍‍‌‌‌‌‍‌‍‍‍‌‌‍‍‌‍‍‍‌‍‌‌‌‍‍‌‌‍‌‍‌‍‍‍‌‌‍‌‌‌‍‌‍‍‌‍‌‍‍‍‌‌‌‌‌‍‍‍‌‌‍‌‌‍‍‌‍‍‍‍‌‍‍‌‍‍‌‍‌‍‍‍‌‌‌‌‌‍‍‍‌‍‌‌‌‌‍‌‍‍‌‍‌‍‍‍‌‍‍‌‌‌‍‍‌‍‌‌‌‌‍‍‌‍‍‍‌‍‍‍‍‍‌‌‌‍‌‌‌‌‍‍‌‍‌‌‌‌‍‍‌‌‍‌‍‍‌‍‌‍‌‌‌‌‍‌‌‍‌‍‍‌‌‍‌‌‍‌‍‍‌‍‌‍‌‌‍‍‍‌‌‍‌‌‌‌‍‍‌‌‍‌‍‍‌‍‌‌‍‍‌‍‌‌‌‌‍‌‍‍‍‌‌‌‍‍‌‌‌‌‌‍‍‍‍‍‌‌‌‌‍‍‌‌‍‌‌‌‍‍‌‌‌‌‌‌‍‍‌‌‍‌‌‌‍‍‌‍‍‌‌‌‍‌‍‍‌‍‌‌‍‍‌‌‌‌‌‌‍‍‌‍‍‍‌‌‍‌‍‍‌‍‌‌‍‍‌‌‌‌‌‌‍‍‌‌‍‍​
 # Title: fu75ch1 Master-Prompt v4.7 — Production AI System Prompt
 # Price: €9
 # Slug: master-prompt-v47
@@ -54,11 +54,11 @@ same build. Not a polished demo prompt — the one actually running in productio
 
 Pairs well with the **OpSec Checklist** (€7) — verify the environment this prompt assumes is actually hardened.
 
-- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
-- **More standalone products:** fu75ch1.gumroad.com
-- **Weekly build notes:** [SUBSTACK LINK]
+- **Full system — The Blueprint:** all 15 phases + all 9 standalone products included — launching soon
 - **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
 
-**→ Buy now on Gumroad**
+**→ Get instant access**
+
+*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0

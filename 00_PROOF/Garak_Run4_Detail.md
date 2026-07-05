@@ -1,13 +1,8 @@
 ---
-tags:
-  - phase8
-  - garak
-  - ai-red-teaming
-  - security
-  - run4
+tags: [phase8, garak, ai-red-teaming, security, run4]
 date: 2026-06-24
 status: ✅ Abgeschlossen
-title: Garak Run 4 — AutoDANCached — Master-Prompt v4.5
+title: Garak Run 4 — AutoDANCached — 2026-06-24
 ---
 
 # Garak Run 4 — AutoDANCached — 2026-06-24

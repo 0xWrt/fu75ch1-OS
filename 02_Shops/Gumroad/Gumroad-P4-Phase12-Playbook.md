@@ -19,7 +19,7 @@ Phase 12 was the hardening phase of the fu75ch1 AI operating system — where ev
 
 This playbook is not a guide on what to do. It is a documented record of what was actually done — including what broke, why it broke, and what the prevention rule is for next time.
 
-If you are building a production AI system and want to learn from 101 documented mistakes instead of making them yourself, this is that document.
+If you are building a production AI system and want to learn from 100+ documented mistakes instead of making them yourself, this is that document.
 
 ---
 
@@ -63,11 +63,12 @@ If you are building a production AI system and want to learn from 101 documented
 
 Pairs well with the **OpSec Checklist** (€7) — the exact audit script referenced throughout this playbook.
 
-- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **Full system — The Blueprint:** all 15 phases + all 9 standalone products included (€84 of parts for €29 Early Bird) → fu75ch1.gumroad.com/l/blueprint
 - **More standalone products:** fu75ch1.gumroad.com
-- **Weekly build notes:** [SUBSTACK LINK]
 - **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
 
 **→ Buy now on Gumroad**
+
+*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0

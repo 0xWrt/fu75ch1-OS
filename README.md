@@ -1,3 +1,6 @@
+---
+title: fu75ch1
+---
 # fu75ch1
 
 > Privacy by Architecture. Not by Settings.
@@ -17,10 +20,11 @@ This one is different in a way that doesn't require any of that: it's **one
 person, two weeks, and a public log of exactly what went wrong.** Not a
 polished pitch — a working system with the failure modes left in.
 
-- **101 numbered errors**, each with root cause, fix, and prevention rule —
-  not deleted, not squashed into a clean commit history
+- **103 numbered errors**, each with root cause, fix, and prevention rule —
+  not deleted, not squashed into a clean commit history. Including #103:
+  the error of forgetting to log error #96. Yes, that's in there too.
 - **A red-team number that doesn't flatter the system.** A 3-probe pilot run
-  showed 0% jailbreak resistance. That number is technically true and
+  showed a 0% attack success rate. That number is technically true and
   completely useless. The real test — 512 real-world jailbreak attempts —
   came back at 38.43%. Both are published. Only one of them is honest.
 - **Scripts that run**, not architecture diagrams. Every claim in this repo
@@ -36,18 +40,22 @@ solo build with nothing hidden actually looks like, keep reading.
 
 | Metric | Result |
 |---|---|
-| Jailbreak resistance (Garak 0.15.1, 512 real-world attempts) | **38.43% / 9.8% ASR** (see note) |
+| Jailbreak ASR — lower is better (Garak 0.15.1, 512 real-world attempts) | **38.43%** (see note) |
 | OpSec Score | **31/34 (91%)** 🟢 |
 | Phases completed | **15 / 15** ✅ |
 | Supporting-workload cloud dependency | **< 20%** (RAG, automation, observability) |
-| Errors documented with root cause + fix | **101** (numbered to #101) |
+| Errors documented with root cause + fix | **103** — [full chronicle](01_Architecture/Error_Chronicle.md) |
 | Time to build | **~2 weeks, one person** |
 
+<!-- TODO before Show HN: add dashboard screenshot (fu75ch1_dashboard.py, localhost:8501) here -->
+
 > **Why 38.43%?** Run 4 (AutoDANCached, 3 attempts) showed 0% ASR — not representative.
-> Run 5 (DanInTheWild, 512 real community jailbreaks) showed 41.8%. Run 6 (same probe,
-> updated system prompt v4.6) improved to **38.43%** — a -3.37 pp reduction.
-> Run 7 showed 48.52% but is attributed to statistical noise and false positives,
-> not system regression. All runs documented honestly. Full data:
+> Run 5 (DanInTheWild, 512 real community jailbreaks) showed 41.8%; a separate probe in
+> the same run (HijackHateHumans) came in at 9.8% ASR. Run 6 (DanInTheWild, updated
+> system prompt v4.6) improved to **38.43%** — a -3.37 pp reduction.
+> Run 7 showed 48.52% but is attributed to statistical noise and false positives
+> (the MitigationBypass detector flags harmless refusals), not system regression.
+> All runs documented honestly. Full data:
 > [Verified_Results.md](00_PROOF/Verified_Results.md).
 >
 > **Note on cloud dependency:** supporting infrastructure (RAG, workflow
@@ -115,21 +123,24 @@ Full write-up of every phase: [01_Architecture/Phases](01_Architecture/Phases)
 /
 ├── README.md                    ← this file
 ├── LICENSE                      ← CC BY-NC 4.0
-├── MANIFESTO.md                 ← philosophy & architecture vision (honest build status)
+├── MANIFESTO.md                 ← philosophy & architecture vision (EN, honest build status)
+├── MANIFESTO_DE.md              ← German original
 ├── 00_PROOF/                    ← verified metrics, Garak run details
 ├── 01_Architecture/             ← sanitized system prompt, phase write-ups,
-│                                   error chronicle (101 entries), handbook
+│                                   error chronicle (103 entries), handbook
 └── 02_CONTENT_OPERATING_SYSTEM/ ← LinkedIn, newsletter, product templates
 ```
 
-Full system (all scripts, configs, prompts, docs):
-→ **The Blueprint on Lemon Squeezy** — link coming with launch
+Full system (all scripts, configs, prompts, docs, full error chronicle):
+→ **The Blueprint** — all 9 individual products (€84 combined) plus the complete
+vault for **€29 Early Bird** (first 50 buyers, then €49) — going live this week at
+[fu75ch1.gumroad.com](https://fu75ch1.gumroad.com)
 
-Individual components:
-→ **Gumroad Store** — link coming with launch
+Individual components (€7–€14 each):
+→ **Gumroad Store** — [fu75ch1.gumroad.com](https://fu75ch1.gumroad.com)
 
-Weekly newsletter:
-→ **Substack** — link coming with launch
+Weekly build notes:
+→ **Substack** — launching in week 2; until then, watch/star this repo for updates
 
 ---
 

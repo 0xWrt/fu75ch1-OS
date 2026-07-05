@@ -61,11 +61,12 @@ OpSec Score: 31/34 (91%)
 
 Pairs well with the **Windows Hardening Guide** (€9) and **DNS/VPN Guide** (€7) — fix what the audit finds.
 
-- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **Full system — The Blueprint:** all 15 phases + all 9 standalone products included (€84 of parts for €29 Early Bird) → fu75ch1.gumroad.com/l/blueprint
 - **More standalone products:** fu75ch1.gumroad.com
-- **Weekly build notes:** [SUBSTACK LINK]
 - **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
 
 **→ Buy now on Gumroad**
+
+*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0

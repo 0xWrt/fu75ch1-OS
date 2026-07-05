@@ -1,259 +1,190 @@
-# fu75sch1: The Executable AI Architecture & Privacy Manifesto
-## "Privacy for the Masses" — fu75sch1 für alle.
+---
+title: "fu75ch1: The Executable AI Architecture & Privacy Manifesto"
+---
+# fu75ch1: The Executable AI Architecture & Privacy Manifesto
+## "Privacy for the Masses" — fu75ch1 für alle.
+
+> English rewrite 2026-07-04 (Show-HN-ready). German original: [MANIFESTO_DE.md](MANIFESTO_DE.md)
+> Honesty labels used throughout: ✅ built · 🟡 partial · 🔵 planned
 
 ---
 
-### 1. DER KATALYSATOR: DAS ERWACHEN (THE TELEMETRY REALIZATION)
+### 1. THE CATALYST: THE TELEMETRY REALIZATION
 
-Dieses Manifest entspringt keiner akademischen Theorie und keinem überfinanzierten Silicon-Valley-Labor. Es entstand aus einer fundamentalen Frustration über den modernen Status quo der Informationstechnologie: dem unkontrollierten, permanenten Abfluss von Telemetrie- und Metadaten.
+This manifesto didn't come out of an academic lab or a funded startup. It came out of a simple frustration: the permanent, uncontrolled outflow of telemetry and metadata from a normal computer.
 
-Jedes Mal, wenn ein Nutzer ein ungesichertes Cloud-KI-System abfragt, passiert im Hintergrund ein unsichtbarer, digitaler Kolonialismus. Es sind nicht nur die offensichtlichen Prompts, die übertragen werden. Es sind IP-Adressen, Systemkonfigurationen, Latenzzeiten, Kontext-Footprints und Verhaltensmuster. Big Tech saugt diese Metadaten ab, nutzt sie als kostenlosen Treibstoff zur Optimierung ihrer Multi-Milliarden-Dollar-Modelle, sperrt die gewonnene Intelligenz hinter eine Paywall und verkauft sie uns bitweise als Abonnement zurück.
+Every query against an unguarded cloud AI system transmits more than the prompt. IP addresses, system configuration, latency fingerprints, context footprints, behavioral patterns. That metadata trains multi-billion-dollar models, the resulting intelligence goes behind a paywall, and it gets sold back to you by the token.
 
-Die Geburtsstunde von `fu75sch1` war das radikale Umdenken an einem ganz normalen Laptop. Es ist der lebende Beweis dafür, dass man keine monumentale Server-Infrastruktur benötigt, um ein enterprise-taugliches Abwehrschild gegen Datenflug zu errichten. Dieses Manifest ist ein Aufruf zur digitalen Selbstverteidigung: Hört auf zu warten, ändert euer Mindset bezüglich eurer Datenströme und fangt an, eure eigene souveräne Architektur direkt auf eurer lokalen Festplatte aufzubauen.
+fu75ch1 started as a counter-experiment on one ordinary laptop: how much of that outflow can a single person actually stop, without a server rack, in two weeks? The answer is documented in this repository — including everything that went wrong along the way (103 numbered errors and counting).
 
----
-
-### 2. DAS FUTSCHI-PRINZIP: DIE 80/20 DUAL-CORE-MATRIX
-
-Der Codename `fu75sch1` leitet sich von der Berliner Eckkneipen-Kultur ab – namentlich dem Kultgetränk „Futschi" (Wilthener Goldkrone und Cola). Die Architektur ehrt das kompromisslose Mischungsverhältnis des „Heavy Pour": 80% harter Kern, 20% Auffüller. Im technologischen Kontext übersetzt sich diese radikale Matrix in das **80/20 Dual-Core-Operating-Principle**:
-
-#### 1. The Heavy Pour (80% Lokale Härte & Isolation)
-Achtzig Prozent der unterstützenden Workloads — Wissensspeicher, semantische Suche, Workflow-Automation, Observability — laufen lokal und sandboxed innerhalb des unbrechbaren lokalen Markdown-Vaults. Es fließen keinerlei Daten ab, und es entstehen keinerlei Token-Kosten für diesen Anteil.
-
-#### 2. The Filler (20% Zero-Trust Cloud-Konnektivität)
-Die verbleibenden Workloads, die extreme logische Abstraktion erfordern — heute primär die eigentliche KI-Inferenz selbst — werden an externe Premium-Cloud-APIs übergeben. Diese Verbindung operiert unter strikten Zero-Trust-Bedingungen: Daten werden vor dem Verlassen des lokalen Perimeters nach Möglichkeit bereinigt und anonymisiert, der Transportweg ist verschlüsselt. Die Cloud ist kein Integrationspartner; sie ist ein austauschbarer Erfüllungsgehilfe.
-
-> **Ehrlichkeitshinweis:** Die 80/20-Aufteilung bezieht sich auf die Anzahl der
-> unterstützenden Workloads (RAG, Automation, Observability), nicht auf den
-> Anteil der KI-Inferenz selbst — die läuft heute überwiegend über die
-> Anthropic-Cloud-API. Details: [Before_After_Visual.md](../00_PROOF/Before_After_Visual.md).
+This is a call to change your default posture toward your own data streams — and to build your sovereign architecture on your own local disk instead of waiting for someone to sell it to you.
 
 ---
 
-### 3. DIE FUTSCHI-INFLATION: DIE ÖKONOMIE DER EFFIZIENZ
+### 2. THE [USER] PRINCIPLE: THE 80/20 DUAL-CORE MATRIX
 
-Die Rebellion besitzt eine harte ökonomische Komponente, die sich am Tresen widerspiegelt. Ein Futschi in der Berliner Kneipe kostete früher 1,80 € – ein unkompliziertes Getränk für jedermann. Heute treibt die Inflation den Preis gegen die 4-Euro-Marke.
+The codename `fu75ch1` comes from Berlin corner-bar culture — the "[USER]" (cheap brandy and cola), famous for its uncompromising heavy pour: 80% hard core, 20% filler. The architecture honors that ratio as the **80/20 Dual-Core Operating Principle**:
 
-Exakt dieselbe Dynamik blutet die IT-Budgets von Entwicklern und Unternehmen aus. Was als offene KI-Forschung begann, ist heute ein profitorientiertes Monopol. API-Token-Preise, proprietäre Compliance-Zertifikate und absurde pro-Kopf-Lizenzgebühren (Seat Licenses) machen Datenschutz zu einem Luxusgut, das sich nur noch Großkonzerne leisten können.
+**1. The Heavy Pour (80% — local hardness & isolation)**
+The supporting workloads — knowledge storage, semantic search, workflow automation, observability — run locally and sandboxed inside a plain-Markdown vault. For this share: no data leaves the machine, and no token costs accrue.
 
-`fu75sch1` bricht diese Spirale. Indem die unterstützenden Workloads lokal bei exakt null Token-Kosten abgefangen werden, drückt die Architektur die Betriebskosten der Enterprise-KI radikal nach unten. Wir holen uns den **1,80 € Futschi-Tarif** zurück in die Infrastruktur. Keine monatlich wiederkehrenden Software-as-a-Service-Abos, keine unvorhersehbaren API-Kosten-Spikes für diesen Anteil – mehr finanzielle Souveränität durch lokale Execution.
+**2. The Filler (20% — zero-trust cloud connectivity)**
+Workloads that need heavy reasoning — today, primarily the AI inference itself — go to external cloud APIs under strict zero-trust conditions: data is scrubbed and anonymized locally before it leaves the perimeter, transport is encrypted, and the provider is treated as a replaceable contractor, not an integration partner.
 
----
-
-### 4. DIE REBELLION GEGEN DEN DATEN-KAPITALISMUS
-
-Dieses Projekt ist eine kalkulierte Rebellion gegen den Überwachungskapitalismus der großen Cloud-Monopole. Es basiert auf drei ideologischen Säulen:
-
-*   **Vom Konsumenten zum Souverän:** Wir verweigern die Rolle des reinen Daten-Zulieferers. Die Produktionsmittel der künstlichen Intelligenz (die Gewichte der Open-Source-Modelle und die semantischen Datenstrukturen) gehören zurück auf die eigene Maschine.
-*   **Der totale Entzug der Metadaten-Pipeline:** Wir verknappen das Gut, aus dem die Tech-Giganten ihre Macht schöpfen. Durch das lokale Abfangen der unterstützenden Workloads hungern wir die Cloud-Trainingspipelines aus, wo immer das technisch möglich ist.
-*   **Demokratisierung von High-End-Sicherheit:** Anstatt compliance-relevantes Wissen hinter astronomisch teuren Enterprise-Lizenzen zu verstecken, macht der 29 € Einstiegs-Blueprint tiefes CISO-Wissen für jedermann zugänglich. „Privacy for the Masses" ist kein Slogan, sondern gelebter digitaler Klassenkampf.
+> **Honesty note:** the 80/20 split refers to the *number of supporting workloads* (RAG, automation, observability), not to the share of AI inference — inference currently runs primarily through the Anthropic cloud API. Details: [Before_After_Visual.md](../00_PROOF/Before_After_Visual.md).
 
 ---
 
-### 5. DAS „STRATEGY-AS-A-PRODUCT" ARCHITEKTUR-MODELL
+### 3. THE [USER] INFLATION: THE ECONOMICS OF EFFICIENCY
 
-`fu75sch1` ist bewusst keine starre, wartungsintensive SaaS-Software. Es ist ein **Executable Architectural Blueprint** und ein **kulturelles Manifest**. Es liefert das strukturelle Fundament, die Logik-Muster und Architektur-Entscheidungs-Protokolle (ADRs), die Unternehmen und Entwickler direkt adaptieren und in ihre eigene, firmeninterne Infrastruktur einbetten können. Das Obsidian-Vault fungiert hierbei als das menschenlesbare, textbasierte User Interface.
+There's a hard economic argument here, and it maps neatly onto the bar tab. A [USER] used to cost €1.80. Inflation has pushed it toward €4 — same drink, same glass.
 
-Die Architektur gliedert sich konzeptionell in fünf Verteidigungs-Layer. Drei
-davon sind heute gebaut und im Einsatz, zwei sind als nächste Ausbaustufe
-geplant — diese Unterscheidung wird hier bewusst offengelegt, statt sie zu
-verwischen.
+The same dynamic is bleeding developer and IT budgets: what started as open AI research is now metered access. API token prices, proprietary compliance certificates, per-seat licenses — privacy is being repriced as a luxury good.
+
+fu75ch1 pushes back on the share it can actually control: by handling the supporting workloads locally at exactly zero token cost, the architecture cuts recurring costs for that entire layer. No SaaS subscriptions for knowledge storage, search, or automation. Call it reclaiming the €1.80 tariff — for the parts of the stack where that's honestly achievable today.
+
+---
+
+### 4. AGAINST DATA CAPITALISM: THREE COMMITMENTS
+
+This project is a deliberate act of digital self-defense, built on three commitments:
+
+- **From consumer to operator:** refuse the role of free data supplier. The means of production — open-source model weights, semantic data structures, the vault itself — belong on your own machine, under your own control.
+- **Shrink the metadata pipeline where technically possible:** every workload intercepted locally is telemetry that never existed. Not a total blockade (see the honesty note above — inference is still cloud today), but a measurable reduction, verified by scripts you can run yourself.
+- **Democratize high-end security knowledge:** instead of locking compliance-grade architecture behind enterprise license fees, the €29 early-bird Blueprint makes deep CISO-level patterns accessible to anyone. "Privacy for the Masses" is the product spec, not a slogan.
+
+---
+
+### 5. THE "STRATEGY-AS-A-PRODUCT" ARCHITECTURE MODEL
+
+fu75ch1 is deliberately not a SaaS product. It is an **executable architectural blueprint**: structural foundations, logic patterns, and architecture decision records that developers and teams can adapt and embed into their own infrastructure. The Obsidian vault is the human-readable, text-based user interface.
+
+The architecture is organized as five defensive layers. Three exist today, two are planned — this distinction is disclosed instead of blurred:
 
 ```
 [ INPUT PROMPT ]
-         |
-         v
-    +--------+
-    | LAYER 1: IDENTITY & CONTEXT SEPARATION       ✅ GEBAUT |
-    +--------+
-         |
-         v
-    +--------+
-    | LAYER 2: LOCAL GOVERNANCE & POLICY           ✅ GEBAUT |
-    +--------+
-         |
-         v
-    +--------+
-    | LAYER 3: ENGINE-AGNOSTIC DECISION & ROUTER   🟡 TEILWEISE |
-    +--------+
-         |
-    +----+----+
-    |         |
-    v         v
-LOKAL      CLOUD (heute primaer)
-    |         |
-    v         v
-    +--------+
-    | LAYER 4: SECURITY CONTROLS & KILL-SWITCHES   🔵 GEPLANT |
-    +--------+
-         |
-         v
-    +--------+
-    | LAYER 5: GITOPS AUDIT SYSTEM (Team-Vision)   🔵 GEPLANT |
-    +--------+
+      |
+      v
++------------------------------------------------------+
+| LAYER 1: IDENTITY & CONTEXT SEPARATION      ✅ BUILT  |
++------------------------------------------------------+
+      |
+      v
++------------------------------------------------------+
+| LAYER 2: LOCAL GOVERNANCE & POLICY          ✅ BUILT  |
++------------------------------------------------------+
+      |
+      v
++------------------------------------------------------+
+| LAYER 3: ENGINE-AGNOSTIC DECISION & ROUTER  🟡 PARTIAL|
++------------------------------------------------------+
+      |
+   +--+--------+
+   |           |
+   v           v
+ LOCAL      CLOUD (primary today)
+   |           |
+   v           v
++------------------------------------------------------+
+| LAYER 4: SECURITY CONTROLS & KILL-SWITCHES  🔵 PLANNED|
++------------------------------------------------------+
+      |
+      v
++------------------------------------------------------+
+| LAYER 5: GITOPS AUDIT SYSTEM (team vision)  🔵 PLANNED|
++------------------------------------------------------+
 ```
 
-#### Die 5 Layer der Verteidigung
+**The five layers:**
 
-1.  **Identity & Context Separation Layer** ✅ Gebaut & automatisch verdrahtet
-    (`Invoke-PIIScrubber.ps1`, Phase 4B): Regex-basiertes Scrubbing von API-Keys,
-    IPs, MAC-Adressen, Pfaden, Hostnamen und Usernamen. Seit 2026-07-01 automatisch
-    in `Invoke-AnthropicCached.ps1` v2.1 eingehängt: sessionState + userMessage
-    werden vor jedem API-Call gescrubt (Fehler #96 behoben).
-2.  **Local Governance & Policy Layer** ✅ Gebaut: Governance-Modell L0–L4
-    (Stufe L2 "Freigabe" als Standard) steuert, welche Aktionen ohne explizite
-    Bestätigung laufen dürfen — dokumentiert im Master-Prompt.
-3.  **Engine-Agnostic Decision & Pareto-Router** 🟡 Teilweise gebaut:
-    Unterstützende Workloads (RAG, Automation, Observability) laufen lokal,
-    die primäre KI-Inferenz läuft heute überwiegend über die Anthropic-API.
-    Ollama ist als lokale Option installiert; automatisches Routing zwischen
-    Cloud und lokal je nach Komplexität existiert noch nicht.
-4.  **Local Security Controls & Telemetry Kill-Switches** 🔵 Geplant: Ein
-    automatischer Kill-Switch bei Cloud-Ausfall sowie Shadow-AI-Discovery
-    sind als nächste Ausbaustufe vorgesehen, aktuell nicht implementiert.
-5.  **Zero-Conflict GitOps Audit System** 🔵 Geplant (Vision für
-    Team-/Enterprise-Einsatz): Ein PR-basierter Freigabe-Workflow für
-    Non-Tech-Mitarbeiter ist konzipiert, aber nicht gebaut — relevant erst,
-    sobald fu75sch1 im Team statt solo betrieben wird.
+1. **Identity & Context Separation** ✅ Built and auto-wired (`Invoke-PIIScrubber.ps1`): regex-based scrubbing of API keys, IPs, MAC addresses, paths, hostnames and usernames. Since 2026-07-01, session state and user messages are scrubbed automatically before every API call (errors #96 and #101 in the chronicle document exactly how this went wrong first).
+2. **Local Governance & Policy** ✅ Built: autonomy model L0–L4 (L2 "prepare, then wait for approval" as default) controls which actions may run without explicit confirmation — documented in the master prompt.
+3. **Engine-Agnostic Decision & Pareto Router** 🟡 Partial: supporting workloads run locally; primary AI inference runs through the Anthropic API today. Ollama is installed as the local option; automatic complexity-based routing between cloud and local does not exist yet.
+4. **Local Security Controls & Telemetry Kill-Switches** 🔵 Planned: an automatic kill-switch on cloud failure and shadow-AI discovery are the next expansion stage — not implemented today.
+5. **Zero-Conflict GitOps Audit System** 🔵 Planned (team/enterprise vision): a PR-based approval workflow for non-technical staff is designed but not built — relevant only once fu75ch1 runs in a team instead of solo.
 
 ---
 
-### 5.1 GDPR/EU AI ACT COMPLIANCE: THE HONEST VERSION
+### 5.1 GDPR / EU AI ACT COMPLIANCE: THE HONEST VERSION
 
-**Was fu75sch1 dir GIBT:**
+**What fu75ch1 GIVES you:** local architecture removes a large share of typical GDPR friction — no cloud data-processing agreements for the local layer, no data-residency questions, no cloud-provider audits, no cross-border transfer delays for what never leaves the disk.
 
-Die lokale Architektur entfernt ~70% der typischen GDPR-Probleme:
-- ✅ Keine Cloud Data Processing Agreements nötig
-- ✅ Keine "Data Residency"-Fragen
-- ✅ Keine "Cloud Provider Audits" notwendig
-- ✅ Keine Daten-Transfer-Verzögerungen über Grenzen
+**What fu75ch1 does NOT give you (your responsibility):**
 
-**Was fu75sch1 dir NICHT gibt (deine Verantwortung):**
-
-Die verbleibenden 30% Compliance sind deine Aufgabe:
-
-| Forderung | Beschreibung | fu75sch1 Support |
+| Requirement | Description | fu75ch1 support |
 |---|---|---|
-| **Access Logging** | Wer hat wann auf Daten zugegriffen? | Framework + Templates |
-| **Data Retention** | Wie lange Daten speichern? (DSGVO: max 2–3 Jahre) | Policy Templates |
-| **Encryption at Rest** | Sind Daten auf Disk verschlüsselt? | Empfehlung: BitLocker / VeraCrypt |
-| **Audit Trail Integrity** | Können Logs manipuliert werden? | Git-basierte Immutability |
-| **Subject Access Requests** | "Zeig mir meine Daten" — exportierbar? | Export-Script-Vorlage |
-| **Data Processing Agreements** | Wenn du externe Models nutzt (OpenAI, etc.) | Vorlage: "Model Provider DPA" |
+| Access logging | Who accessed which data, when? | Framework + templates |
+| Data retention | How long may data be stored? | Policy templates |
+| Encryption at rest | Is data on disk encrypted? | Recommendation: BitLocker / VeraCrypt |
+| Audit-trail integrity | Can logs be tampered with? | Git-based immutability |
+| Subject access requests | "Show me my data" — exportable? | Export script template |
+| Data processing agreements | If you use external model providers | "Model Provider DPA" template |
 
-**Die kritische Erkenntnis:**
-Lokale Verarbeitung = "Compliance-Ready", nicht "Compliance-Achieved". Du brauchst immer noch rechtliche Dokumentation und interne Governance. fu75sch1 ist der technische Schutzwall, nicht der Rechtsanwalt.
-
----
-
-### 6. GAMIFIED SOVEREIGNTY: CHECKPOINT QUIZZES & EDUTAINMENT
-
-Um die trockene Materie der Cyber-Security und IT-Compliance tief im Bewusstsein der Anwender zu verankern, bricht `fu75sch1` das klassische, sterile Handbuch-Format auf. Jede Phase der Architektur-Integration wird durch interaktive Checkpoint-Quizzes innerhalb des Vaults gesichert.
-
-Das Prinzip kombiniert unnachgiebige Härte bei Fehlern mit informativen Belohnungen bei korrekten Antworten:
-
-#### Beispiel-Struktur eines Phase-Quizzes:
-
-**Frage:** Ein automatisiertes Analyse-Skript soll Metadaten einer firmeninternen Finanzanalyse zur schnellen Vorverarbeitung an eine externe Cloud-API senden. Wie reagiert das `fu75sch1`-Sicherheits-Protokoll?
-
-*   **A)** Das Skript leitet die Rohdaten direkt weiter, da es sich um eine automatisierte System-Pipeline handelt.
-*   **B)** Das System blockiert die Übertragung im lokalen Layer 4, erzwingt eine lokale Klassifizierung und verlangt bei Cloud-Bedarf eine Anonymisierung der Metadaten.
-*   **C)** Das System wartet auf ein manuelles Klick-Zertifikat im Cloud-Dashboard.
+**The critical insight:** local processing means *compliance-ready*, not *compliance-achieved*. You still need legal documentation and internal governance. fu75ch1 is the technical wall, not the lawyer.
 
 ---
 
-#### Auswertung & Feedback-Logik:
+### 6. GAMIFIED SOVEREIGNTY: CHECKPOINT QUIZZES
 
-*   **Bei Auswahl von Antwort A (FALSCH):**
-    > 🔴 **KRITISCHER FEHLER:** Du hast gerade die goldene Regel gebrochen und die Telemetrie-Krake gefüttert. Wenn du automatisierte Skripte ungeprüft Rohdaten nach außen senden lässt, hebelst du den lokalen Schutzwall komplett aus. Genau dafür ist Layer 4 gedacht — sobald er gebaut ist (Stand heute: geplant, siehe Kapitel 5), erkennt er solche Aufrufe als *Shadow AI Activity* und kappt die Verbindung per Kill-Switch. Zurück an den Tresen, lies Kapitel 4 noch einmal.
-*   **Bei Auswahl von Antwort C (FALSCH):**
-    > 🟡 **FALSCH:** Wir lehnen „Click-Ops" und die Abhängigkeit von externen Cloud-Dashboards fundamental ab. Wer manuelle Zertifikate in Web-UIs klickt, hat die Kontrolle über seine Governance verloren.
-*   **Bei Auswahl von Antwort B (RICHTIG):**
-    > 🟢 **KORREKT:** Exakt das ist das Ziel-Verhalten. Der Identity-Layer (gebaut, Kapitel 5) maskiert sensible Daten lokal, bevor irgendetwas die Maschine verlässt — nur der anonymisierte Rest darf passieren.
-    > 
-    > 🌟 **FUTSCHI FUN FACT:** Wusstest du, dass der originale Futschi in den Berliner Arbeiterkneipen der Nachkriegszeit entstand, weil billiger Weinbrand (Goldkrone) geschmacklich durch die Süße der West-Cola kaschiert werden musste? Genauso maskiert unser Scrubbing-Layer die sensiblen Unternehmensdaten durch Anonymisierung, bevor die ungenießbare Cloud-API sie zu Gesicht bekommt.
+Dry security material doesn't stick. Every phase of the architecture ships with checkpoint quizzes inside the vault — hard on wrong answers, generous with context on right ones.
 
----
+**Sample question:** An automated analysis script wants to send metadata from an internal financial analysis to an external cloud API for preprocessing. How does the fu75ch1 protocol respond?
 
-### 7. DAS LEBENDE HANDBUCH: DIE BAR-KARTE DES SYSTEMS
+- **A)** The script forwards the raw data — it's an automated pipeline. → 🔴 **WRONG.** You just fed the telemetry pipeline. This is exactly what Layer 4 is designed to catch as shadow-AI activity — once built (today: planned, see chapter 5). Back to the bar, re-read chapter 4.
+- **B)** The transfer is blocked locally, classification is enforced, and cloud transfer requires anonymized metadata. → 🟢 **CORRECT.** The identity layer (built, chapter 5) masks sensitive data locally before anything leaves the machine.
+- **C)** The system waits for a manual click-certificate in a cloud dashboard. → 🟡 **WRONG.** Click-ops in external dashboards means you've already lost control of your governance.
 
-Ein Architektur-Blueprint entfaltet seine Wirkung erst, wenn er operativ anwendbar ist. Das `fu75sch1`-Vault verfügt über ein integriertes Nachschlagewerk: **Das Lebende Handbuch (The System Bar-Menu)**.
-
-Das Handbuch wird heute manuell kuratiert und versioniert (aktuell v1.5); eine
-automatische Generierung aus den Vault-Dokumenten ist als mittelfristiges Ziel
-vorgesehen, aber noch nicht gebaut. Es dient als Single Source of Truth, um
-die Sicherheits-Infrastruktur transparent zu machen.
-
-#### Auszug aus dem Register des Lebenden Handbuchs (reale Befehle):
-
-| Befehl / Werkzeug-ID | Beschreibung | Risiko-Klassifizierung | Operatives Anwendungsbeispiel |
-| :--- | :--- | :--- | :--- |
-| `fu75` | Startet alle Kerndienste (AgenticLoop, Telemetry, Docker-Container) | 🟢 Niedrig (Standard-Start) | `fu75` von überall im Terminal |
-| `Get-fu75ch1-PerfCheck.ps1` | Hardware-/Dienst-Healthcheck (RAM, CPU, Container, Tasks) | 🟢 Niedrig (read-only) | Vor und nach groesseren Aenderungen |
-| `Invoke-OpSecAudit.ps1` | 34 automatisierte Sicherheits-Checks v2.0 (VPN, Telemetrie, AppSec, Anti-Tracking, System Hardening, AI Stack) | 🟢 Niedrig (read-only Audit) | Regelmaessig, vor jedem Release |
-| `Invoke-PublicExport-v2.ps1 -DryRun` | Simuliert den sanitierten Export ins Public-Repo, ohne zu schreiben | 🟢 Niedrig (Simulation) | Vor jedem echten Export zur Kontrolle |
-| `Invoke-PIIScrubber.ps1` | Maskiert API-Keys, IPs, Pfade, Hostnamen vor Versand/Logging | 🟢 Niedrig (automatisch in AnthropicCached v2.1) | Laeuft automatisch vor jedem API-Call |
+🌟 **[USER] fun fact:** the original [USER] was invented in post-war Berlin workers' bars because cheap brandy needed the sweetness of cola to mask it. Our scrubbing layer works the same way — sensitive data is masked locally before the cloud API ever tastes it.
 
 ---
 
-### 8. ANONYMITY AS A BRAND: DIE DIGITALE MASKE
+### 7. THE LIVING HANDBOOK: THE SYSTEM'S BAR MENU
 
-Dieses Projekt verzichtet bewusst auf ein menschliches Gesicht oder die typische Selbstdarstellung moderner Tech-Gründer. Der Urheber agiert vollständig unter der digitalen Maske des Pseudonyms – als **`fu75sch1-operator`**.
+A blueprint only matters if it's operational. The vault ships with an integrated reference — **the Living Handbook** (currently v1.5, manually curated; auto-generation from vault documents is a mid-term goal, not built yet). Excerpt with real commands:
 
-In einer von totaler Transparenz und Tracking besessenen Welt ist die bewusste Anonymität des Entwicklers kein Versteckspiel, sondern die **konsequenteste Umsetzung des Manifests selbst**. Wer ein System gegen die lückenlose Überwachung baut, schützt seine eigene Identität vor den Suchmaschinen und Gesichtserkennungs-Algorithmen des Daten-Kapitalismus.
-
-Es gibt keine ablenkende Personal Brand, keine Hochglanz-Videos, keine Selbstdarstellung. Die gesamte Energie des Projekts fließt zu 100% in die Härte des Codes, die Präzision der Dokumente und die Tiefe der Philosophie. Der Laptop-Bildschirm, die Terminal-Logs und die kompromisslose Tonalität der Texte sind das einzige Gesicht der Bewegung. `fu75sch1` gehört niemandem exklusiv – es ist ein kollaboratives Schild. **fu75sch1 für alle.**
-
----
-
-### 9. DIE 3-TIER WERTSCHÖPFUNGSKETTE: DIE ROADMAP
-
-Die Verbreitung des Manifests und der Architektur folgt einer klaren, ökonomisch nachhaltigen B2B-Wertschöpfungsleiter, die Unabhängigkeit garantiert und die Einstiegsbarrieren für die Masse pulverisiert:
-
-#### Tier 1: Der Solo-Developer Executable Blueprint — 29 €
-Das vollständige, sofort einsatzbereite Obsidian-Vault als `.zip`-Datei über Lemon Squeezy gehostet. Geladen mit sämtlichen Architektur-Blueprints, sofort kopierbaren Terminal-Befehlen, den automatischen Handbuch-Strukturen und den Phase-Quizzes. Der No-Brainer-Einstieg für jeden Entwickler und AI-Architect, um die Souveränität auf dem eigenen Laptop zu starten.
-
-**Was du bekommst:**
-- Kompletter fu75sch1 Vault (alle 15 Phasen)
-- Master-Prompt v4.7 + Security Addendum
-- OpSec Audit Script (34 Checks, v2.0)
-- Anti-Tracking Hardening Scripts
-- Alle Phase-Dokumentation + Quizzes
-- Living Handbook (manuell kuratiert, Automatisierung geplant)
-
-**Was NICHT inkludiert:**
-- Persönlicher Support
-- Custom Implementation
-- Paid Updates
-
-#### Tier 2: Die Enterprise Implementation Package — 1.499 €
-Nicht "Licensing", sondern **Guided Implementation für Teams**. 4-Wochen-Engagement mit async Architect-Support. Ideal für KMUs und Platform-Teams, die den Blueprint live in ihre Infrastruktur einbetten möchten.
-
-**Was du bekommst:**
-- Custom Vault-Setup (für deine Infrastruktur)
-- Streamlit-Dashboard mit ROI-Metriken (geplantes Deliverable dieser Tier-Stufe)
-- 10 Hours async Architect Support (via Slack/Email)
-- Automated CI/CD Deployment Scripts
-- Monthly Security Patch Digest (3 Monate)
-
-**Timeline:** 4 Wochen, selbstgesteuert, async
-
-#### Tier 3: Der Bespoke Architecture Workshop — Ab 9.500 €
-High-End Consulting direkt mit dem anonymen Operator (via text-only channels). Tiefe, maßgeschneiderte Integration der Defensiv-Layer in komplexe Enterprise-Infrastruktur (Kubernetes, Air-Gapped Networks, Multi-Cloud).
-
-**Was du bekommst:**
-- Full Architecture Design
-- Custom Threat Modeling
-- Implementation Playbook (dein Stack)
-- 12 Weeks async Architect Partnership
-- Bespoke Security Policies
+| Command / tool | Description | Risk class | Typical use |
+|---|---|---|---|
+| `fu75` | Starts all core services (AgenticLoop, telemetry, containers) | 🟢 Low | From anywhere in the terminal |
+| `Get-fu75ch1-PerfCheck.ps1` | Hardware/service health check (RAM, CPU, containers, tasks) | 🟢 Low (read-only) | Before and after major changes |
+| `Invoke-OpSecAudit.ps1` | 34 automated security checks v2.0 (VPN, telemetry, AppSec, hardening, AI stack) | 🟢 Low (read-only) | Regularly, before every release |
+| `Invoke-PublicExport-v2.ps1 -DryRun` | Simulates the sanitized public-repo export without writing | 🟢 Low (simulation) | Before every real export |
+| `Invoke-PIIScrubber.ps1` | Masks API keys, IPs, paths, hostnames before transmission/logging | 🟢 Low (automatic) | Runs before every API call |
 
 ---
 
-# SCHLUSSWORT
+### 8. ANONYMITY AS A BRAND: THE DIGITAL MASK
 
-Das System steht. Die Werkzeuge sind auf der Festplatte. Die API-Pipelines von Big Tech warten auf Daten – wir werden sie ihnen entziehen.
+This project deliberately has no human face. The author operates entirely under a pseudonym — as the **fu75ch1 operator**.
 
-Sicher dir das Vault. Schütz deine Maschine. Trink deinen Futschi lokal.
+In a world obsessed with total transparency and tracking, the developer's anonymity is not hide-and-seek — it is the most consistent implementation of the manifesto itself. If you build a system against pervasive surveillance, you don't feed your own identity to the face-recognition and search pipelines you're defending against.
 
-**Privacy for the Masses. fu75sch1 für alle.**
+No personal brand, no glossy videos. The terminal logs, the error chronicle, and the uncompromising tone of the documents are the only face of the project. fu75ch1 belongs to no one exclusively — **fu75ch1 für alle.**
+
+---
+
+### 9. THE 3-TIER VALUE LADDER: THE ROADMAP
+
+Distribution follows a simple, economically sustainable ladder. Honest status per tier:
+
+**Tier 1: The Solo-Developer Executable Blueprint — €29 early bird (first 50), then €49** ✅ active
+The complete, ready-to-run Obsidian vault: all 15 phases, master prompt v4.7 + security addendum, the 34-check OpSec audit script, hardening scripts, the full error chronicle (103 entries), phase quizzes and the Living Handbook. Not included: personal support, custom implementation.
+
+**Tier 2: Enterprise Implementation Package — €1,499** 🔵 designed, not actively offered yet
+Guided implementation for teams: custom vault setup, dashboard with ROI metrics, 10 hours async architect support, CI/CD deployment scripts. Will be activated once the project has organic sales and testimonials — an anonymous brand asking four figures without a public track record would be asking for trust it hasn't earned yet.
+
+**Tier 3: Bespoke Architecture Workshop — from €9,500** 🔵 designed, not actively offered yet
+Deep, custom integration of the defensive layers into complex enterprise infrastructure (Kubernetes, air-gapped networks, multi-cloud), via text-only channels. Same activation condition as Tier 2.
+
+---
+
+# CLOSING
+
+The system is running. The tools are on the disk. The scripts are executable, the mistakes are numbered, and nothing in this document claims more than the repository can prove.
+
+Get the vault. Harden your machine. Drink your [USER] locally.
+
+**Privacy for the Masses. fu75ch1 für alle.**
+
+---
+
+© fu75ch1 — CC BY-NC 4.0

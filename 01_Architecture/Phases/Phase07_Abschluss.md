@@ -1,11 +1,5 @@
 ---
-tags:
-  - phase7
-  - hardware-forensik
-  - ghidra
-  - binwalk
-  - firetv
-  - abschluss
+tags: [phase7, hardware-forensik, ghidra, binwalk, firetv, abschluss]
 date: 2026-06-25
 status: ✅ Abgeschlossen (Block C offen)
 title: Phase 7 — Hardware Forensik Abschluss

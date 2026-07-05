@@ -1,11 +1,5 @@
 ---
-tags:
-  - phase13
-  - vault-wachstum
-  - n8n
-  - memos
-  - agentic-loop
-  - abschluss
+tags: [phase13, vault-wachstum, n8n, memos, agentic-loop, abschluss]
 date: 2026-06-24
 status: ✅ Abgeschlossen
 title: Phase 13 — Kontrolliertes Vault-Wachstum Abschluss

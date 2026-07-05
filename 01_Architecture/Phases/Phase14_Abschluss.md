@@ -1,11 +1,5 @@
 ---
-tags:
-  - phase14
-  - rag
-  - anythingllm
-  - mcp
-  - semantic-search
-  - abschluss
+tags: [phase14, rag, anythingllm, mcp, semantic-search, abschluss]
 date: 2026-06-24
 status: ✅ Abgeschlossen
 title: Phase 14 — RAG & Semantische Vault-Suche Abschluss

@@ -1,15 +1,8 @@
 ---
-tags:
-  - audit
-  - security
-  - gitleaks
-  - garak
-  - pre-commit
-  - live-verifikation
-  - phase15
+tags: [audit, security, gitleaks, garak, pre-commit, live-verifikation, phase15]
 date: 2026-06-25
 status: ✅ Verifiziert
-title: Phase 15 — Security Audit Live-Verifikation (Garak + gitleaks)
+title: Phase 15 — Security Audit Live-Verifikation
 ---
 
 # Phase 15 — Security Audit Live-Verifikation

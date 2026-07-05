@@ -1,8 +1,8 @@
 ---
 date: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-04
 tags: [meta, launch, plan, monetisierung, anti-copy, plattform]
-status: ⚠️ v1.1 — 2026-07-02 ueberarbeitet (Positionierung geschärft, Whop ergänzt, Tier 3 zurückgestellt, 72h-Sprint)
+status: ⚠️ v1.2 — 2026-07-04 ueberarbeitet (Blueprint-P10 auf Gumroad vorgezogen, Whop-Bundle-Entscheidung, Show-HN-Titel 80-Zeichen-fix, Fehlerzahl 103)
 title: Launch Plan — fu75ch1 Produkt & Kanal-Strategie
 ---
 
@@ -23,16 +23,16 @@ title: Launch Plan — fu75ch1 Produkt & Kanal-Strategie
  System" als Kategorie-Claim (GitHub-Topic `ai-operating-system` ist
  uebersaettigt mit teambetriebenen Projekten). Hin zu der einzigen
  Differenzierung, die ein 2-Wochen-Solo-Projekt ehrlich beanspruchen kann:
- **101 dokumentierte Fehler, ehrliche 38.43%-ASR-Zahl statt geschoenter 0%,
+ **103 dokumentierte Fehler (exakte Zahl vor jedem Post via metrics.json pruefen), ehrliche 38.43%-ASR-Zahl statt geschoenter 0%,
  lauffaehige Scripts statt Architektur-Diagramme.** README + GitHub bereits
- umgeschrieben (2026-07-02).
+ umgeschrieben (2026-07-02, Zahlen-Update 2026-07-04).
 
 | Std. | Aktion |
 |---|---|
-| 0-6 | README/GitHub-Repo-Politur final pruefen (bereits umgeschrieben) |
-| 6-12 | Gumroad P3, P5-P9 hochladen (Inhalte fertig) |
-| 12-18 | Whop: P1 (Master-Prompt) als eigenstaendiges Listing, €19-24 (Whop-Marktpreis fuer AI-Prompts, nicht Gumroad-Preisanker uebernehmen) |
-| 18-24 | Cover-Bilder speichern, alle Produktseiten final gegenlesen |
+| 0-6 | README/GitHub-Repo-Politur final pruefen (2026-07-04: Zahlen auf 103 aktualisiert, tote Links ersetzt, MANIFESTO EN live) |
+| 6-12 | Gumroad P3, P5-P9 hochladen (Inhalte fertig) + **P10 Blueprint anlegen** (Copy fertig: Gumroad-P10-Blueprint.md, €49 Basis + EARLYBIRD-Code limit 50 auf €29) |
+| 12-18 | Whop: **Bundle P1+P2** ("Master-Prompt + OpSec Audit") als EIN Listing, €19 — NICHT P1 solo (Preisarbitrage: identische Datei fuer €9 auf Gumroad waere fuer eine Ehrlichkeits-Marke toxisch; das Bundle differenziert das Angebot echt) |
+| 18-24 | Cover-Bilder speichern, alle Produktseiten final gegenlesen, Dashboard-Screenshot ins README (TODO-Marker gesetzt) |
 | Tag 2 frueh | Show HN posten (Mo/Di 9-11 Uhr UTC) |
 | Tag 2 | Reddit: r/privacy, r/selfhosted -- Link in Bio, kein Spam-Post |
 | Tag 3 | Nachfassen: Kommentare beantworten, Traffic beobachten. Keine neuen Produkte mehr -- Energie auf Distribution |
@@ -64,7 +64,7 @@ Early-Bird-Mechanismus:
 
 | # | Produkt | Preis | Kanal | Phase |
 |---|---|---|---|---|
-| 1 | **The Blueprint** (Vault + 15 Phasen + Scripts) | €29→€49→€79 | Lemon Squeezy | 2 |
+| 1 | **The Blueprint** (Vault + 15 Phasen + Scripts) — Shop-Nr: **P10** | €29→€49→€79 | **Gumroad zuerst** (P10, im 72h-Sprint), Lemon Squeezy zieht Woche 2 nach | 2 |
 | 2 | Master-Prompt v4.7 | €9 | Gumroad | 2 |
 | 3 | OpSec Checklist (34-Punkt, automatisiert) | €7 | Gumroad | 2 |
 | 4 | Advanced Configs (Ollama, n8n, WireGuard) | €12 | Gumroad | 2 |
@@ -95,22 +95,24 @@ Early-Bird-Mechanismus:
 - **Aufwand:** 1× Setup pro Produkt (~30min), danach passiv
 - **Profil:** Anonyme Bio, fu75ch1-Logo, Links zu GitHub + Substack
 
-#### Lemon Squeezy (Flagship)
+#### Lemon Squeezy (Flagship-Checkout, Woche 2)
 - **Was:** The Blueprint — vollständiger Vault + 15 Phasen
+- **Wichtig (2026-07-04):** Blueprint launcht ZUERST auf Gumroad (P10, im 72h-Sprint),
+  damit das Flaggschiff waehrend des Show-HN-Traffic-Fensters kaufbar ist.
+  Lemon Squeezy zieht in Woche 2 als besserer Checkout nach (EU-VAT automatisch).
 - **Warum:** Bessere Checkout-UX als Gumroad, EU-VAT-Handling automatisch
 - **Aufwand:** 1× Setup, danach passiv
 - **Early-Bird:** €29 erste 50 Käufer, Counter im Substack sichtbar
-- **Status:** in den 72h-Sprint NICHT enthalten, zieht in Woche 2 nach
 
-#### Whop (neu, 2026-07-02 -- nur fuer Master-Prompt)
-- **Was:** P1 (Master-Prompt) als eigenstaendiges Listing, separat von Gumroad
-- **Warum:** Whops eigener Marktplatz-Fokus liegt auf AI-Prompt-Produkten,
-  validierter Preisbereich €24-50 -- passt strukturell besser als die
-  restlichen 8 Produkte (Scripts/Guides), die dort keinen Markt-Fit haben
+#### Whop (aktualisiert 2026-07-04 -- Bundle-Entscheidung)
+- **Was:** **Bundle P1+P2** ("Master-Prompt + OpSec Audit") als EIN Listing, €19
+- **Warum Bundle statt P1 solo:** Whops Marktplatz-Fokus liegt auf AI-Prompt-Produkten
+  (validierter Preisbereich €24-50). ABER: P1 solo fuer €19-24 bei identischer Datei
+  fuer €9 auf Gumroad = sichtbare Preisarbitrage -- ein Whop-Kaeufer, der fu75ch1
+  googelt, fuehlt sich abgezockt. Toedlich fuer eine Marke, deren Kern Ehrlichkeit ist.
+  Das Bundle (Prompt + Audit-Script) differenziert das Angebot echt statt kuenstlich.
 - **Aufwand:** laut Whop < 10 Min Listing-Zeit
-- **Preis:** €19-24 (Whop-Marktpreis, NICHT den Gumroad-Preis €9 uebernehmen)
-- **Bewusst NICHT:** P2-P9 auf Whop listen -- falscher Markt fuer Scripts/Guides,
-  zusaetzlicher Pflegeaufwand ohne Gegenwert
+- **Bewusst NICHT:** P3-P9 auf Whop listen -- falscher Markt fuer Scripts/Guides
 
 #### Polar.sh (pausiert, 2026-07-02)
 - **Status:** Onboarding gestartet (Organisation `fu75ch1` angelegt), dann
@@ -138,7 +140,7 @@ Early-Bird-Mechanismus:
 - **Wann:** Ab Phase 2 (wenn GitHub live)
 
 #### Hacker News — Show HN
-- **Was:** Einmaliger Launch-Post: "Show HN: fu75ch1 — I built an AI stack solo in 2 weeks and published all 101 mistakes (38.43% ASR, not the 0% I could have led with)"
+- **Was:** Einmaliger Launch-Post: "Show HN: I documented all 103 mistakes building a local-first AI stack solo" (77 Zeichen -- HN-Limit ist 80; exakte Fehlerzahl am Post-Tag via metrics.json pruefen). Die ASR-Story (38.43% statt geschoenter 0%) gehoert in den ersten eigenen Kommentar, nicht in den Titel.
 - **Aufwand:** 1× einmalig, ~1h Vorbereitung
 - **Timing:** Montag/Dienstag 9–11 Uhr UTC (höchste Sichtbarkeit)
 - **Erwartung:** 50–300 GitHub-Stars im Launch-Fenster
@@ -205,7 +207,7 @@ Early-Bird-Mechanismus:
 ### 3.3 Community (Phase 3+, optional)
 
 **Geschlossener Kanal (Discord/Matrix) nur für Käufer**
-- Beweis-Token: Lemon Squeezy Kaufbestätigung = Zugangsschlüssel
+- Beweis-Token: [REDACTED] Squeezy Kaufbestätigung = Zugangsschlüssel
 - Wert: Q&A, neue Configs, Frühzugang zu Produkten
 - Aufwand: Mittel — erst starten wenn > 50 Käufer
 

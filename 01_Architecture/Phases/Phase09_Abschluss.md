@@ -1,11 +1,5 @@
 ---
-tags:
-  - phase9
-  - orchestrator
-  - git-hook
-  - garak
-  - agentic
-  - abschluss
+tags: [phase9, orchestrator, git-hook, garak, agentic, abschluss]
 date: 2026-06-25
 status: ✅ Abgeschlossen
 title: Phase 9 — Semi-Autonome Orchestrierung Abschluss

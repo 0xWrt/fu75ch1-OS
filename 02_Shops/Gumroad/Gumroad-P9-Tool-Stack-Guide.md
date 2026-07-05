@@ -19,7 +19,7 @@ Every tool in the fu75ch1 stack has a defined purpose, has been evaluated agains
 
 Equally important: what was rejected and why. Cloud sync credential managers, cloud-based code assistants, proprietary note-taking apps — all evaluated, all rejected for documented reasons.
 
-If you are building a local-first AI stack and want to skip the evaluation phase, this is the shortcut — built from 15 phases and 101 documented mistakes.
+If you are building a local-first AI stack and want to skip the evaluation phase, this is the shortcut — built from 15 phases and 100+ documented mistakes.
 
 ---
 
@@ -90,11 +90,12 @@ purpose, evaluated alternatives, why it made the cut, privacy status, version pi
 
 This guide explains every tool. The **full system** shows how they're wired together end to end.
 
-- **Full system (all 15 phases):** [LEMON SQUEEZY LINK] — €29 Early Bird
+- **Full system — The Blueprint:** all 15 phases + all 9 standalone products included (€84 of parts for €29 Early Bird) → fu75ch1.gumroad.com/l/blueprint
 - **More standalone products:** fu75ch1.gumroad.com
-- **Weekly build notes:** [SUBSTACK LINK]
 - **Public repo (free, sanitized):** github.com/0xWrt/fu75ch1-OS
 
 **→ Buy now on Gumroad**
+
+*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0

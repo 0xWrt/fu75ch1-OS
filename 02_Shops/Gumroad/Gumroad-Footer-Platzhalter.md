@@ -6,6 +6,13 @@ title: Gumroad Footer — Offene Platzhalter (alle 9 Produkte)
 
 # Gumroad Footer — Offene Platzhalter
 
+> **STATUS-UPDATE 2026-07-04: OBSOLET fuer die Produktdateien** — alle
+> `[LEMON SQUEEZY LINK]`/`[SUBSTACK LINK]`-Platzhalter wurden durch den
+> Blueprint-Gumroad-Link ersetzt (P10 launcht auf Gumroad zuerst, Lemon
+> Squeezy folgt Woche 2). Diese Datei bleibt nur als Referenz fuer den
+> Substack-Livegang (dann die "launching soon"-Stellen ersetzen — das
+> Batch-Skript unten funktioniert dafuer sinngemaess weiter).
+
 > Kontext: In allen 9 Produkt-Listing-Dateien wurde ein CTA + Cross-Promotion-
 > Footer ("GET THE FULL SYSTEM") nach der Listing-Guideline ergänzt
 > (Struktur: Problem→Solution→Contents→Value→CTA + Cross-Links).

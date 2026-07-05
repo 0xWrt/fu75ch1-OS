@@ -2,7 +2,7 @@
 status: L2-Pending
 source: agentic-loop
 date: 2026-06-24
-title: Public Handbuch
+title: Personal AI Operating System — Nutzerhandbuch (Public)
 ---
 
 # Personal AI Operating System — Nutzerhandbuch (Public)
