@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, 'Cascadia Code', monospace">
+  <rect width="1280" height="720" fill="#0d1117"/>
+  <rect x="60" y="50" width="1160" height="620" rx="14" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <circle cx="100" cy="88" r="8" fill="#f85149"/><circle cx="126" cy="88" r="8" fill="#d29922"/><circle cx="152" cy="88" r="8" fill="#3fb950"/>
+  <text x="640" y="94" fill="#8b949e" font-size="18" text-anchor="middle">pwsh — Invoke-OpSecAudit.ps1 v2.0</text>
+  <line x1="60" y1="112" x2="1220" y2="112" stroke="#30363d" stroke-width="2"/>
+  <text x="100" y="156" fill="#e6edf3" font-size="22">&gt; .\Invoke-OpSecAudit.ps1</text>
+  <text x="100" y="200" fill="#8b949e" font-size="20">34 automated checks — VPN, telemetry, hardening, AppSec, AI stack</text>
+  <text x="100" y="252" fill="#3fb950" font-size="21">[OK] Check 26: WiFi MAC randomization active</text>
+  <text x="100" y="284" fill="#3fb950" font-size="21">[OK] Check 27: WDigest disabled (no cleartext pw in RAM)</text>
+  <text x="100" y="316" fill="#3fb950" font-size="21">[OK] Check 28: LSASS Protected Process Light (PPL) active</text>
+  <text x="100" y="348" fill="#f85149" font-size="21">[X]  Check 29: SMBv1 legacy feature removed</text>
+  <text x="100" y="380" fill="#3fb950" font-size="21">[OK] Check 32: Docker daemon not exposed on 0.0.0.0</text>
+  <text x="100" y="412" fill="#3fb950" font-size="21">[OK] Check 33: PII scrubber wired into every API call</text>
+  <text x="100" y="464" fill="#58a6ff" font-size="21">--- Category breakdown ---</text>
+  <text x="100" y="496" fill="#e6edf3" font-size="21">  VPN / Network      : 4/5      System Security : 5/5</text>
+  <text x="100" y="528" fill="#e6edf3" font-size="21">  Tools &amp; AppSec     : 8/8      AI Stack        : 3/3</text>
+  <text x="100" y="560" fill="#e6edf3" font-size="21">  Anti-Tracking      : 8/9      Hardening       : 3/4</text>
+  <text x="100" y="618" fill="#3fb950" font-size="30" font-weight="bold">[OK] OpSec Score: 31/34 (91%)</text>
+  <text x="1180" y="618" fill="#8b949e" font-size="18" text-anchor="end">failing checks published too — fu75ch1</text>
+</svg>

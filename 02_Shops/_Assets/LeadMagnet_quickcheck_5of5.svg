@@ -1,0 +1,19 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, 'Cascadia Code', monospace">
+  <rect width="1280" height="720" fill="#0d1117"/>
+  <rect x="60" y="50" width="1160" height="620" rx="14" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <circle cx="100" cy="88" r="8" fill="#f85149"/><circle cx="126" cy="88" r="8" fill="#d29922"/><circle cx="152" cy="88" r="8" fill="#3fb950"/>
+  <text x="640" y="94" fill="#8b949e" font-size="18" text-anchor="middle">pwsh — Invoke-OpSecQuickCheck.ps1 (free)</text>
+  <line x1="60" y1="112" x2="1220" y2="112" stroke="#30363d" stroke-width="2"/>
+  <text x="100" y="160" fill="#e6edf3" font-size="22">&gt; .\Invoke-OpSecQuickCheck.ps1</text>
+  <text x="100" y="208" fill="#58a6ff" font-size="22">=== fu75ch1 OpSec QuickCheck (5 of 34) ===</text>
+  <text x="100" y="240" fill="#8b949e" font-size="19">Read-only. Nothing is changed, nothing is transmitted.</text>
+  <text x="100" y="296" fill="#3fb950" font-size="22">[OK] Check 1: VPN adapter active</text>
+  <text x="100" y="332" fill="#3fb950" font-size="22">[OK] Check 2: Firewall enabled (Domain/Private/Public)</text>
+  <text x="100" y="368" fill="#3fb950" font-size="22">[OK] Check 3: Telemetry service (DiagTrack) not running</text>
+  <text x="100" y="404" fill="#3fb950" font-size="22">[OK] Check 4: SMBv1 server protocol disabled</text>
+  <text x="100" y="440" fill="#3fb950" font-size="22">[OK] Check 5: DNS-over-HTTPS resolver configured</text>
+  <text x="100" y="504" fill="#3fb950" font-size="32" font-weight="bold">QuickCheck Score: 5/5 (100%)</text>
+  <text x="100" y="560" fill="#8b949e" font-size="20">This was 5 of 34 checks. Full audit: kill-switch, IPv6 leaks,</text>
+  <text x="100" y="590" fill="#8b949e" font-size="20">BitLocker, LSASS, MAC randomization, AI-stack security...</text>
+  <text x="100" y="634" fill="#58a6ff" font-size="21">-&gt; free script in bio  |  full 34-check audit: fu75ch1.gumroad.com</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, 'Cascadia Code', monospace">
+  <rect width="1280" height="720" fill="#0d1117"/>
+  <rect x="60" y="50" width="1160" height="620" rx="14" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <circle cx="100" cy="88" r="8" fill="#f85149"/><circle cx="126" cy="88" r="8" fill="#d29922"/><circle cx="152" cy="88" r="8" fill="#3fb950"/>
+  <text x="640" y="94" fill="#8b949e" font-size="18" text-anchor="middle">pwsh — Invoke-MetricsCheck.ps1 (publication gate)</text>
+  <line x1="60" y1="112" x2="1220" y2="112" stroke="#30363d" stroke-width="2"/>
+  <text x="100" y="158" fill="#e6edf3" font-size="22">&gt; .\Invoke-MetricsCheck.ps1</text>
+  <text x="100" y="204" fill="#58a6ff" font-size="21">Canonical state (metrics.json):</text>
+  <text x="100" y="236" fill="#e6edf3" font-size="21">  Errors: 103 (up to #103) | OpSec: 31/34 | ASR: 38.43%</text>
+  <text x="100" y="288" fill="#58a6ff" font-size="21">--- Stale-number scan (13 files) ---</text>
+  <text x="100" y="322" fill="#3fb950" font-size="21">[OK] README.md          [OK] MANIFESTO.md       [OK] Launch_Plan.md</text>
+  <text x="100" y="354" fill="#3fb950" font-size="21">[OK] Sampler.md         [OK] Posts.md           [OK] Issue-01.md</text>
+  <text x="100" y="386" fill="#3fb950" font-size="21">[OK] Session_State.md   [OK] Produkt-Uebersicht [OK] +4 more</text>
+  <text x="100" y="438" fill="#58a6ff" font-size="21">--- Error chronicle gap check ---</text>
+  <text x="100" y="472" fill="#3fb950" font-size="21">[OK] No gaps in #9..#103</text>
+  <text x="100" y="504" fill="#3fb950" font-size="21">[OK] Chronicle maximum (#103) == metrics.json (103)</text>
+  <text x="100" y="566" fill="#3fb950" font-size="30" font-weight="bold">RESULT: All metrics consistent.</text>
+  <text x="100" y="626" fill="#8b949e" font-size="19">exists because error #103 = "the error log lost an error" — fu75ch1</text>
+</svg>

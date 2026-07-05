@@ -8,7 +8,7 @@
       1. VPN adapter up
       2. Windows Firewall enabled on all profiles
       3. Telemetry service (DiagTrack) not running
-      4. SMBv1 disabled
+      4. SMBv1 server protocol disabled
       5. DNS-over-HTTPS configured on at least one resolver
 
     No data leaves your machine. No PII in the output. Safe to run repeatedly.
@@ -88,7 +88,7 @@ try {
     $smb = Get-SmbServerConfiguration -ErrorAction SilentlyContinue
     $smbOk = ($null -ne $smb) -and (-not $smb.EnableSMB1Protocol)
 } catch { $smbOk = $false }
-$score += Write-Check $smbOk 'Check 4: SMBv1 disabled' `
+$score += Write-Check $smbOk 'Check 4: SMBv1 server protocol disabled (full audit also checks the installed legacy feature)' `
     'Legacy SMBv1 is enabled — a known ransomware vector: Set-SmbServerConfiguration -EnableSMB1Protocol $false'
 
 # --- 5. DNS-over-HTTPS configured ---
