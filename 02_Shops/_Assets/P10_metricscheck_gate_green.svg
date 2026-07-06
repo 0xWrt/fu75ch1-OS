@@ -6,7 +6,7 @@
   <line x1="60" y1="112" x2="1220" y2="112" stroke="#30363d" stroke-width="2"/>
   <text x="100" y="158" fill="#e6edf3" font-size="22">&gt; .\Invoke-MetricsCheck.ps1</text>
   <text x="100" y="204" fill="#58a6ff" font-size="21">Canonical state (metrics.json):</text>
-  <text x="100" y="236" fill="#e6edf3" font-size="21">  Errors: 103 (up to #103) | OpSec: 36/38 | ASR: 38.43%</text>
+  <text x="100" y="236" fill="#e6edf3" font-size="21">  Errors: 103 (up to #103) | OpSec: 35/38 | ASR: 38.43%</text>
   <text x="100" y="288" fill="#58a6ff" font-size="21">--- Stale-number scan (13 files) ---</text>
   <text x="100" y="322" fill="#3fb950" font-size="21">[OK] README.md          [OK] MANIFESTO.md       [OK] Launch_Plan.md</text>
   <text x="100" y="354" fill="#3fb950" font-size="21">[OK] Sampler.md         [OK] Posts.md           [OK] Issue-01.md</text>

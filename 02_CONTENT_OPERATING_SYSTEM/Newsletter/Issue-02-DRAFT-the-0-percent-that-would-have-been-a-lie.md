@@ -47,4 +47,4 @@ If a security product shows you exactly one benchmark number, ask two questions:
 > **Redaktions-Notizen (vor Publikation löschen):**
 > - Zahlen gegen `metrics.json` prüfen
 > - Sampler-Link finalisieren (wie Issue #1)
-> - Als Begleit-Visual: `02_Shops\_Assets\P2_opsec_audit_36of38.svg` (PNG-Export)
+> - Als Begleit-Visual: `02_Shops\_Assets\P2_opsec_audit_35of38.svg` (PNG-Export)

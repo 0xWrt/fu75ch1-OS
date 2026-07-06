@@ -43,7 +43,7 @@ Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Ea
 
 ### P2 — OpSec Checklist
 - Cover: "38 checks. 60 seconds. Your real score."
-- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output — [OK]/[X]-Liste + "OpSec Score: 36/38 (95%)"]
+- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output — [OK]/[X]-Liste + "OpSec Score: 35/38 (92%)"]
 - [SCREENSHOT: Kategorie-Breakdown-Abschnitt]
 
 ### P3 — Advanced Configs

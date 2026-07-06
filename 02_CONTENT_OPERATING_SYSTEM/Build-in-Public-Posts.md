@@ -74,6 +74,6 @@ Free stuff first if you're skeptical: 20-error sampler + 5-check OpSec script + 
 1. Reddit: Posts 1+2 nur als organische Kommentare/Antworten einsetzen, Post 3 gar nicht (Selbstpromo-Ban-Risiko). Link in Bio, nicht im Text.
 2. X: als Einzelposts oder Post 1 als Thread (Absätze = Tweets).
 3. HN: Post 1 + 2 sind Rohmaterial für Antworten im eigenen Show-HN-Thread — nie copy-pasten, immer auf den konkreten Kommentar anpassen.
-4. Zahlen (105, 38.43%, 36/38, €84) vor jedem Post gegen `metrics.json`.
+4. Zahlen (105, 38.43%, 35/38, €84) vor jedem Post gegen `metrics.json`.
 
 © fu75ch1 — intern

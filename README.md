@@ -41,7 +41,7 @@ solo build with nothing hidden actually looks like, keep reading.
 | Metric | Result |
 |---|---|
 | Jailbreak ASR — lower is better (Garak 0.15.1, 512 real-world attempts) | **38.43%** (see note) |
-| OpSec Score | **36/38 (95%)** 🟢 |
+| OpSec Score | **35/38 (92%)** 🟢 |
 | Phases completed | **15 / 15** ✅ |
 | Supporting-workload cloud dependency | **< 20%** (RAG, automation, observability) |
 | Errors documented with root cause + fix | **103** — [full chronicle](01_Architecture/Error_Chronicle.md) |

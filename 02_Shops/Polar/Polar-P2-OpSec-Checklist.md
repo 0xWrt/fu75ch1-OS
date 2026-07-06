@@ -42,7 +42,7 @@ finds real gaps because it was written to catch the author's own mistakes, not t
 [OK] Check 01: VPN interface active
 [X]  Check 04: IPv6 disabled (physical adapters)
 ...
-OpSec Score: 36/38 (95%)
+OpSec Score: 35/38 (92%)
 ```
 
 **Properties:**

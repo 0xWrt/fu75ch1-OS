@@ -84,7 +84,7 @@ config, and decision documented so you can reproduce it exactly.
 | Metric | Result |
 |---|---|
 | Jailbreak resistance (Garak 0.15.1, 512 real-world probes) | 38.43% ASR (DanInTheWild) — see note below |
-| OpSec Score | 36/38 (95%) 🟢 |
+| OpSec Score | 35/38 (92%) 🟢 |
 | Phases | 15/15 complete |
 | Cloud dependency | <20% of workloads |
 
