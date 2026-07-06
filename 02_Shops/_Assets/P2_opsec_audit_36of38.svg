@@ -15,7 +15,7 @@
   <text x="100" y="464" fill="#58a6ff" font-size="21">--- Category breakdown ---</text>
   <text x="100" y="496" fill="#e6edf3" font-size="21">  VPN / Network      : 4/5      System Security : 5/5</text>
   <text x="100" y="528" fill="#e6edf3" font-size="21">  Tools &amp; AppSec     : 8/8      AI Stack        : 3/3</text>
-  <text x="100" y="560" fill="#e6edf3" font-size="21">  Anti-Tracking      : 8/9      Hardening       : 4/4</text>
-  <text x="100" y="618" fill="#3fb950" font-size="30" font-weight="bold">[OK] OpSec Score: 33/38 (87%)</text>
+  <text x="100" y="560" fill="#e6edf3" font-size="21">  Anti-Tracking      : 9/9      Hardening       : 4/4</text>
+  <text x="100" y="618" fill="#3fb950" font-size="30" font-weight="bold">[OK] OpSec Score: 36/38 (95%)</text>
   <text x="1180" y="618" fill="#8b949e" font-size="18" text-anchor="end">failing checks published too — fu75ch1</text>
 </svg>
