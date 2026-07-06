@@ -31,7 +31,7 @@ AI Operating System — built from scratch, documented in public.
 
 - 15 phases. Local-first. Zero cloud dependency for 80% of workloads.
 - Jailbreak resistance: 38.43% ASR (verified via Garak 0.15.1, 512 real-world probes)
-- OpSec Score: 31/34 (91%)
+- OpSec Score: 33/38 (87%)
 - Stack: Windows 11 hardened · WSL2 · Obsidian · n8n · AnythingLLM · KeePassXC
 
 **The Blueprint** — all 15 phases, scripts, configs, docs:
@@ -76,7 +76,7 @@ fu75ch1 builds AI operating systems that run locally,
 don't leak, and are documented to the last script.
 
 The Blueprint = 15 phases of real-world implementation.
-Garak-tested (38.43% ASR, 512 real probes). OpSec 31/34. Ready to deploy.
+Garak-tested (38.43% ASR, 512 real probes). OpSec 33/38. Ready to deploy.
 
 Updates included. CC BY-NC 4.0.
 ```

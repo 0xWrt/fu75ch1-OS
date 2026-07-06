@@ -146,7 +146,7 @@ A blueprint only matters if it's operational. The vault ships with an integrated
 |---|---|---|---|
 | `fu75` | Starts all core services (AgenticLoop, telemetry, containers) | 🟢 Low | From anywhere in the terminal |
 | `Get-fu75ch1-PerfCheck.ps1` | Hardware/service health check (RAM, CPU, containers, tasks) | 🟢 Low (read-only) | Before and after major changes |
-| `Invoke-OpSecAudit.ps1` | 34 automated security checks v2.0 (VPN, telemetry, AppSec, hardening, AI stack) | 🟢 Low (read-only) | Regularly, before every release |
+| `Invoke-OpSecAudit.ps1` | 38 automated security checks v2.0 (VPN, telemetry, AppSec, hardening, AI stack) | 🟢 Low (read-only) | Regularly, before every release |
 | `Invoke-PublicExport-v2.ps1 -DryRun` | Simulates the sanitized public-repo export without writing | 🟢 Low (simulation) | Before every real export |
 | `Invoke-PIIScrubber.ps1` | Masks API keys, IPs, paths, hostnames before transmission/logging | 🟢 Low (automatic) | Runs before every API call |
 
@@ -167,7 +167,7 @@ No personal brand, no glossy videos. The terminal logs, the error chronicle, and
 Distribution follows a simple, economically sustainable ladder. Honest status per tier:
 
 **Tier 1: The Solo-Developer Executable Blueprint — €29 early bird (first 50), then €49** ✅ active
-The complete, ready-to-run Obsidian vault: all 15 phases, master prompt v4.7 + security addendum, the 34-check OpSec audit script, hardening scripts, the full error chronicle (103 entries), phase quizzes and the Living Handbook. Not included: personal support, custom implementation.
+The complete, ready-to-run Obsidian vault: all 15 phases, master prompt v4.7 + security addendum, the 38-check OpSec audit script, hardening scripts, the full error chronicle (103 entries), phase quizzes and the Living Handbook. Not included: personal support, custom implementation.
 
 **Tier 2: Enterprise Implementation Package — €1,499** 🔵 designed, not actively offered yet
 Guided implementation for teams: custom vault setup, dashboard with ROI metrics, 10 hours async architect support, CI/CD deployment scripts. Will be activated once the project has organic sales and testimonials — an anonymous brand asking four figures without a public track record would be asking for trust it hasn't earned yet.

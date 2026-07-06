@@ -219,7 +219,7 @@ Das vollständige, sofort einsatzbereite Obsidian-Vault als `.zip`-Datei (aktuel
 **Was du bekommst:**
 - Kompletter fu75ch1 Vault (alle 15 Phasen)
 - Master-Prompt v4.7 + Security Addendum
-- OpSec Audit Script (34 Checks, v2.0)
+- OpSec Audit Script (38 Checks, v2.1)
 - Anti-Tracking Hardening Scripts
 - Alle Phase-Dokumentation + Quizzes
 - Living Handbook (manuell kuratiert, Automatisierung geplant)

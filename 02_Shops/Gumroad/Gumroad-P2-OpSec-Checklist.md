@@ -1,5 +1,5 @@
 # Product 2 — OpSec Checklist
-# Title: fu75ch1 OpSec Checklist — 34-Point Security Audit (PowerShell, v2.0)
+# Title: fu75ch1 OpSec Checklist — 38-Point Security Audit (PowerShell, v2.0)
 # Price: €7
 # Slug: opsec-checklist
 
@@ -7,7 +7,7 @@
 
 ## SUMMARY
 
-34 automated security checks for Windows 11. Run it, get a score. No manual work, no guesswork — real results in under 60 seconds.
+38 automated security checks for Windows 11. Run it, get a score. No manual work, no guesswork — real results in under 60 seconds.
 
 ---
 
@@ -15,20 +15,20 @@
 
 Most security checklists are PDFs you read once and forget. This one runs on your machine and tells you exactly where you stand.
 
-`Invoke-OpSecAudit.ps1` is the exact script used to audit the fu75ch1 AI operating system — 34 checks across 6 categories, automated, with a clear pass/fail output and an overall score.
+`Invoke-OpSecAudit.ps1` is the exact script used to audit the fu75ch1 AI operating system — 38 checks across 6 categories, automated, with a clear pass/fail output and an overall score.
 
 No raw data leaves the machine. No IPs, MACs, or credentials in the output. Just clean results you can act on.
 
 If you want to know your actual security posture — not your assumed one — run this script.
 
-One of 34 checks in a script written for a solo, two-week build — the kind that
+One of 38 checks in a script written for a solo, two-week build — the kind that
 finds real gaps because it was written to catch the author's own mistakes, not to look thorough in a demo.
 
 ---
 
 ## DETAILS
 
-**34 checks across 6 categories:**
+**38 checks across 6 categories:**
 
 - VPN & Network (5): interface active, default route over VPN, service running, IPv6 disabled, DNS over VPN only
 - System Security (5): Firewall all profiles, UAC, Secure Boot, Defender real-time, Defender definitions age
@@ -42,7 +42,7 @@ finds real gaps because it was written to catch the author's own mistakes, not t
 [OK] Check 01: VPN interface active
 [X]  Check 04: IPv6 disabled (physical adapters)
 ...
-OpSec Score: 31/34 (91%)
+OpSec Score: 33/38 (87%)
 ```
 
 **Properties:**

@@ -15,7 +15,7 @@ title: Marketing-Assets — Terminal-Cards (echt) + Screenshot-Restliste
 
 | Datei | Inhalt | Einsatz |
 |---|---|---|
-| `P2_opsec_audit_31of34.svg` | Echter Audit-Lauf, 31/34 inkl. sichtbarem [X] Check 29 | P2-Cover/Screenshot, Post 2, README |
+| `P2_opsec_audit_33of38.svg` | Echter Audit-Lauf, 33/38 inkl. sichtbarem [X] Check 29 | P2-Cover/Screenshot, Post 2, README |
 | `LeadMagnet_quickcheck_5of5.svg` | Echter QuickCheck-Lauf 5/5 | Lead-Magnet-Promo, X-Posts |
 | `P10_metricscheck_gate_green.svg` | Echtes grünes Publikations-Gate + #103-Referenz | P10-Cover, #103-Story-Post, Issue #1 |
 
@@ -26,7 +26,7 @@ Exakt die Markenlinie (38.43% statt 0%).
 ## SVG → PNG (für Gumroad/X)
 
 - Schnell: SVG im Browser öffnen → Screenshot, oder
-- Sauber: `inkscape P2_opsec_audit_31of34.svg -o P2_cover.png -w 1280 -h 720`
+- Sauber: `inkscape P2_opsec_audit_33of38.svg -o P2_cover.png -w 1280 -h 720`
   (alternativ: jeder Online-Konverter — Dateien enthalten keine sensiblen Daten)
 
 ## Noch manuell nötig (GUI, siehe `..\Produkt-Uebersicht.md` für Details + PII-Regeln)
@@ -41,4 +41,4 @@ Exakt die Markenlinie (38.43% statt 0%).
 
 - Neue Cards: nur aus echten, verifizierten Outputs bauen — nie Zahlen erfinden
 - Vor jeder neuen Card: `Invoke-MetricsCheck.ps1` grün
-- Bei Zahlenänderung (z.B. OpSec-Fix → 32/34): Cards regenerieren, alte löschen
+- Bei Zahlenänderung (z.B. OpSec-Fix → 33/38): Cards regenerieren, alte löschen

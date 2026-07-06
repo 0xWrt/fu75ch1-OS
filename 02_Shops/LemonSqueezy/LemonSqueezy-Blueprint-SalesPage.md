@@ -1,7 +1,7 @@
 ---
 date: 2026-06-25
 tags: [sales, lemon-squeezy, blueprint, produkt]
-status: ⚠️ Stale (2026-06-25) — 2026-07-02 korrigiert: v4.5→v4.7, OpSec 26→34 Checks/30→31, ASR-Zahl auf ehrliche Dual-Angabe (0% Pilot / 38.43% real) umgestellt. Vor Live-Einpflegen nochmal komplett gegenlesen.
+status: ⚠️ Stale (2026-06-25) — 2026-07-02 korrigiert: v4.5→v4.7, OpSec 26→38 Checks/30→31, ASR-Zahl auf ehrliche Dual-Angabe (0% Pilot / 38.43% real) umgestellt. Vor Live-Einpflegen nochmal komplett gegenlesen.
 title: Lemon Squeezy — The Blueprint (Sales Page)
 ---
 
@@ -52,7 +52,7 @@ config, and decision documented so you can reproduce it exactly.
 - PowerShell scripts (idempotent, strict mode, documented)
 
 **Privacy & Security**
-- OpSec Checklist (34 checks, automated via PowerShell)
+- OpSec Checklist (38 checks, automated via PowerShell)
 - Windows Hardening Guide (ASR, BitLocker, Firewall, Telemetry)
 - DNS/VPN Setup (NextDNS DoH + WireGuard Kill-Switch)
 - Browser Hardening (LibreWolf + uBlock Origin config export)
@@ -84,7 +84,7 @@ config, and decision documented so you can reproduce it exactly.
 | Metric | Result |
 |---|---|
 | Jailbreak resistance (Garak 0.15.1, 512 real-world probes) | 38.43% ASR (DanInTheWild) — see note below |
-| OpSec Score | 31/34 (91%) 🟢 |
+| OpSec Score | 33/38 (87%) 🟢 |
 | Phases | 15/15 complete |
 | Cloud dependency | <20% of workloads |
 

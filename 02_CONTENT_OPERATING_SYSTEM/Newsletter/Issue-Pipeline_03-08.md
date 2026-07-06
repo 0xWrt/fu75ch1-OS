@@ -36,7 +36,7 @@ title: Issue-Pipeline #3–#8 — Werbe-Newsletter, 6 Wochen Vorlauf
 - **Kern:** Was die drei offenen Checks konkret prüfen, warum strukturelle Gründe (Hardware/Workflow) sie blocken, was das Rest-Risiko real bedeutet.
 - **Regel:** Ein Audit, das immer 100% zeigt, prüft nichts.
 - **Ehrlichkeit:** Ist der Kern des Issues selbst.
-- **CTA-Produkt:** P2 OpSec Checklist. **Visual:** `P2_opsec_audit_31of34.svg` (das [X] ist der Star).
+- **CTA-Produkt:** P2 OpSec Checklist. **Visual:** `P2_opsec_audit_33of38.svg` (das [X] ist der Star).
 
 ## Issue #6 — "The invisible watermark I tell you about"
 - **Quelle:** Ghost-Mark-System + Transparenznote

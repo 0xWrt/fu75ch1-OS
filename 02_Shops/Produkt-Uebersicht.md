@@ -19,7 +19,7 @@ title: Produkt-Übersicht — alle 10 Produkte + Screenshot-Plan
 | # | Produkt | Preis | Gumroad | Whop | Polar | LemonSqueezy | Status |
 |---|---|---|---|---|---|---|---|
 | P1 | Master-Prompt v4.7 | €9 | 🟢 live | 🔶 im Bundle €19 | ⏸ vorbereitet | — | live |
-| P2 | OpSec Checklist (34 Checks) | €7 | 🟢 live | 🔶 im Bundle €19 | ⏸ vorbereitet | — | live |
+| P2 | OpSec Checklist (38 Checks) | €7 | 🟢 live | 🔶 im Bundle €19 | ⏸ vorbereitet | — | live |
 | P3 | Advanced Configs | €12 | 🔜 Sprint | — | ⏸ | — | upload-bereit |
 | P4 | Phase 12 Playbook | €14 | 🔜 Sprint | — | ⏸ | — | upload-bereit |
 | P5 | Windows Hardening Guide | €9 | 🔜 Sprint | — | ⏸ | — | upload-bereit |
@@ -42,8 +42,8 @@ Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Ea
 - [SCREENSHOT: Garak-Terminal-Output Run 6 mit 38.43%-Zeile (Pfad-Zeile croppen)]
 
 ### P2 — OpSec Checklist
-- Cover: "34 checks. 60 seconds. Your real score."
-- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output — [OK]/[X]-Liste + "OpSec Score: 31/34 (91%)"]
+- Cover: "38 checks. 60 seconds. Your real score."
+- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output — [OK]/[X]-Liste + "OpSec Score: 33/38 (87%)"]
 - [SCREENSHOT: Kategorie-Breakdown-Abschnitt]
 
 ### P3 — Advanced Configs
