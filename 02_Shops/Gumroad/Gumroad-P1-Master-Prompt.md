@@ -42,7 +42,7 @@ same build. Not a polished demo prompt — the one actually running in productio
 
 **Garak red-team results (honest disclosure):**
 - AutoDANCached → 0% ASR (3 probes, pilot run — not representative)
-- DanInTheWild → 38.43% ASR (512 real-world community jailbreaks)
+- DanInTheWild → 38.43% ASR (256 real-world community jailbreaks)
 
 **Format:** Single `.md` file, ready to paste as system prompt.
 **Compatible with:** Claude, GPT-4, any API with a system prompt field.

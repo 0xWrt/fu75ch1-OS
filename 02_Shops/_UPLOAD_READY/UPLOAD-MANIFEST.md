@@ -22,8 +22,8 @@ title: UPLOAD-MANIFEST — alle Beschreibungen & Deliverables an einem Ort
 
 | Produkt | Store-Copy (EN, kanonisch) | Deliverable-Quelle (Core) | Zip | Status |
 |---|---|---|---|---|
-| P1 Master-Prompt €9 | `..\Gumroad\Gumroad-P1-Master-Prompt.md` | `00_META\Master-Prompt-v4.7.md` (neutralisierte Fassung) + Addendum v1.1 + Buyer-Setup-Guide + `Verify-GhostMark.py` | 🔶 RE-UPLOAD nötig (Watermark + Verify-Script, Transparenznote-Pflicht) | live |
-| P2 OpSec Checklist €7 | `..\Gumroad\Gumroad-P2-OpSec-Checklist.md` | `10_Workflows\Invoke-OpSecAudit.ps1` + Checklisten-MD | 🔶 RE-UPLOAD nötig (wie P1) | live |
+| P1 Master-Prompt €9 | `..\Gumroad\Gumroad-P1-Master-Prompt.md` | `00_META\Master-Prompt-v4.7.md` (neutralisierte Fassung) + Addendum v1.1 + Buyer-Setup-Guide + `Verify-GhostMark.py` | 🔶 RE-UPLOAD nötig (Watermark + Verify-Script, Transparenznote-Pflicht) | hochgeladen, unpublished |
+| P2 OpSec Checklist €7 | `..\Gumroad\Gumroad-P2-OpSec-Checklist.md` | `10_Workflows\Invoke-OpSecAudit.ps1` + Checklisten-MD | 🔶 RE-UPLOAD nötig (wie P1) | hochgeladen, unpublished |
 | P3 Advanced Configs €12 | `..\Gumroad\Gumroad-P3-Advanced-Configs.md` | Ollama/n8n/WireGuard-Configs (Phase-10/11-Bestand) | ⬜ packen | upload-bereit |
 | P4 Phase 12 Playbook €14 | `..\Gumroad\Gumroad-P4-Phase12-Playbook.md` | Phase-12-Abschlüsse + Chronik-Auszug | ⬜ packen | upload-bereit |
 | P5 Windows Hardening €9 | `..\Gumroad\Gumroad-P5-Windows-Hardening.md` | Phase-1-Guide + Hardening-Scripts | ⬜ packen | upload-bereit |

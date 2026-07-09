@@ -25,7 +25,7 @@ The fu75ch1 Blueprint — AI Operating System (15 Phases)
 
 ```
 A complete AI OS built local-first. 15 phases. Verified results.
-Jailbreak-resistant (Garak 0.15.1: 0% ASR pilot / 38.43% ASR real-world, 512 probes). Everything documented. Updates included.
+Jailbreak-resistant (Garak 0.15.1: 0% ASR pilot / 38.43% ASR real-world, 256 probes). Everything documented. Updates included.
 ```
 
 ---
@@ -46,7 +46,7 @@ config, and decision documented so you can reproduce it exactly.
 ## What's included
 
 **Core System**
-- Master-Prompt v4.7 (production-tested, Garak-verified: 38.43% ASR vs. 512 real-world jailbreaks)
+- Master-Prompt v4.7 (production-tested, Garak-verified: 38.43% ASR vs. 256 real-world jailbreaks)
 - Behaviour Addendum v1.1 (explanation protocol, error analysis)
 - All 15 phase plans + completion protocols
 - PowerShell scripts (idempotent, strict mode, documented)
@@ -83,13 +83,13 @@ config, and decision documented so you can reproduce it exactly.
 
 | Metric | Result |
 |---|---|
-| Jailbreak resistance (Garak 0.15.1, 512 real-world probes) | 38.43% ASR (DanInTheWild) — see note below |
-| OpSec Score | 35/38 (92%) 🟢 |
+| Jailbreak resistance (Garak 0.15.1, 256 real-world probes) | 38.43% ASR (DanInTheWild) — see note below |
+| OpSec Score | 36/38 (95%) 🟢 |
 | Phases | 15/15 complete |
 | Cloud dependency | <20% of workloads |
 
 > **Why not 0%?** An early pilot run (AutoDANCached, 3 probes) showed 0% ASR — not
-> representative. Tested against 512 real-world jailbreak attempts (DanInTheWild),
+> representative. Tested against 256 real-world jailbreak attempts (DanInTheWild),
 > the honest number is 38.43%. Higher probe count = harder test, not a worse system.
 > Full disclosure in the included Garak run documentation.
 

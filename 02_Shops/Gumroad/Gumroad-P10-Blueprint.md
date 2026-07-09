@@ -59,7 +59,7 @@ Most system guides show you the polished end state. This one ships the failure m
 
 **Garak red-team results (honest disclosure):**
 - AutoDANCached → 0% ASR (3 probes, pilot run — not representative)
-- DanInTheWild → 38.43% ASR (512 real-world community jailbreaks)
+- DanInTheWild → 38.43% ASR (256 real-world community jailbreaks)
 - Full run documentation included. Both numbers published. Only one is honest.
 
 **Format:** .zip — all markdown files, scripts, and configs

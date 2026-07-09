@@ -15,7 +15,7 @@ The complete documentation of how a functional AI system becomes a reliable one 
 
 A working AI system and a hardened AI system are two different things.
 
-Phase 12 was the hardening phase of the fu75ch1 AI operating system — where every script became idempotent, every change was audited, every dependency was verified, and the prompt security was tested against 512 real-world jailbreak attempts.
+Phase 12 was the hardening phase of the fu75ch1 AI operating system — where every script became idempotent, every change was audited, every dependency was verified, and the prompt security was tested against 256 real-world jailbreak attempts.
 
 This playbook is not a guide on what to do. It is a documented record of what was actually done — including what broke, why it broke, and what the prevention rule is for next time.
 
@@ -45,7 +45,7 @@ If you are building a production AI system and want to learn from 100+ documente
 
 **Prompt Security — Garak Results (honest):**
 - Run 1 Baseline: 45.23% ASR
-- Run 6 (v4.6, DanInTheWild, 512 probes): 38.43% ASR
+- Run 6 (v4.6, DanInTheWild, 256 probes): 38.43% ASR
 - Run 4 showed 0% ASR — AutoDANCached, 3 probes, not representative. Documented alongside the real numbers.
 
 **Includes:**

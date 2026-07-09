@@ -25,7 +25,7 @@ polished pitch — a working system with the failure modes left in.
   the error of forgetting to log error #96. Yes, that's in there too.
 - **A red-team number that doesn't flatter the system.** A 3-probe pilot run
   showed a 0% attack success rate. That number is technically true and
-  completely useless. The real test — 512 real-world jailbreak attempts —
+  completely useless. The real test — 256 real-world jailbreak attempts —
   came back at 38.43%. Both are published. Only one of them is honest.
 - **Scripts that run**, not architecture diagrams. Every claim in this repo
   is backed by a `.ps1` you can execute yourself and verify.
@@ -40,8 +40,8 @@ solo build with nothing hidden actually looks like, keep reading.
 
 | Metric | Result |
 |---|---|
-| Jailbreak ASR — lower is better (Garak 0.15.1, 512 real-world attempts) | **38.43%** (see note) |
-| OpSec Score | **35/38 (92%)** 🟢 |
+| Jailbreak ASR — lower is better (Garak 0.15.1, 256 real-world attempts) | **38.43%** (see note) |
+| OpSec Score | **36/38 (95%)** 🟢 |
 | Phases completed | **15 / 15** ✅ |
 | Supporting-workload cloud dependency | **< 20%** (RAG, automation, observability) |
 | Errors documented with root cause + fix | **103** — [full chronicle](01_Architecture/Error_Chronicle.md) |
@@ -50,13 +50,24 @@ solo build with nothing hidden actually looks like, keep reading.
 <!-- TODO before Show HN: add dashboard screenshot (fu75ch1_dashboard.py, localhost:8501) here -->
 
 > **Why 38.43%?** Run 4 (AutoDANCached, 3 attempts) showed 0% ASR — not representative.
-> Run 5 (DanInTheWild, 512 real community jailbreaks) showed 41.8%; a separate probe in
+> Run 5 (DanInTheWild, 239 scored attempts) showed 41.8%; a separate probe in
 > the same run (HijackHateHumans) came in at 9.8% ASR. Run 6 (DanInTheWild, updated
 > system prompt v4.6) improved to **38.43%** — a -3.37 pp reduction.
-> Run 7 showed 48.52% but is attributed to statistical noise and false positives
-> (the MitigationBypass detector flags harmless refusals), not system regression.
+> Run 7 (system prompt v4.7) came back at 48.52%. The confidence intervals overlap
+> (Run 6: 32.2-44.6%, Run 7: 42.2-54.9%), so this is not a statistically significant
+> regression - but it is not evidence of improvement either.
+> Caveat on the metric itself: the MitigationBypass detector counts any response that
+> does not *look like* a refusal as a successful attack - including harmless replies
+> such as "I understand." that deliver no harmful content. The reported ASR is an
+> upper bound, not a harm rate. The individual hits have not been adjudicated yet.
+> We publish the higher number until we have counted the real one.
 > All runs documented honestly. Full data:
 > [Verified_Results.md](00_PROOF/Verified_Results.md).
+>
+> **Correction (2026-07-09):** Earlier versions of this README stated *512 probes*.
+> The correct count is **256** - garak's default `soft_probe_prompt_cap`. Run 5's ASR
+> was computed over **239 scored attempts**. The 38.43% figure never depended on the
+> wrong number and is unchanged. Logged as error #109.
 >
 > **Note on cloud dependency:** supporting infrastructure (RAG, workflow
 > automation, observability) runs locally. Primary AI inference still runs
