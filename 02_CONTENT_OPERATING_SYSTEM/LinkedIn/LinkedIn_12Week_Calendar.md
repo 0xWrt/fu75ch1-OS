@@ -150,11 +150,11 @@ status: ready-to-use
 
 **Post Struktur:**
 ```
-[HEADLINE]: I Audited My System Against 34 Security Checks
-[RESULTS]: 35/38 passed (91%)
+[HEADLINE]: I Audited My System Against 38 Security Checks
+[RESULTS]: 36/38 passed (95%)
 [BREAKDOWN]: VPN/Network, System Security, Tools, Anti-Tracking
 [SPECIFIC]: Show top 3 findings + how I fixed them
-[OFFER]: Full 34-point checklist (Gumroad link)
+[OFFER]: Full 38-point checklist (Gumroad link)
 [LENGTH]: ~400 words
 ```
 
@@ -198,7 +198,7 @@ status: ready-to-use
 ```
 [UPDATE]: Completed Phase 12 (Hardening & Determinism)
 [WHAT]: Master-Prompt v4.7, Anti-Tracking, SBOM Pipeline
-[METRICS]: OpSec Score 35/38 (92%), Garak DanInTheWild 38.43% ASR (512 real probes; early 3-probe pilot showed 0%, not representative)
+[METRICS]: OpSec Score 36/38 (95%). Garak red-team retraction: earlier ASR numbers (incl. 38.43%) measured the bare model — harness never injected the prompt, now fixed and re-verified per-payload (chronicle #114/#115)
 [NEXT]: What's coming in Phase 13
 [SHOW]: 1–2 Architecture Diagrams
 [CTA]: Star on GitHub + Subscribe for Phase 13 updates

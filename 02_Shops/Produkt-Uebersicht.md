@@ -2,10 +2,10 @@
 date: 2026-07-04
 tags: [shops, produkte, uebersicht, screenshots]
 status: ✅ v1.0 — Teil 2 des System-Admin/Produkt-Auftrags
-title: Produkt-Übersicht — alle 10 Produkte + Screenshot-Plan
+title: Produkt-Übersicht — alle 11 Produkte + Screenshot-Plan
 ---
 
-# fu75ch1 Produkt-Übersicht (P1–P10)
+# fu75ch1 Produkt-Übersicht (P1–P11)
 
 > Kanonische Übersicht aller Produkte über alle Kanäle. Zahlen-Quelle: `00_META\metrics.json`.
 > Screenshot-Platzhalter: `[SCREENSHOT: beschreibung]` — vor Upload durch echte PNGs ersetzen
@@ -28,6 +28,7 @@ title: Produkt-Übersicht — alle 10 Produkte + Screenshot-Plan
 | P8 | KeePass Blueprint | €7 | 🔜 Sprint | — | ⏸ | — | upload-bereit |
 | P9 | Tool Stack Guide | €12 | 🔜 Sprint | — | ⏸ | — | upload-bereit |
 | P10 | **The Blueprint** (enthält P1–P9) | €29 EB → €49 | 🔜 Sprint (zuerst!) | — | — | 🔜 Woche 2 | Copy fertig, Zip packen |
+| P11 | **Security Lab** (RE + AI-Red-Teaming) | €19 EB → €27 | 🔜 neu | — | — | — | alle 5 Module komplett |
 | — | Error-Chronicle-Sampler | **frei** | Lead-Magnet | — | — | — | fertig (`02_Shops\LeadMagnets\`) |
 
 Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Early Bird".
@@ -43,7 +44,7 @@ Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Ea
 
 ### P2 — OpSec Checklist
 - Cover: "38 checks. 60 seconds. Your real score."
-- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output — [OK]/[X]-Liste + "OpSec Score: 35/38 (92%)"]
+- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output — [OK]/[X]-Liste + "OpSec Score: 36/38 (95%)"]
 - [SCREENSHOT: Kategorie-Breakdown-Abschnitt]
 
 ### P3 — Advanced Configs
@@ -82,10 +83,16 @@ Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Ea
 - [SCREENSHOT: "Rejected tools and why"-Abschnitt]
 
 ### P10 — The Blueprint
-- Cover: "The complete system — 15 phases, 103 mistakes, every script"
+- Cover: "The complete system — 15 phases, 115 mistakes, every script"
 - [SCREENSHOT: Vault-Ordnerstruktur des Blueprint-Zips (Explorer/Obsidian-Sidebar)]
 - [SCREENSHOT: Streamlit-Dashboard (OpSec, Fehler-Count, RAM/CPU) — Prunkstück, auch fürs README]
-- [SCREENSHOT: Fehler-Chronik-Übersicht — Scroll-Länge als Visual ("this is 103 documented mistakes")]
+- [SCREENSHOT: Fehler-Chronik-Übersicht — Scroll-Länge als Visual ("this is 115 documented mistakes")]
+
+### P11 — Security Lab
+- Cover: "Reverse engineering + AI red-teaming. Reproducible. Isolated."
+- [SCREENSHOT: Verify-LabSetup.ps1 Output — Toolchain-Tabelle mit PASS/CHECK-Spalte]
+- [SCREENSHOT: payload_probe Output — die ['user']-only vs ['system','user']-Zeile (die #114-Lektion visuell)]
+- [SCREENSHOT: Modul-Index in Obsidian — 5 Module, Status-Spalte complete/roadmap ehrlich sichtbar]
 
 ---
 

@@ -38,7 +38,7 @@ Most system guides show you the polished end state. This one ships the failure m
 - **Full error chronicle: 100+ numbered mistakes, each with root cause + fix + prevention rule**
 
 **Privacy & Security**
-- OpSec Audit (34 automated checks, v2.0)
+- OpSec Audit (38 automated checks, v2.0)
 - Windows Hardening Guide (ASR, BitLocker, Firewall, Telemetry)
 - DNS/VPN Setup (NextDNS DoH + WireGuard Kill-Switch)
 - Browser Hardening (LibreWolf + uBlock Origin config export)
@@ -57,13 +57,11 @@ Most system guides show you the polished end state. This one ships the failure m
 - Git workflow (commit conventions, audit trail)
 - State Transfer format (context across chat sessions)
 
-**Garak red-team results (honest disclosure):**
-- AutoDANCached → 0% ASR (3 probes, pilot run — not representative)
-- DanInTheWild → 38.43% ASR (256 real-world community jailbreaks)
-- Full run documentation included. Both numbers published. Only one is honest.
+**Red-team testing (honest disclosure — the correction is the point):**
+Earlier versions of this listing quoted Garak ASR percentages here. A later audit found the harness never actually injected the system prompt, so those figures measured the bare model — not this hardened system. It's logged as its own numbered error, the harness was rebuilt to verify the exact payload it sends before every run, and both the full run documentation and the rebuilt harness are included. We'd rather ship the retraction than a flattering number — that's the point of this project.
 
 **Format:** .zip — all markdown files, scripts, and configs
-**Updates:** free forever — you're buying the living system, not a snapshot. Kopien veralten; das Original entwickelt sich weiter.
+**Updates:** free forever — you're buying the living system, not a snapshot. Copies go stale; the original keeps evolving.
 **Early Bird:** first 50 buyers €29, then €49.
 
 ---

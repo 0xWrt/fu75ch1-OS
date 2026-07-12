@@ -4,6 +4,8 @@ date: 2026-07-01
 status: ✅ Aktiv
 version: "4.7"
 title: Master-Prompt v4.7 — AI Operating System
+edition: personal reference/showcase (echtes Setup, DE) — NICHT die verkaufte Produktversion
+sibling_files: Master-Prompt-v4.7.md (EN, verkauftes Produkt-Template, generisch) | Master-Prompt-v4.7-Public-EN.md (EN, Showcase-Uebersetzung dieser Datei)
 ---
 
 # Master-Prompt v4.7 — AI Operating System
@@ -52,7 +54,7 @@ Vault: %USERPROFILE%\Documents\fu75ch1
 VirtualBox: Host-Only Adapter aktiv, kein Routing-Konflikt (verifiziert)
 IPv6: deaktiviert auf allen physischen Adaptern
 WSL2: Ubuntu 22.04 aktiv (Binwalk v2.3.3, Linux-Tools)
-Netzwerk: [ISP-REDACTED] (LTE/CG-NAT, kein OpenWrt, kein router-seitiges DNS)
+Netzwerk: LTE/CG-NAT-Gateway (kein OpenWrt, kein router-seitiges DNS)
 
 MANAGED DEVICES:
 - Fire TV Stick AFTKM | Fire OS 11 | ABI: armeabi-v7a | IP: [IP-REDACTED]

@@ -31,7 +31,7 @@ If you are building a production AI system and want to learn from 100+ documente
 - Script header retrofit applied to all production scripts
 
 **OpSec Hardening:**
-- 34-point automated audit (v2.0), current score 35/38 (92%)
+- 38-point automated audit (v2.0), current score 36/38 (95%)
 - Gap analysis for remaining 3 structural issues
 - Fix scripts for all addressable gaps
 
@@ -43,10 +43,8 @@ If you are building a production AI system and want to learn from 100+ documente
 - 3 tools wired into Claude Desktop: read vault, write vault, execute PowerShell
 - Architecture and integration documentation
 
-**Prompt Security — Garak Results (honest):**
-- Run 1 Baseline: 45.23% ASR
-- Run 6 (v4.6, DanInTheWild, 256 probes): 38.43% ASR
-- Run 4 showed 0% ASR — AutoDANCached, 3 probes, not representative. Documented alongside the real numbers.
+**Prompt Security — Garak Results (honest retraction):**
+This playbook originally reported ASR percentages from Runs 1–6. A later audit found the harness never injected the system prompt — every one of those figures measured the bare model, not the hardened prompt. The finding is logged as its own numbered error and the harness was rebuilt to verify the exact payload before each run. The playbook now ships that correction and the rebuilt methodology in place of the invalid numbers.
 
 **Includes:**
 - Full Phase 12 plan and completion protocol

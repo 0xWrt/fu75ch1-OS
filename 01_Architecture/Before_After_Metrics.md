@@ -40,4 +40,4 @@ title: Before/After Metrics — fu75ch1 (auto)
 | Public .md Dateien | 79 |
 | Git Commits (Core) | 147 |
 
-## Fehler-Chronologie: **102 Eintraege** (nummeriert bis #103, einzelne Nummern historisch konsolidiert), je eine Praeventionsregel pro Eintrag
+## Fehler-Chronologie: **115 Eintraege** (nummeriert bis #115, einzelne Nummern historisch konsolidiert), je eine Praeventionsregel pro Eintrag

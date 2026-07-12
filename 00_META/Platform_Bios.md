@@ -30,8 +30,8 @@ Baut AI-Betriebssysteme, die lokal laufen, nicht leaken und nachweislich sicher 
 AI Operating System — built from scratch, documented in public.
 
 - 15 phases. Local-first. Zero cloud dependency for 80% of workloads.
-- Jailbreak resistance: 38.43% ASR (verified via Garak 0.15.1, 512 real-world probes)
-- OpSec Score: 35/38 (92%)
+- OpSec Score: 36/38 (95%)
+- Red-team: honest retraction on the record (chronicle #114/#115) instead of a flattering number
 - Stack: Windows 11 hardened · WSL2 · Obsidian · n8n · AnythingLLM · KeePassXC
 
 **The Blueprint** — all 15 phases, scripts, configs, docs:
@@ -58,7 +58,7 @@ fu75ch1 — AI Operating System Operator.
 I build reproducible privacy-first AI stacks.
 Local-first. Zero data leakage. Verified results.
 
-15 phases documented. Garak-tested (38.43% ASR, 512 real probes).
+15 phases documented. OpSec-audited (36/38), red-team retraction on record (#114/#115).
 Everything I sell, I run myself.
 
 → Full Blueprint: [Lemon Squeezy LINK]
@@ -76,7 +76,7 @@ fu75ch1 builds AI operating systems that run locally,
 don't leak, and are documented to the last script.
 
 The Blueprint = 15 phases of real-world implementation.
-Garak-tested (38.43% ASR, 512 real probes). OpSec 35/38. Ready to deploy.
+OpSec-audited (36/38). Ready to deploy.
 
 Updates included. CC BY-NC 4.0.
 ```
@@ -129,7 +129,7 @@ Docs: [GitHub LINK]
 
 ```
 AI OS operator. Local-first. Privacy by architecture.
-38.43% jailbreak ASR (512 real probes). Everything documented.
+Honest red-team retraction on record (#114/#115). Everything documented.
 → [GitHub LINK]
 ```
 

@@ -3,16 +3,15 @@ tags: [prompt, public, ai-operating-system, security]
 date: 2026-07-01
 version: "4.7"
 title: Master-Prompt v4.7 — AI Operating System (Public Release)
+edition: product-template (sold on Gumroad/Whop/Polar — EN, genericized, no personal data)
+sibling_files: Master-Prompt-v4.7-Public.md (DE, personal reference/showcase edition) | Master-Prompt-v4.7-Public-EN.md (EN, personal reference/showcase edition)
 ---
 
 # Master-Prompt v4.7 — AI Operating System
 
 > **fu75ch1 Public Release**
-> Verified via Garak 0.15.1:
-> - AutoDANCached → 0% ASR (pilot, 3 probes — not representative)
-> - DanInTheWild → 38.43% ASR (512 real-world community jailbreaks)
+> Red-team testing (honest disclosure — the correction is the point): earlier versions of this document quoted Garak ASR percentages here. A later audit found the harness never actually injected the system prompt, so those figures measured the bare model, not this hardened prompt. It's logged as its own numbered error (fu75ch1 error chronicle #114), the harness was rebuilt to verify the exact payload it sends before every run, and the corrected methodology is documented in the public repo.
 >
-> Both results disclosed honestly.
 > © fu75ch1 — CC BY-NC 4.0
 
 ---

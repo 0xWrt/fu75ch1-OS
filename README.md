@@ -20,7 +20,7 @@ This one is different in a way that doesn't require any of that: it's **one
 person, two weeks, and a public log of exactly what went wrong.** Not a
 polished pitch — a working system with the failure modes left in.
 
-- **103 numbered errors**, each with root cause, fix, and prevention rule —
+- **115 numbered errors**, each with root cause, fix, and prevention rule —
   not deleted, not squashed into a clean commit history. Including #103:
   the error of forgetting to log error #96. Yes, that's in there too.
 - **A red-team number that doesn't flatter the system.** A 3-probe pilot run
@@ -44,7 +44,7 @@ solo build with nothing hidden actually looks like, keep reading.
 | OpSec Score | **36/38 (95%)** 🟢 |
 | Phases completed | **15 / 15** ✅ |
 | Supporting-workload cloud dependency | **< 20%** (RAG, automation, observability) |
-| Errors documented with root cause + fix | **103** — [full chronicle](01_Architecture/Error_Chronicle.md) |
+| Errors documented with root cause + fix | **115** — [full chronicle](01_Architecture/Error_Chronicle.md) |
 | Time to build | **~2 weeks, one person** |
 
 <!-- TODO before Show HN: add dashboard screenshot (fu75ch1_dashboard.py, localhost:8501) here -->
@@ -138,7 +138,7 @@ Full write-up of every phase: [01_Architecture/Phases](01_Architecture/Phases)
 ├── MANIFESTO_DE.md              ← German original
 ├── 00_PROOF/                    ← verified metrics, Garak run details
 ├── 01_Architecture/             ← sanitized system prompt, phase write-ups,
-│                                   error chronicle (103 entries), handbook
+│                                   error chronicle (115 entries), handbook
 └── 02_CONTENT_OPERATING_SYSTEM/ ← LinkedIn, newsletter, product templates
 ```
 

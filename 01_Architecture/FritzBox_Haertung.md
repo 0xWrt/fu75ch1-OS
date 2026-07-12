@@ -14,8 +14,8 @@ title: Fritz!Box 6660 Cable -- Haertung & WireGuard
 |---|---|
 | Modell | Fritz!Box 6660 Cable |
 | FRITZ!OS | 7.57 ([ISP-REDACTED]-Leihgeraet, Update gesperrt) |
-| Anbieter | [ISP-REDACTED] |
-| IP-Situation | CG-NAT (WAN: 100.x.x.x), IPv6 vorhanden ([IPv6-REDACTED]...) |
+| Anbieter | [ISP-REDACTED] (Kabel) |
+| IP-Situation | CG-NAT (WAN: 100.x.x.x), IPv6 vorhanden ([IPv6-PREFIX-REDACTED]) |
 | MyFRITZ! | aktiv, Hostname: [MYFRITZ-HOSTNAME-REDACTED] |
 
 ## Durchgefuehrte Haertung (2026-07-01)
@@ -38,7 +38,7 @@ title: Fritz!Box 6660 Cable -- Haertung & WireGuard
 |---|---|
 | Bevorzugter DNSv4 | [IP-REDACTED] (Mullvad) |
 | Alternativer DNSv4 | [IP-REDACTED] (Mullvad) |
-| Bevorzugter DNSv6 | 2a07:e340::2 (Mullvad) |
+| Bevorzugter DNSv6 | [IP-REDACTED] (Mullvad) |
 | DoT-Hostname | dns.mullvad.net |
 | DNS over TLS | aktiv |
 

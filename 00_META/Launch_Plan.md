@@ -23,7 +23,7 @@ title: Launch Plan — fu75ch1 Produkt & Kanal-Strategie
  System" als Kategorie-Claim (GitHub-Topic `ai-operating-system` ist
  uebersaettigt mit teambetriebenen Projekten). Hin zu der einzigen
  Differenzierung, die ein 2-Wochen-Solo-Projekt ehrlich beanspruchen kann:
- **103 dokumentierte Fehler (exakte Zahl vor jedem Post via metrics.json pruefen), ehrliche 38.43%-ASR-Zahl statt geschoenter 0%,
+ **115 dokumentierte Fehler (exakte Zahl vor jedem Post via metrics.json pruefen), eine ehrliche Selbstkorrektur bei der eigenen Sicherheitsmessung (#114/#115) statt einer stillen Zahlenkosmetik,
  lauffaehige Scripts statt Architektur-Diagramme.** README + GitHub bereits
  umgeschrieben (2026-07-02, Zahlen-Update 2026-07-04).
 
@@ -140,7 +140,7 @@ Early-Bird-Mechanismus:
 - **Wann:** Ab Phase 2 (wenn GitHub live)
 
 #### Hacker News — Show HN
-- **Was:** Einmaliger Launch-Post: "Show HN: I documented all 103 mistakes building a local-first AI stack solo" (77 Zeichen -- HN-Limit ist 80; exakte Fehlerzahl am Post-Tag via metrics.json pruefen). Die ASR-Story (38.43% statt geschoenter 0%) gehoert in den ersten eigenen Kommentar, nicht in den Titel.
+- **Was:** Einmaliger Launch-Post: "Show HN: I documented all 115 mistakes building a local-first AI stack solo" (77 Zeichen -- HN-Limit ist 80; exakte Fehlerzahl am Post-Tag via metrics.json pruefen). Die Story im ersten eigenen Kommentar ist jetzt die Garak-Retraction (#114/#115: Harness injizierte den Prompt nie, alle bisherigen ASR-Zahlen ungueltig) statt der alten 38.43%-vs-0%-Erzaehlung -- staerkere Story, echte Selbstkorrektur statt Kennzahl.
 - **Aufwand:** 1× einmalig, ~1h Vorbereitung
 - **Timing:** Montag/Dienstag 9–11 Uhr UTC (höchste Sichtbarkeit)
 - **Erwartung:** 50–300 GitHub-Stars im Launch-Fenster

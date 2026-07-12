@@ -17,19 +17,19 @@ title: Gumroad Upload Guide — alle 9 Produkte
 
 **Titel:** `fu75ch1 Master-Prompt v4.7 — Production AI System Prompt`
 **Preis:** €9
-**Summary:** `The system prompt that runs a complete AI OS. Jailbreak-resistant. Garak 0.15.1 tested: 0% ASR (AutoDANCached, pilot) and 38.43% ASR (DanInTheWild, 512 real-world probes). Governance layers. Security hardened.`
+**Summary:** `The system prompt that runs a complete AI OS. Jailbreak-resistant, governance layers, security hardened. On red-team metrics we ship an honest retraction: our earlier ASR numbers measured the bare model (harness never injected the prompt) — corrected methodology is in the repo.`
 **Additional details:** Inhalt aus Beschreibungs-MD
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Master-Prompt-v4.7-Gumroad.md`
-**Upload 2 (Produkt):** `fu75ch1_public\01_Architecture\Master-Prompt-v4.7-Gumroad.md` (gleiche Datei — ist Prompt + Anleitung in einem)
+**Upload 1 (README):** `fu75ch1_public\01_Architecture\Master-Prompt-v4.7.md`
+**Upload 2 (Produkt):** `fu75ch1_public\01_Architecture\Master-Prompt-v4.7.md` (gleiche Datei — ist Prompt + Anleitung in einem)
 **Slug:** `master-prompt-v47`
 
 ---
 
 ## Produkt 2 — OpSec Checklist ✅
 
-**Titel:** `fu75ch1 OpSec Checklist — 34-Point Security Audit (PowerShell, v2.0)`
+**Titel:** `fu75ch1 OpSec Checklist — 38-Point Security Audit (PowerShell, v2.0)`
 **Preis:** €7
-**Summary:** `34 automated security checks for Windows. Run it, get a score. No manual work. Real results in 60 seconds.`
+**Summary:** `38 automated security checks for Windows. Run it, get a score. No manual work. Real results in 60 seconds.`
 **Additional details:** Inhalt aus Beschreibungs-MD
 **Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P2-OpSec-Checklist.md`
 **Upload 2 (Produkt):** `fu75ch1\10_Workflows\Invoke-OpSecAudit.ps1`
@@ -57,6 +57,25 @@ fu75ch1_public\01_Architecture\Configs\WireGuard\Disable-IPv6Leak.ps1
 ```
 
 **Slug (reserviert):** `advanced-configs`
+
+---
+
+## Produkt 11 — Security Lab (NEU 2026-07-11)
+
+**Titel:** `fu75ch1 Security Lab — Reverse Engineering + AI Red-Teaming (reproducible, isolated)`
+**Preis:** €27 (Early Bird €19, erste 50 — als Gumroad-Discount-Code, Limit 50)
+**Summary:** `A reproducible security lab you build from pinned, idempotent scripts: reverse engineering (Android + firmware) and AI red-teaming in one isolated environment. Built around a real, documented measurement failure - so you learn the part most courses skip: proving your test tested what you think it did.`
+**Additional details:** Inhalt aus Beschreibungs-MD (`Gumroad-P11-Security-Lab.md`)
+
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P11-Security-Lab.md`
+
+**Upload 2 (Produkt-Zip):** ganzen Ordner packen nach Manifest in der Beschreibungs-MD:
+```
+fu75ch1_public\01_Architecture\SecurityLab\   (README, SAFETY-and-LEGAL, provision\, modules\)
+```
+> Vor dem Zippen: `Verify-GhostMark`-Watermark setzen (wie P1-P10), Stale-/PII-Scan ueber den Ordner.
+
+**Slug:** `security-lab`
 
 ---
 

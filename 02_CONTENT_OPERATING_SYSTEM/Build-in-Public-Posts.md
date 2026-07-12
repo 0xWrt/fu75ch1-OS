@@ -16,7 +16,7 @@ title: Build-in-Public — 3 Posts (Launch-Woche)
 
 ## Post 1 — Die #103-Story (Launch-Tag, stärkster Post)
 
-My side project's core claim is "every mistake numbered and documented." 103 entries.
+My side project's core claim is "every mistake numbered and documented." 115 entries.
 
 Last week a consistency check found the chronicle jumped from #95 to #97.
 
@@ -28,7 +28,7 @@ The fix is 15 lines of PowerShell that compare referenced error numbers against 
 
 Lesson: if your project claims "we document everything," that claim is a system requirement, not a habit. Habits fail silently.
 
-Full chronicle (all 103, root cause + prevention rule each) is public-ish — 20 free in the sampler, link in bio.
+Full chronicle (all 115, root cause + prevention rule each) is public-ish — 20 free in the sampler, link in bio.
 
 *(Screenshot-Slot: Chronik-Ausschnitt mit #103-Eintrag)*
 
@@ -36,19 +36,15 @@ Full chronicle (all 103, root cause + prevention rule each) is public-ish — 20
 
 ## Post 2 — Die 0%-vs-38.43%-Story (Tag 2, nach Show HN)
 
-I red-teamed my own AI system prompt with Garak and got 0% attack success rate.
+I red-teamed my own AI system prompt with Garak — and later found the harness never actually injected the prompt.
 
-Great number. Completely useless.
+The numbers looked reasonable at first: 0% ASR on a pilot run, 38.43% on the real one. Published both, side by side, because the moment you publish only the flattering one, everything else you claim becomes suspicious too.
 
-The 0% came from a 3-probe pilot run. Three attempts. I could have led every product page with it — "0% jailbreak success, verified!" — and it would have been technically true.
+Then a payload audit found the bug: the harness sends the attack turns as pure user-role messages. The system prompt config key exists, is documented, and is never read by the tool. Every one of those numbers measured the bare model — not the hardened prompt.
 
-The real test: DanInTheWild, 512 actual community jailbreaks. Result: 38.43% got through.
+That's now error #114 in the chronicle. The harness got rebuilt to verify the exact payload it sends before every run — no more trusting a config key just because it's documented.
 
-Both numbers are published, side by side, on every page. Because the moment you publish only the flattering one, everything else you claim becomes suspicious too.
-
-Bonus honesty: Run 7 showed 48.52% — and after reading the actual failures, most were false positives from an oversensitive detector. That analysis is public too. Raw scanner metrics lie in both directions.
-
-If a security product only shows you one number, ask what the other runs said.
+If a security product only shows you one number, ask what actually got measured — not just whether the number looks bad enough to be honest.
 
 *(Screenshot-Slot: Garak-Terminal-Output Run 6)*
 
@@ -58,7 +54,7 @@ If a security product only shows you one number, ask what the other runs said.
 
 Two weeks ago I started selling the parts of my local-first AI stack as standalone guides: hardening, DNS/VPN, browser config, credential setup, the audit script, the system prompt. Nine products, €84 combined.
 
-Today the whole thing went live as one package: The Blueprint — all 15 phases, every script, every config, and the complete error chronicle (103 numbered mistakes with root cause and prevention rule each).
+Today the whole thing went live as one package: The Blueprint — all 15 phases, every script, every config, and the complete error chronicle (115 numbered mistakes with root cause and prevention rule each).
 
 €29 for the first 50 buyers, €49 after. Yes, that's a third of the parts price — the standalone products are for people who need one specific fix; the Blueprint is for people who want the system.
 
@@ -74,6 +70,6 @@ Free stuff first if you're skeptical: 20-error sampler + 5-check OpSec script + 
 1. Reddit: Posts 1+2 nur als organische Kommentare/Antworten einsetzen, Post 3 gar nicht (Selbstpromo-Ban-Risiko). Link in Bio, nicht im Text.
 2. X: als Einzelposts oder Post 1 als Thread (Absätze = Tweets).
 3. HN: Post 1 + 2 sind Rohmaterial für Antworten im eigenen Show-HN-Thread — nie copy-pasten, immer auf den konkreten Kommentar anpassen.
-4. Zahlen (105, 38.43%, 35/38, €84) vor jedem Post gegen `metrics.json`.
+4. Zahlen (115, 36/38, €84) vor jedem Post gegen `metrics.json`. Post 2 zitiert bewusst KEINE ASR-Prozentzahl mehr (Messfehler #114) — nicht wieder einfuegen ohne neue valide Messung.
 
 © fu75ch1 — intern

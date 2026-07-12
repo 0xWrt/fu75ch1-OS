@@ -50,7 +50,7 @@ Vault: %USERPROFILE%\Documents\fu75ch1
 VirtualBox: Host-Only Adapter aktiv, kein Routing-Konflikt (verifiziert)
 IPv6: deaktiviert auf allen physischen Adaptern
 WSL2: Ubuntu 22.04 aktiv (Binwalk v2.3.3, Linux-Tools)
-Netzwerk: [ISP-REDACTED] (LTE/CG-NAT, kein OpenWrt, kein router-seitiges DNS)
+Netzwerk: LTE/CG-NAT-Gateway (kein OpenWrt, kein router-seitiges DNS)
 
 MANAGED DEVICES:
 - Fire TV Stick AFTKM | Fire OS 11 | ABI: armeabi-v7a | IP: [IP-REDACTED]

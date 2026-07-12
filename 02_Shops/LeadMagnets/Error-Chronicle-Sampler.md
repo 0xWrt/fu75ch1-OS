@@ -1,13 +1,13 @@
 # The fu75ch1 Error Chronicle — Free Sampler
-## 20 of 103 documented mistakes from building an AI operating system solo, in two weeks
+## 20 of 115 documented mistakes from building an AI operating system solo, in two weeks
 
 > **What this is:** fu75ch1 is a local-first AI operating system built by one person
 > in two weeks — with every single mistake numbered, root-caused, and documented.
-> This sampler contains 20 hand-picked entries from the full chronicle of 103.
+> This sampler contains 20 hand-picked entries from the full chronicle of 115.
 > No fluff, no theory: each of these actually broke, on a real machine, and each
 > prevention rule below exists because it had to.
 >
-> **The full chronicle (all 103, plus every script and config) ships with
+> **The full chronicle (all 115, plus every script and config) ships with
 > [The fu75ch1 Blueprint](https://fu75ch1.gumroad.com/l/blueprint) — €29 Early Bird.**
 > Free sanitized repo: [github.com/0xWrt/fu75ch1-OS](https://github.com/0xWrt/fu75ch1-OS)
 
@@ -91,7 +91,7 @@ Garak sent `temperature` and `top_p` simultaneously — the Anthropic API accept
 
 **#37 — The red-team number that lied (in both directions).**
 Garak's MitigationBypass detector produced heavy false positives — raw ASR numbers looked dramatic and meant little.
-→ **Rule: never publish a raw scanner metric unvalidated. Read the actual failures. (This rule is why fu75ch1 publishes 38.43% honestly instead of a flattering 0% from a 3-probe pilot.)**
+→ **Rule: never publish a raw scanner metric unvalidated. Read the actual failures. (This rule got a sharper sequel: a later audit found the harness never injected the system prompt at all — so even the honest-looking number measured the bare model, not the hardened one. The rule was right; we hadn't applied it deep enough. The rebuilt harness is in the repo.)**
 
 **#51 — RAG indexed everything twice.**
 Two document connectors (Obsidian + local directory) pointed at the same vault. Every document existed twice; retrieval quality collapsed.
@@ -122,7 +122,7 @@ If a project's error log can't even trust itself without tooling, neither can yo
 
 ---
 
-## Want all 103?
+## Want all 115?
 
 - **[The fu75ch1 Blueprint](https://fu75ch1.gumroad.com/l/blueprint)** — the complete system: all 15 phases, every script, every config, and the full error chronicle with root cause + fix + prevention rule for each entry. €29 Early Bird (first 50), then €49.
 - **Standalone components** (€7–14): [fu75ch1.gumroad.com](https://fu75ch1.gumroad.com)

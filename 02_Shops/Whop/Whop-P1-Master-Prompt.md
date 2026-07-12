@@ -40,9 +40,8 @@ Built solo, in two weeks, alongside 100+ other documented mistakes from the same
 - `[output_format]` — MECE structure, explanation principle, audience calibration
 - `[self_check]` — 30-point pre-response checklist
 
-**Garak red-team results (honest disclosure):**
-- AutoDANCached → 0% ASR (3 probes, pilot run — not representative)
-- DanInTheWild → 38.43% ASR (256 real-world community jailbreaks)
+**Red-team testing (honest disclosure — the correction is the point):**
+Earlier versions of this listing quoted Garak ASR percentages here. A later audit found the harness never actually injected the system prompt, so those figures measured the bare model — not this hardened prompt. It's logged as its own numbered error, the harness was rebuilt to verify the exact payload it sends before every run, and the corrected methodology ships in the public repo. We'd rather show the retraction than a flattering number.
 
 **Format:** Single `.md` file, ready to paste as system prompt.
 **Compatible with:** Claude, GPT-4, any API with a system-prompt field.

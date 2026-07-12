@@ -33,7 +33,7 @@ Exakt die Markenlinie (38.43% statt 0%).
 
 - [ ] Streamlit-Dashboard (localhost:8501) — wichtigster Shot, auch fürs README-TODO
 - [ ] Obsidian: Vault-Struktur (P10) + Master-Prompt-Gliederung (P1)
-- [ ] Fehler-Chronik-Scroll (P10, "this is 103 documented mistakes")
+- [ ] Fehler-Chronik-Scroll (P10, "this is 115 documented mistakes")
 - [ ] KeePassXC Demo-DB (P8 — NUR Demo-Einträge!)
 - [ ] n8n Workflow-Canvas (P3)
 
