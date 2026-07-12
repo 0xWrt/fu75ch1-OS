@@ -1,0 +1,32 @@
+# fu75ch1 Security Lab - AI Red-Teaming
+# Run the pinned red-team environment. The API key is injected from your shell
+# environment at run time and never stored in this file or the image.
+#
+# Usage:
+#   export ANTHROPIC_API_KEY=...        # in your shell, NOT in this file
+#   docker compose run --rm airt        # drops you into the lab shell
+#
+# Verify only (prints tool versions, then exits):
+#   docker compose run --rm airt python -c "import garak; print(garak.__version__)"
+
+services:
+  airt:
+    build:
+      context: .
+      # Versions are pinned in the Dockerfile ARGs; override here only on purpose.
+    image: fu75ch1-airt:1.0
+    container_name: fu75ch1-airt
+    # Secret injection: value comes from YOUR environment. If ANTHROPIC_API_KEY is
+    # unset, the container starts but red-team runs against Anthropic will fail loudly
+    # - which is correct. No key ever lives in this repo.
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    # Your lab configs and results stay on the host, under your version control.
+    volumes:
+      - ./work:/home/lab/work
+    # No inbound ports. This lab makes outbound API calls only.
+    # Interactive shell by default.
+    stdin_open: true
+    tty: true
+    command: ["/bin/bash"]

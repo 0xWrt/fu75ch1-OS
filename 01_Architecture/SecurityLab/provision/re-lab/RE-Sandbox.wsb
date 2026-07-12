@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  fu75ch1 Security Lab - Windows Sandbox config for reverse engineering.
+
+  Windows Sandbox gives you a disposable, isolated Windows instance that is destroyed
+  on close. This is where you run untrusted binaries and dynamic analysis - never on
+  your host.
+
+  Requires: Windows 11 Pro/Enterprise/Education with "Windows Sandbox" feature enabled
+  (Settings > optional features, or: Enable-WindowsOptionalFeature -Online
+  -FeatureName "Containers-DisposableClientVM"). Windows Home has no Sandbox - use the
+  WSL2 track instead.
+
+  Networking is DISABLED by default here. Static analysis (JADX, Ghidra) needs no
+  network. Enable it deliberately (set Networking to Default) only for the specific
+  step that requires it, and re-read SAFETY-and-LEGAL.md first.
+
+  Usage: double-click this .wsb file (adjust the HostFolder path first).
+-->
+<Configuration>
+  <VGpu>Disable</VGpu>
+  <Networking>Disable</Networking>
+  <MappedFolders>
+    <MappedFolder>
+      <!-- EDIT THIS PATH: a host folder holding your legal target(s) + tool installers. -->
+      <HostFolder>C:\lab-share</HostFolder>
+      <SandboxFolder>C:\lab</SandboxFolder>
+      <!-- Read-only so nothing in the sandbox can tamper with your host copy. -->
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <ProtectedClient>Enable</ProtectedClient>
+  <LogonCommand>
+    <Command>cmd.exe /c echo fu75ch1 RE Sandbox ready. Targets in C:\lab (read-only). Network OFF by design.</Command>
+  </LogonCommand>
+</Configuration>
