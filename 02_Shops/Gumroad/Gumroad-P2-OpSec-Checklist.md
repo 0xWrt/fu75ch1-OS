@@ -7,7 +7,7 @@
 
 ## SUMMARY
 
-38 automated security checks for Windows 11. Run it, get a score. No manual work, no guesswork — real results in under 60 seconds.
+38 automated security checks for Windows 11. Run it, get a real score in under 60 seconds — including the gaps that look green but aren't.
 
 ---
 
@@ -20,6 +20,8 @@ Most security checklists are PDFs you read once and forget. This one runs on you
 No raw data leaves the machine. No IPs, MACs, or credentials in the output. Just clean results you can act on.
 
 If you want to know your actual security posture — not your assumed one — run this script.
+
+Most audits tick a box and move on. This one catches the traps standard tools miss: a drive that reads "encrypted" but whose protection is silently switched off — self-unlocking, protecting nothing. A proxy service you can't safely disable because six others depend on it. It shows you the gap, tells you what closing it costs, and how to undo it. You decide, you run it. Nothing changes behind your back.
 
 One of 38 checks in a script written for a solo, two-week build — the kind that
 finds real gaps because it was written to catch the author's own mistakes, not to look thorough in a demo.
@@ -39,11 +41,13 @@ finds real gaps because it was written to catch the author's own mistakes, not t
 
 **Output format:**
 ```
-[OK] Check 01: VPN interface active
-[X]  Check 04: IPv6 disabled (physical adapters)
+[OK] Check 23: NetBIOS over TCP/IP disabled
+[X]  Check 35: BitLocker C: active  (FullyEncrypted, but ProtectionStatus=Off — encrypted yet unprotected)
 ...
-OpSec Score: 36/38 (95%)
+OpSec Score: 37/38 (97%)
 ```
+
+The author's own machine failed Check 35 — a fully encrypted drive protecting nothing, because no secure key protector was bound. The audit caught it. That's a real score you earn, not a vanity 100%.
 
 **Properties:**
 - Idempotent — safe to run repeatedly
