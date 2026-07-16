@@ -52,7 +52,7 @@ Consulting (siehe 1.2 -- aus aktiver Vermarktung genommen).
 **Korrigiert:** €49–79 (Early-Bird: €29 für erste 50 Käufer)
 
 Begründung: Das Blueprint ist kein generischer Prompt-Pack.
-Es ist ein dokumentiertes Betriebssystem mit 15 Phasen, Security-Verifikation (Garak: 38.43% ASR gegen 512 reale Jailbreaks, DanInTheWild; ein frueher 3-Proben-Pilot zeigte 0%, aber das war nicht repraesentativ),
+Es ist ein dokumentiertes Betriebssystem mit 15 Phasen, Security-Verifikation (Garak + Promptfoo; die veroeffentlichte ASR-Zahl wurde mit #114/#115 zurueckgezogen -- der Harness injizierte den System-Prompt nie, gemessen wurde das blanke Modell),
 Governance-Layer und reproduzierbarem Aufbau. Dieser Wert ist nicht bei €29 kommunizierbar.
 
 Early-Bird-Mechanismus:
@@ -140,7 +140,7 @@ Early-Bird-Mechanismus:
 - **Wann:** Ab Phase 2 (wenn GitHub live)
 
 #### Hacker News — Show HN
-- **Was:** Einmaliger Launch-Post: "Show HN: I documented all 115 mistakes building a local-first AI stack solo" (77 Zeichen -- HN-Limit ist 80; exakte Fehlerzahl am Post-Tag via metrics.json pruefen). Die Story im ersten eigenen Kommentar ist jetzt die Garak-Retraction (#114/#115: Harness injizierte den Prompt nie, alle bisherigen ASR-Zahlen ungueltig) statt der alten 38.43%-vs-0%-Erzaehlung -- staerkere Story, echte Selbstkorrektur statt Kennzahl.
+$1 <!-- stale-ok: beschreibt bewusst die alte Erzaehlung -->
 - **Aufwand:** 1× einmalig, ~1h Vorbereitung
 - **Timing:** Montag/Dienstag 9–11 Uhr UTC (höchste Sichtbarkeit)
 - **Erwartung:** 50–300 GitHub-Stars im Launch-Fenster

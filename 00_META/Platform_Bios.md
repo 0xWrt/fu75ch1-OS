@@ -30,7 +30,7 @@ Baut AI-Betriebssysteme, die lokal laufen, nicht leaken und nachweislich sicher 
 AI Operating System — built from scratch, documented in public.
 
 - 15 phases. Local-first. Zero cloud dependency for 80% of workloads.
-- OpSec Score: 36/38 (95%)
+- OpSec Score: 37/38 (97%), measured 2026-07-16 - one visible fail
 - Red-team: honest retraction on the record (chronicle #114/#115) instead of a flattering number
 - Stack: Windows 11 hardened · WSL2 · Obsidian · n8n · AnythingLLM · KeePassXC
 
@@ -58,7 +58,7 @@ fu75ch1 — AI Operating System Operator.
 I build reproducible privacy-first AI stacks.
 Local-first. Zero data leakage. Verified results.
 
-15 phases documented. OpSec-audited (36/38), red-team retraction on record (#114/#115).
+15 phases documented. OpSec-audited (37/38), red-team retraction on record (#114/#115).
 Everything I sell, I run myself.
 
 → Full Blueprint: [Lemon Squeezy LINK]
@@ -76,7 +76,7 @@ fu75ch1 builds AI operating systems that run locally,
 don't leak, and are documented to the last script.
 
 The Blueprint = 15 phases of real-world implementation.
-OpSec-audited (36/38). Ready to deploy.
+OpSec-audited (37/38). Ready to deploy.
 
 Updates included. CC BY-NC 4.0.
 ```

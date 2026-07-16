@@ -28,7 +28,7 @@ The fix is 15 lines of PowerShell that compare referenced error numbers against 
 
 Lesson: if your project claims "we document everything," that claim is a system requirement, not a habit. Habits fail silently.
 
-Full chronicle (all 115, root cause + prevention rule each) is public-ish — 20 free in the sampler, link in bio.
+Full chronicle (every entry, root cause + prevention rule each) is public-ish — 20 free in the sampler, link in bio.
 
 *(Screenshot-Slot: Chronik-Ausschnitt mit #103-Eintrag)*
 
@@ -70,6 +70,6 @@ Free stuff first if you're skeptical: 20-error sampler + 5-check OpSec script + 
 1. Reddit: Posts 1+2 nur als organische Kommentare/Antworten einsetzen, Post 3 gar nicht (Selbstpromo-Ban-Risiko). Link in Bio, nicht im Text.
 2. X: als Einzelposts oder Post 1 als Thread (Absätze = Tweets).
 3. HN: Post 1 + 2 sind Rohmaterial für Antworten im eigenen Show-HN-Thread — nie copy-pasten, immer auf den konkreten Kommentar anpassen.
-4. Zahlen (115, 36/38, €84) vor jedem Post gegen `metrics.json`. Post 2 zitiert bewusst KEINE ASR-Prozentzahl mehr (Messfehler #114) — nicht wieder einfuegen ohne neue valide Messung.
+4. JEDE Zahl vor jedem Post gegen `metrics.json` pruefen (nie aus dem Gedaechtnis, nie aus einem alten Post kopieren). Post 2 zitiert bewusst KEINE ASR-Prozentzahl mehr (Messfehler #114) — nicht wieder einfuegen ohne neue valide Messung.
 
 © fu75ch1 — intern

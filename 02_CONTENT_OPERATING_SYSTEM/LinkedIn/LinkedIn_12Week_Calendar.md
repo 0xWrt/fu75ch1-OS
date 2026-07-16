@@ -141,7 +141,7 @@ status: ready-to-use
 
 ## WEEK 5: Real Results (Social Proof)
 
-**Topic:** OpSec Audit — 35/38 Security Score Explained  
+**Topic:** OpSec Audit -- der Score, den du dir verdienst (aktuelle Zahl aus metrics.json)
 **Type:** Results / Case Study (Your Own)  
 **Tone:** Factual, Impressive-But-Honest  
 **CTA:** Full Audit Checklist (Gumroad €7)  
@@ -151,7 +151,7 @@ status: ready-to-use
 **Post Struktur:**
 ```
 [HEADLINE]: I Audited My System Against 38 Security Checks
-[RESULTS]: 36/38 passed (95%)
+[RESULTS]: [aktuelle Zahl aus metrics.json einsetzen]
 [BREAKDOWN]: VPN/Network, System Security, Tools, Anti-Tracking
 [SPECIFIC]: Show top 3 findings + how I fixed them
 [OFFER]: Full 38-point checklist (Gumroad link)
@@ -198,7 +198,7 @@ status: ready-to-use
 ```
 [UPDATE]: Completed Phase 12 (Hardening & Determinism)
 [WHAT]: Master-Prompt v4.7, Anti-Tracking, SBOM Pipeline
-[METRICS]: OpSec Score 36/38 (95%). Garak red-team retraction: earlier ASR numbers (incl. 38.43%) measured the bare model — harness never injected the prompt, now fixed and re-verified per-payload (chronicle #114/#115)
+$1[aktuell aus metrics.json]$2 <!-- stale-ok: nennt 38.43% bewusst als Retraction -->
 [NEXT]: What's coming in Phase 13
 [SHOW]: 1–2 Architecture Diagrams
 [CTA]: Star on GitHub + Subscribe for Phase 13 updates
