@@ -15,9 +15,9 @@ title: Marketing-Assets — Terminal-Cards (echt) + Screenshot-Restliste
 
 | Datei | Inhalt | Einsatz |
 |---|---|---|
-| `P2_opsec_audit_35of38.svg` | Echter Audit-Lauf, 35/38 inkl. sichtbarem [X] Check 29 | P2-Cover/Screenshot, Post 2, README |
+| `P2_opsec_audit_35of38.svg` | **STALE (2026-07-16)** -- zeigt einen ueberholten Score. NEU ERZEUGEN aus echtem elevated Audit-Lauf. NICHT von Hand umschreiben (waere gefaelschte Evidenz). |
 | `LeadMagnet_quickcheck_5of5.svg` | Echter QuickCheck-Lauf 5/5 | Lead-Magnet-Promo, X-Posts |
-| `P10_metricscheck_gate_green.svg` | **STALE (2026-07-14)** -- zeigt Errors 103 / OpSec 35/38 / ASR 38.43%; alle drei ueberholt (118 / 37/38 / ASR zurueckgezogen). NEU ERZEUGEN aus echtem Lauf, NICHT von Hand umschreiben. |
+| `P10_metricscheck_gate_green.svg` | **STALE (2026-07-16)** -- Fehlerzahl, OpSec-Score und ASR-Zeile alle ueberholt (ASR-Claim inzwischen zurueckgezogen). NEU ERZEUGEN aus echtem Lauf. |
 
 **Warum das [X] in der P2-Card drin bleibt:** Ein Audit-Screenshot mit sichtbarem
 Fehlschlag ist glaubwürdiger als 34× grün — er zeigt, dass das Tool wirklich prüft.
@@ -33,7 +33,7 @@ Exakt die Markenlinie (38.43% statt 0%).
 
 - [ ] Streamlit-Dashboard (localhost:8501) — wichtigster Shot, auch fürs README-TODO
 - [ ] Obsidian: Vault-Struktur (P10) + Master-Prompt-Gliederung (P1)
-- [ ] Fehler-Chronik-Scroll (P10, "this is 115 documented mistakes")
+- [ ] Fehler-Chronik-Scroll (P10, "every mistake, numbered" -- Zahl aus metrics.json)
 - [ ] KeePassXC Demo-DB (P8 — NUR Demo-Einträge!)
 - [ ] n8n Workflow-Canvas (P3)
 

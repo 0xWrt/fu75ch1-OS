@@ -25,7 +25,7 @@ The fu75ch1 Blueprint — AI Operating System (15 Phases)
 
 ```
 A complete AI OS built local-first. 15 phases. Verified results.
-Jailbreak-resistant (Garak 0.15.1: 0% ASR pilot / 38.43% ASR real-world, 256 probes). Everything documented. Updates included.
+Jailbreak-resistant - and honestly measured. The headline ASR number I published for months turned out to test the bare model, never my hardened prompt (error chronicle #114/#115). The correction, the method and the raw runs all ship with it. Everything documented. Updates included.
 ```
 
 ---
@@ -46,7 +46,7 @@ config, and decision documented so you can reproduce it exactly.
 ## What's included
 
 **Core System**
-- Master-Prompt v4.7 (production-tested, Garak-verified: 38.43% ASR vs. 256 real-world jailbreaks)
+- Master-Prompt v4.7 (production-tested; red-teamed with Garak + Promptfoo - including the payload-verification failure that invalidated my own headline number, #114/#115)
 - Behaviour Addendum v1.1 (explanation protocol, error analysis)
 - All 15 phase plans + completion protocols
 - PowerShell scripts (idempotent, strict mode, documented)

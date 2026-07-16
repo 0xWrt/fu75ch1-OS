@@ -15,7 +15,7 @@ The complete documentation of how a functional AI system becomes a reliable one 
 
 A working AI system and a hardened AI system are two different things.
 
-Phase 12 was the hardening phase of the fu75ch1 AI operating system — where every script became idempotent, every change was audited, every dependency was verified, and the prompt security was tested against 256 real-world jailbreak attempts.
+Phase 12 was the hardening phase of the fu75ch1 AI operating system — where every script became idempotent, every change was audited, every dependency was verified, and the prompt security was red-teamed - including the discovery that the harness had never been injecting the prompt at all (chronicle #114/#115).
 
 This playbook is not a guide on what to do. It is a documented record of what was actually done — including what broke, why it broke, and what the prevention rule is for next time.
 

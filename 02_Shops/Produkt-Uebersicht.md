@@ -44,7 +44,7 @@ Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Ea
 
 ### P2 — OpSec Checklist
 - Cover: "38 checks. 60 seconds. Your real score."
-- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output — [OK]/[X]-Liste + "OpSec Score: 36/38 (95%)"]
+- [SCREENSHOT: Invoke-OpSecAudit.ps1 Output -- [OK]/[X]-Liste + aktuelle Score-Zeile inkl. sichtbarem [X] (Zahl NICHT hartkodieren, aus echtem Lauf)]
 - [SCREENSHOT: Kategorie-Breakdown-Abschnitt]
 
 ### P3 — Advanced Configs
@@ -83,10 +83,10 @@ Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Ea
 - [SCREENSHOT: "Rejected tools and why"-Abschnitt]
 
 ### P10 — The Blueprint
-- Cover: "The complete system — 15 phases, 115 mistakes, every script"
+- Cover: "The complete system — 15 phases, every numbered mistake, every script"
 - [SCREENSHOT: Vault-Ordnerstruktur des Blueprint-Zips (Explorer/Obsidian-Sidebar)]
 - [SCREENSHOT: Streamlit-Dashboard (OpSec, Fehler-Count, RAM/CPU) — Prunkstück, auch fürs README]
-- [SCREENSHOT: Fehler-Chronik-Übersicht — Scroll-Länge als Visual ("this is 115 documented mistakes")]
+- [SCREENSHOT: Fehler-Chronik-Übersicht — Scroll-Länge als Visual ("every mistake, numbered" (Zahl aus metrics.json, nicht hartkodieren))]
 
 ### P11 — Security Lab
 - Cover: "Reverse engineering + AI red-teaming. Reproducible. Isolated."
