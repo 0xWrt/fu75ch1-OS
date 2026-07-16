@@ -31,7 +31,7 @@ If you are building a production AI system and want to learn from 100+ documente
 - Script header retrofit applied to all production scripts
 
 **OpSec Hardening:**
-- 38-point automated audit (v2.0), current score 36/38 (95%)
+- 38-point automated audit (v2.0), current score 37/38 (97%)
 - Gap analysis for remaining 3 structural issues
 - Fix scripts for all addressable gaps
 

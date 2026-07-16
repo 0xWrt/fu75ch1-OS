@@ -17,7 +17,7 @@ title: Marketing-Assets — Terminal-Cards (echt) + Screenshot-Restliste
 |---|---|---|
 | `P2_opsec_audit_35of38.svg` | Echter Audit-Lauf, 35/38 inkl. sichtbarem [X] Check 29 | P2-Cover/Screenshot, Post 2, README |
 | `LeadMagnet_quickcheck_5of5.svg` | Echter QuickCheck-Lauf 5/5 | Lead-Magnet-Promo, X-Posts |
-| `P10_metricscheck_gate_green.svg` | Echtes grünes Publikations-Gate + #103-Referenz | P10-Cover, #103-Story-Post, Issue #1 |
+| `P10_metricscheck_gate_green.svg` | **STALE (2026-07-14)** -- zeigt Errors 103 / OpSec 35/38 / ASR 38.43%; alle drei ueberholt (118 / 37/38 / ASR zurueckgezogen). NEU ERZEUGEN aus echtem Lauf, NICHT von Hand umschreiben. |
 
 **Warum das [X] in der P2-Card drin bleibt:** Ein Audit-Screenshot mit sichtbarem
 Fehlschlag ist glaubwürdiger als 34× grün — er zeigt, dass das Tool wirklich prüft.
@@ -41,4 +41,4 @@ Exakt die Markenlinie (38.43% statt 0%).
 
 - Neue Cards: nur aus echten, verifizierten Outputs bauen — nie Zahlen erfinden
 - Vor jeder neuen Card: `Invoke-MetricsCheck.ps1` grün
-- Bei Zahlenänderung (z.B. OpSec-Fix → 35/38): Cards regenerieren, alte löschen
+- Bei Zahlenaenderung (z.B. OpSec-Fix -> 37/38): Cards regenerieren, alte loeschen. NIE Zahlen im SVG von Hand editieren -- Screenshots muessen echte Laeufe zeigen.

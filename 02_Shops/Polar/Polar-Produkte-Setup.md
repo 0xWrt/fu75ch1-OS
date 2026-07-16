@@ -88,7 +88,7 @@ verwenden, sondern die neutralisierten Versionen in `fu75ch1_public\02_Shops\Pol
 - **Description (kurz, ≤42 Zeichen):**
   `Jailbreak-resistant AI system prompt` *(36 Zeichen)*
 - **Referenz-Satz (zu lang fürs Kurzfeld, nur für Markdown-Text nutzen):**
-  `The system prompt that runs a complete AI OS. Jailbreak-resistant. Garak 0.15.1 tested: 0% ASR (AutoDANCached, pilot) and 38.43% ASR (DanInTheWild, 512 real-world probes). Governance layers. Security hardened.`
+  `The system prompt that runs a complete AI OS. Jailbreak-resistant, red-teamed with Garak and Promptfoo - including the measurement failure that invalidated my own headline number (#114/#115). Governance layers. Security hardened.`
 - **Volltext/Details:** aus `fu75ch1_public\02_Shops\Polar\Polar-P1-Master-Prompt.md` (inkl. Cross-Promotion-Footer)
 - **Benefit-Typ:** File Download (`downloadables`)
 - **Benefit-Description (kurzes Label, sichtbar im Checkout/Portal/Mail):**

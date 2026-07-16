@@ -83,15 +83,18 @@ config, and decision documented so you can reproduce it exactly.
 
 | Metric | Result |
 |---|---|
-| Jailbreak resistance (Garak 0.15.1, 256 real-world probes) | 38.43% ASR (DanInTheWild) — see note below |
-| OpSec Score | 36/38 (95%) 🟢 |
+| Jailbreak resistance | Red-teamed (Garak + Promptfoo); headline ASR number retracted - see note below |
+| OpSec Score | 37/38 (97%) - one visible fail |
 | Phases | 15/15 complete |
 | Cloud dependency | <20% of workloads |
 
-> **Why not 0%?** An early pilot run (AutoDANCached, 3 probes) showed 0% ASR — not
-> representative. Tested against 256 real-world jailbreak attempts (DanInTheWild),
-> the honest number is 38.43%. Higher probe count = harder test, not a worse system.
-> Full disclosure in the included Garak run documentation.
+> **Why is there no ASR number?** I published 38.43% for months. Then I checked the
+> harness itself and found it had never injected my prompt at all - every run had
+> been measuring the bare model (chronicle #114/#115). Once the prompt was actually
+> injected, all 128 raw flags triaged to zero real harmful bypasses, and the metric
+> turned out to score cooperative tone rather than harm. So the number is retracted,
+> not replaced by a prettier one. You get the method, the raw runs and the correction.
+> That is the product.
 
 ---
 

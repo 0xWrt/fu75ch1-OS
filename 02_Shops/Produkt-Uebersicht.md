@@ -55,7 +55,7 @@ Einzelsumme P1–P9: **€84** → Blueprint-Anker: "€84 of parts for €29 Ea
 ### P4 — Phase 12 Playbook
 - Cover: "Hardening & Determinism — the honest playbook"
 - [SCREENSHOT: Fehler-Chronik-Tabelle (3–4 Zeilen, Phase-12-Einträge)]
-- [SCREENSHOT: Garak Run-Vergleich 45.23% → 38.43%]
+- [SCREENSHOT: Chronik #114/#115 -- wie der Harness den Prompt nie injizierte (ASR-Zahlen zurueckgezogen)]
 
 ### P5 — Windows Hardening Guide
 - Cover: "Harden Windows 11. Verify every step."
