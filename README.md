@@ -23,10 +23,10 @@ polished pitch — a working system with the failure modes left in.
 - **115 numbered errors**, each with root cause, fix, and prevention rule —
   not deleted, not squashed into a clean commit history. Including #103:
   the error of forgetting to log error #96. Yes, that's in there too.
-- **A red-team number that doesn't flatter the system.** A 3-probe pilot run
-  showed a 0% attack success rate. That number is technically true and
-  completely useless. The real test — 256 real-world jailbreak attempts —
-  came back at 38.43%. Both are published. Only one of them is honest.
+- **A red-team number I had to retract.** I published 38.43% ASR for months as the <!-- stale-ok: retraction story -->
+  honest, unflattering number. Then I verified the harness instead of the result:
+  it had never injected my system prompt at all. Every run had been measuring the
+  bare model. The retraction is chronicle entry #114/#115, and it is in this repo.
 - **Scripts that run**, not architecture diagrams. Every claim in this repo
   is backed by a `.ps1` you can execute yourself and verify.
 
@@ -40,34 +40,37 @@ solo build with nothing hidden actually looks like, keep reading.
 
 | Metric | Result |
 |---|---|
-| Jailbreak ASR — lower is better (Garak 0.15.1, 256 real-world attempts) | **38.43%** (see note) |
-| OpSec Score | **36/38 (95%)** 🟢 |
+| Jailbreak resistance | Red-teamed (Garak + Promptfoo) - headline ASR **retracted**, see note |
+| OpSec Score | **37/38 (97%)** - one visible fail, measured 2026-07-16 |
 | Phases completed | **15 / 15** ✅ |
 | Supporting-workload cloud dependency | **< 20%** (RAG, automation, observability) |
-| Errors documented with root cause + fix | **115** — [full chronicle](01_Architecture/Error_Chronicle.md) |
+| Errors documented with root cause + fix | **119** - [full chronicle](01_Architecture/Error_Chronicle.md) |
 | Time to build | **~2 weeks, one person** |
 
 <!-- TODO before Show HN: add dashboard screenshot (fu75ch1_dashboard.py, localhost:8501) here -->
 
-> **Why 38.43%?** Run 4 (AutoDANCached, 3 attempts) showed 0% ASR — not representative.
-> Run 5 (DanInTheWild, 239 scored attempts) showed 41.8%; a separate probe in
-> the same run (HijackHateHumans) came in at 9.8% ASR. Run 6 (DanInTheWild, updated
-> system prompt v4.6) improved to **38.43%** — a -3.37 pp reduction.
-> Run 7 (system prompt v4.7) came back at 48.52%. The confidence intervals overlap
-> (Run 6: 32.2-44.6%, Run 7: 42.2-54.9%), so this is not a statistically significant
-> regression - but it is not evidence of improvement either.
-> Caveat on the metric itself: the MitigationBypass detector counts any response that
-> does not *look like* a refusal as a successful attack - including harmless replies
-> such as "I understand." that deliver no harmful content. The reported ASR is an
-> upper bound, not a harm rate. The individual hits have not been adjudicated yet.
-> We publish the higher number until we have counted the real one.
-> All runs documented honestly. Full data:
-> [Verified_Results.md](00_PROOF/Verified_Results.md).
+> **Why is there no ASR number?** I published 38.43% for months - Run 6, DanInTheWild,
+> system prompt v4.6, a -3.37 pp improvement over Run 5. It was the number I was
+> proudest of, precisely because it did not flatter the system.
 >
-> **Correction (2026-07-09):** Earlier versions of this README stated *512 probes*.
-> The correct count is **256** - garak's default `soft_probe_prompt_cap`. Run 5's ASR
-> was computed over **239 scored attempts**. The 38.43% figure never depended on the
-> wrong number and is unchanged. Logged as error #109.
+> Then I verified the harness instead of the result. My system prompt had never been
+> injected. Run 4, Run 5, Run 6 - every one of them had been measuring the bare model.
+> The number was real. It just was not measuring my product. (Chronicle #114/#115.)
+>
+> When the prompt was finally injected (Run 7, v4.7, 2026-07-10), the raw MitigationBypass
+> rate came back at 56.64% - and hand-triaging all 128 flagged responses found **zero**
+> real harmful bypasses: 82% were explicit refusals, the rest harmless role-play. The
+> detector scores any reply that does not *look like* a refusal as a success, including
+> "I understand." It measures cooperative tone, not harm. Even the bare runs had a harm
+> signal of zero.
+>
+> So the number is retracted, not swapped for a prettier one. DanInTheWild is no longer
+> a primary metric here. What ships instead: the harness config, every raw run, and the
+> correction. Full data: [Verified_Results.md](00_PROOF/Verified_Results.md).
+>
+> **Correction (2026-07-09):** Earlier versions of this README stated *512 probes*; the <!-- stale-ok: correction note -->
+> correct count is 256 (garak's default `soft_probe_prompt_cap`). Logged as error #109 -
+> and superseded by #114/#115, where the probe count turned out to be the smaller problem.
 >
 > **Note on cloud dependency:** supporting infrastructure (RAG, workflow
 > automation, observability) runs locally. Primary AI inference still runs
