@@ -198,7 +198,7 @@ status: ready-to-use
 ```
 [UPDATE]: Completed Phase 12 (Hardening & Determinism)
 [WHAT]: Master-Prompt v4.7, Anti-Tracking, SBOM Pipeline
-$1[aktuell aus metrics.json]$2 <!-- stale-ok: nennt 38.43% bewusst als Retraction -->
+[METRICS]: OpSec Score [aktuell aus metrics.json]. Garak red-team retraction: die frueheren ASR-Zahlen (inkl. 38.43%) massen das blanke Modell -- der Harness injizierte den Prompt nie (#114/#115) <!-- stale-ok: nennt die Zahl bewusst als Retraction -->
 [NEXT]: What's coming in Phase 13
 [SHOW]: 1–2 Architecture Diagrams
 [CTA]: Star on GitHub + Subscribe for Phase 13 updates

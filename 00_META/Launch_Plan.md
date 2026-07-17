@@ -140,7 +140,7 @@ Early-Bird-Mechanismus:
 - **Wann:** Ab Phase 2 (wenn GitHub live)
 
 #### Hacker News — Show HN
-$1 <!-- stale-ok: beschreibt bewusst die alte Erzaehlung -->
+- **Was:** Einmaliger Launch-Post: "Show HN: I documented all 119 mistakes building a local-first AI stack solo" (77 Zeichen -- HN-Limit ist 80; exakte Fehlerzahl am Post-Tag via metrics.json pruefen). Die Story im ersten eigenen Kommentar ist jetzt die Garak-Retraction (#114/#115: Harness injizierte den Prompt nie, alle bisherigen ASR-Zahlen ungueltig) statt der alten 38.43%-vs-0%-Erzaehlung -- staerkere Story, echte Selbstkorrektur statt Kennzahl. <!-- stale-ok: nennt 38.43% bewusst als Retraction -->
 - **Aufwand:** 1× einmalig, ~1h Vorbereitung
 - **Timing:** Montag/Dienstag 9–11 Uhr UTC (höchste Sichtbarkeit)
 - **Erwartung:** 50–300 GitHub-Stars im Launch-Fenster
