@@ -31,3 +31,4 @@ _LOESCHEN/
 # Unveroeffentlichte Content-Drafts -- erst nach Plattform-Livegang ins Repo
 02_CONTENT_OPERATING_SYSTEM/DevTo/
 02_CONTENT_OPERATING_SYSTEM/Newsletter/
+__pycache__/

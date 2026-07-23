@@ -1,13 +1,13 @@
 # The fu75ch1 Error Chronicle — Free Sampler
-## 20 of 119 documented mistakes from building an AI operating system solo, in two weeks
+## 20 documented mistakes from building an AI operating system solo, in two weeks
 
 > **What this is:** fu75ch1 is a local-first AI operating system built by one person
 > in two weeks — with every single mistake numbered, root-caused, and documented.
-> This sampler contains 20 hand-picked entries from the full chronicle of 119.
+> This sampler contains 20 hand-picked entries from the full chronicle.
 > No fluff, no theory: each of these actually broke, on a real machine, and each
 > prevention rule below exists because it had to.
 >
-> **The full chronicle (all 119, plus every script and config) ships with
+> **The full chronicle (every numbered mistake, plus every script and config) ships with
 > [The fu75ch1 Blueprint](https://fu75ch1.gumroad.com/l/blueprint) — €29 Early Bird.**
 > Free sanitized repo: [github.com/0xWrt/fu75ch1-OS](https://github.com/0xWrt/fu75ch1-OS)
 
@@ -122,7 +122,7 @@ If a project's error log can't even trust itself without tooling, neither can yo
 
 ---
 
-## Want all 119?
+## Want the full chronicle?
 
 - **[The fu75ch1 Blueprint](https://fu75ch1.gumroad.com/l/blueprint)** — the complete system: all 15 phases, every script, every config, and the full error chronicle with root cause + fix + prevention rule for each entry. €29 Early Bird (first 50), then €49.
 - **Standalone components** (€7–14): [fu75ch1.gumroad.com](https://fu75ch1.gumroad.com)

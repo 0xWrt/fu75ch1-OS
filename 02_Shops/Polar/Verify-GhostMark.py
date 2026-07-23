@@ -1,4 +1,4 @@
-"""
+r"""
 Ghost-Mark / Watermark-Verifikation für fu75ch1-Produkte
 ==========================================================
 

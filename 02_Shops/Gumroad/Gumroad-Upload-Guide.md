@@ -31,7 +31,7 @@ title: Gumroad Upload Guide — alle 9 Produkte
 **Preis:** €7
 **Summary:** `38 automated security checks for Windows. Run it, get a score. No manual work. Real results in 60 seconds.`
 **Additional details:** Inhalt aus Beschreibungs-MD
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P2-OpSec-Checklist.md`
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P2-OpSec-Checklist.md`
 **Upload 2 (Produkt):** `fu75ch1\10_Workflows\Invoke-OpSecAudit.ps1`
 **Slug:** `opsec-checklist`
 
@@ -43,7 +43,7 @@ title: Gumroad Upload Guide — alle 9 Produkte
 **Preis:** €12
 **Status:** Bereit (gebaut 2026-07-02)
 
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P3-Advanced-Configs.md`
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P3-Advanced-Configs.md`
 
 **Upload 2-8 (Produkt-Files):**
 ```
@@ -86,7 +86,7 @@ fu75ch1_public\01_Architecture\SecurityLab\   (README, SAFETY-and-LEGAL, provisi
 **Summary:** `How I hardened my AI system against prompt injection, non-determinism, and unsafe automation. Garak baseline included.`
 **Additional details:** Inhalt aus Beschreibungs-MD
 
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P4-Phase12-Playbook.md`
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P4-Phase12-Playbook.md`
 
 **Upload 2-5 (Produkt-Files):**
 ```
@@ -110,7 +110,7 @@ fu75ch1\10_Workflows\Invoke-OpSecFix-v1.0.ps1
 **Summary:** `Harden Windows 11 without losing productivity. Real commands. Real verification. No guesswork.`
 **Additional details:** Inhalt aus Beschreibungs-MD
 
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P5-Windows-Hardening.md`
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P5-Windows-Hardening.md`
 
 **Upload 2 (Produkt):**
 ```
@@ -128,7 +128,7 @@ fu75ch1_public\01_Architecture\Phases\Phase01_Retrospektive.md
 **Summary:** `Stop your DNS from leaking. Set up encrypted DNS + VPN with Kill-Switch. 30 minutes. Verified via automated leak test.`
 **Additional details:** Inhalt aus Beschreibungs-MD
 
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P6-DNS-VPN-Guide.md`
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P6-DNS-VPN-Guide.md`
 
 **Upload 2 (Produkt):**
 ```
@@ -146,7 +146,7 @@ fu75ch1_public\01_Architecture\Phases\Phase02_Abschluss.md
 **Summary:** `Stop browser fingerprinting. Block trackers at the config level. Exportable settings for LibreWolf + uBlock Origin.`
 **Additional details:** Inhalt aus Beschreibungs-MD
 
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P7-Browser-Hardening.md`
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P7-Browser-Hardening.md`
 
 **Upload 2 (Produkt):**
 ```
@@ -164,7 +164,7 @@ fu75ch1_public\01_Architecture\Phases\Phase03_Retrospektive.md
 **Summary:** `Your browser's password manager is a security hole. This is the offline alternative — with Key-File, backup strategy, and API key hygiene.`
 **Additional details:** Inhalt aus Beschreibungs-MD
 
-**Upload 1 (README):** `fu75ch1_public\01_Architecture\Gumroad-P8-KeePass-Blueprint.md`
+**Upload 1 (README):** `fu75ch1_public\02_Shops\Gumroad\Gumroad-P8-KeePass-Blueprint.md`
 
 **Upload 2 (Produkt):**
 ```
@@ -184,7 +184,7 @@ fu75ch1_public\01_Architecture\Phases\Phase04_Abschluss.md
 
 **Upload 1 (README + Produkt in einem):**
 ```
-fu75ch1_public\01_Architecture\Gumroad-P9-Tool-Stack-Guide.md
+fu75ch1_public\02_Shops\Gumroad\Gumroad-P9-Tool-Stack-Guide.md
 ```
 > Diese Datei ist vollständig — kein zweites File nötig.
 

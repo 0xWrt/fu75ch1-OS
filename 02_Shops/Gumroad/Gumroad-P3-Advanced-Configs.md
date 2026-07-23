@@ -59,6 +59,6 @@ Pairs well with the **Master-Prompt** (€9) — the infrastructure this prompt 
 
 **→ Buy now on Gumroad**
 
-*Transparency note: every delivered file carries an invisible license watermark (zero-width Unicode signature). The verification script `Verify-GhostMark.py` is included in your download — inspect it yourself. Nothing in this product is hidden from you.*
+*Transparency note: delivered files carry an invisible license watermark (zero-width Unicode signature) — except the two JSON configs, because JSON has no comment syntax to hide one in. The verification script `Verify-GhostMark.py` is included in your download; run it and it will tell you exactly which files are marked. Nothing in this product is hidden from you.*
 
 © fu75ch1 — CC BY-NC 4.0
