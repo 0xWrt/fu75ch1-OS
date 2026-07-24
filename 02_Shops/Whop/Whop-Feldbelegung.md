@@ -1,5 +1,5 @@
 ---
-date: 2026-07-23
+date: 2026-07-24
 tags: [whop, felder, upload, checkliste, launch]
 status: Arbeitsblatt -- Copy-Quelle sind die Whop-P*.md im selben Ordner
 title: Whop Feldbelegung -- jedes Eingabefeld
@@ -7,7 +7,7 @@ title: Whop Feldbelegung -- jedes Eingabefeld
 
 # Whop Feldbelegung -- jedes Eingabefeld
 
-> Doku-Stand **2026-07-23**, gelesen aus
+> Doku-Stand **2026-07-24**, gelesen aus
 > `docs.whop.com/manage-your-business/products/create-product`.
 >
 > Im Vault liegen nur zwei Whop-Copies: **P1** und **P11**. Das ist die bewusste

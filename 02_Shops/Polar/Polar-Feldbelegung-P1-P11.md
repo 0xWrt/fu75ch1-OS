@@ -1,5 +1,5 @@
 ---
-date: 2026-07-23
+date: 2026-07-24
 tags: [polar, felder, upload, checkliste, launch]
 status: Arbeitsblatt -- Copy-Quelle sind die Polar-P*.md im selben Ordner
 title: Polar Feldbelegung -- jedes Eingabefeld, P1-P11
@@ -7,7 +7,7 @@ title: Polar Feldbelegung -- jedes Eingabefeld, P1-P11
 
 # Polar Feldbelegung -- jedes Eingabefeld
 
-> Doku-Stand **2026-07-23**, gelesen aus `docs.polar.sh/features/products`,
+> Doku-Stand **2026-07-24**, gelesen aus `docs.polar.sh/features/products`,
 > `/features/benefits/custom`, `/features/custom-fields` sowie der API-Referenz
 > `/api-reference/products/create`.
 >

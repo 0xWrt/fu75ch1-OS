@@ -1,5 +1,5 @@
 ---
-date: 2026-07-23
+date: 2026-07-24
 tags: [launch, fahrplan, shops, gumroad, polar, whop, lemonsqueezy]
 status: aktiv -- Master-Fahrplan ueber alle vier Storefronts
 title: Launch-Fahrplan -- alle Shops, in Abhaengigkeitsreihenfolge
@@ -152,7 +152,7 @@ Aufwand: **~1 Stunde**, plus die Klaerung aus 0.6.
    Backend-Ansicht. Sonst Fehler #110 nochmal
 3. `README.md` und `MANIFESTO.md` um die neuen Kanaele ergaenzen
 4. AnythingLLM starten und `Update-ChronikRAG.ps1` nachziehen -- der RAG-Index
-   kennt #120 bis #123 noch nicht
+   kennt die neuesten Chronik-Eintraege noch nicht
 5. StateTransfer v49 schreiben
 6. Beide Repos committen, Public pushen
 

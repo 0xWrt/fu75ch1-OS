@@ -1,5 +1,5 @@
 ---
-date: 2026-07-23
+date: 2026-07-24
 tags: [lemonsqueezy, felder, upload, checkliste, blueprint]
 status: Arbeitsblatt -- Copy-Quelle ist Gumroad-P10-Blueprint.md (Single-Source-Regel)
 title: Lemon Squeezy Feldbelegung -- jedes Eingabefeld
@@ -7,7 +7,7 @@ title: Lemon Squeezy Feldbelegung -- jedes Eingabefeld
 
 # Lemon Squeezy Feldbelegung -- jedes Eingabefeld
 
-> Doku-Stand **2026-07-23**, gelesen aus
+> Doku-Stand **2026-07-24**, gelesen aus
 > `docs.lemonsqueezy.com/help/products/adding-products` und der API-Referenz
 > `/api/products/the-product-object`.
 >

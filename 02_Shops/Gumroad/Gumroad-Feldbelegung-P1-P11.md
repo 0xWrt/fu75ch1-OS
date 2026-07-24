@@ -1,5 +1,5 @@
 ---
-date: 2026-07-23
+date: 2026-07-24
 tags: [gumroad, upload, felder, checkliste, launch]
 status: Arbeitsblatt -- Quelle sind die Copy-Dateien in 02_Shops\Gumroad\
 title: Gumroad Feldbelegung -- was gehoert in welches Feld (P1-P11)
@@ -65,7 +65,7 @@ als Code-Block gesetzt, nicht als Fliesstext.
 
 ---
 
-## 1. Entscheidungen -- Stand 2026-07-23
+## 1. Entscheidungen -- Stand 2026-07-24
 
 ### 1.1 Wasserzeichen -- ERLEDIGT
 
@@ -75,7 +75,7 @@ Repo-Quelle -- die liegt gratis auf GitHub und waere sonst gegen das Paket
 diffbar.
 
 - 10 Produkte gestaged, 31 Dateien mit per `Verify-GhostMark.py` bestaetigter
-  Signatur `fu75ch1|<slug>|CC-BY-NC-4.0|2026-07-23`
+  Signatur `fu75ch1|<slug>|CC-BY-NC-4.0|2026-07-24`
 - `Verify-GhostMark.py` liegt in jedem Paket bei
 - Neuer Encoder `10_Workflows\Apply-GhostMark-Code.py` fuer Nicht-Markdown
   (Signatur in Kommentarzeile: .ps1/.yml/.conf/.template/.py/.wsb/Dockerfile)
@@ -515,7 +515,7 @@ denselben die Nachbarprodukte.
 
 ---
 
-## 7. Gegen die offizielle Doku geprueft (2026-07-23)
+## 7. Gegen die offizielle Doku geprueft (2026-07-24)
 
 Quellen: Hilfeartikel 79 (Discover), 123 (Tags), 124 (Profil), 149 (Adding a
 product), 248 (Unpublish/Delete), 10 (EU & UK VAT). Die Hilfeseiten rendern per
